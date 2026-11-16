@@ -1,0 +1,14 @@
+# What building, testing, and documenting the package writes.
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+docs/_build/
+
+# A library ships no lock, because its wheel declares its dependencies, so uv's stays out.
+uv.lock
+
+.DS_Store

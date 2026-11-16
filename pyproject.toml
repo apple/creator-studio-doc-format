@@ -1,0 +1,51 @@
+[project]
+name = "creator-studio-doc-format"
+version = "0.1.0"
+description = "A Python library for reading, creating, and editing Apple Creator Studio documents, starting with Keynote."
+readme = "README.md"
+# The upper bound takes a new release to raise.
+requires-python = ">=3.13,<3.16"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "Apple Inc."}]
+keywords = ["keynote", "keyx", "presentation", "slides", "creator-studio", "document"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+  "Typing :: Typed",
+]
+dependencies = [
+    "pydantic>=2.11,<3",
+]
+
+[project.urls]
+Homepage = "https://github.com/apple/creator-studio-doc-format"
+Documentation = "https://apple.github.io/creator-studio-doc-format/"
+Source   = "https://github.com/apple/creator-studio-doc-format"
+Issues   = "https://github.com/apple/creator-studio-doc-format/issues"
+
+[build-system]
+requires = ["setuptools>=84"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["creator_studio_doc_format*"]
+
+[tool.setuptools.package-data]
+creator_studio_doc_format            = ["py.typed"]
+"creator_studio_doc_format.core"     = ["py.typed"]
+"creator_studio_doc_format.examples" = ["*.md", "fixtures/*"]
+
+[dependency-groups]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+# ``src`` is collected because ``--doctest-modules`` runs the ``>>>`` blocks in docstrings.
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules"

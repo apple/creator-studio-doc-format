@@ -1,0 +1,4 @@
+# All of tests/, fixtures included, so a packager can run the suite from the sdist.
+# setuptools would otherwise take only tests/test*.py at the top level.
+graft tests
+global-exclude __pycache__ *.py[cod]

@@ -1,0 +1,60 @@
+name: "🐞 Problem Report"
+description: Report a problem in Creator Studio Document Format
+title: "[Problem]: "
+labels: ["problem", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please search
+        [existing issues](../../issues) before submitting to avoid duplicates.
+
+        To report a security vulnerability, follow the
+        [security policy](https://github.com/apple/.github/blob/main/SECURITY.md).
+        Don't open a public issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the problem
+      description: A clear and concise description of the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to reproduce the behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Stack trace
+      description: If applicable, paste the complete stack trace.
+      render: shell
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        - Version:
+        - OS:
+        - [Other relevant details]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
