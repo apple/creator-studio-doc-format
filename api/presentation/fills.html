@@ -1,0 +1,1459 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="styling.html">
+      
+      
+        <link rel="next" href="colors.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Fills - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fill" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fills
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#slide-content" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#styles-and-appearance" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Styles and appearance</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="styling.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Themes and styles</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Fills</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Fills</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fill" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Fill</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fill">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Gradient</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Stop</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flavor" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Flavor</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Linear</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radial" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Radial</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagefill" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Image<wbr>Fill</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Technique</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="colors.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Colors</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shadows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shadows</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="numbers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Number formats</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="titles.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Titles</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fill" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Fill</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fill">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Gradient</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Stop</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flavor" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Flavor</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Linear</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radial" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Radial</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagefill" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Image<wbr>Fill</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Technique</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="fills">Fills<a class="headerlink" href="#fills" title="Link to this heading">¶</a></h1>
+<p>Fill an area with a solid color, a gradient, or an image.</p>
+<h2 id="fill">Fill<a class="headerlink" href="#fill" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Fill">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Fill</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Fill.color" title="creator_studio_doc_format.core.Fill.color (Python field) — A solid color fill."><span class="n"><span class="pre">color</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Fill.gradient" title="creator_studio_doc_format.core.Fill.gradient (Python field) — A gradient fill, either linear or radial."><span class="n"><span class="pre">gradient</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Fill.image" title="creator_studio_doc_format.core.Fill.image (Python field) — An image fill, with optional scale and tint."><span class="n"><span class="pre">image</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Fill"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Fill" title="Link to this definition">¶</a></dt>
+<dd><p>A style that fills an area with exactly one of a solid color, a gradient, or an image.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Fill.color">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">color</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="colors.html#creator_studio_doc_format.core.Color" title="creator_studio_doc_format.core.Color (Python model) — A color that the reader uses as part of a displayed object, in one of the forms the format supports."><span class="pre">Color</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Fill.color" title="Link to this definition">¶</a></dt>
+<dd><p>A solid color fill.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Fill.gradient">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">gradient</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Gradient" title="creator_studio_doc_format.core.Gradient (Python model) — A fill with a continuous gradient between two or more colors."><span class="pre">Gradient</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Fill.gradient" title="Link to this definition">¶</a></dt>
+<dd><p>A gradient fill, either linear or radial.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Fill.image">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">image</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.ImageFill" title="creator_studio_doc_format.core.ImageFill (Python model) — An image that the reader uses to fill an area."><span class="pre">ImageFill</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Fill.image" title="Link to this definition">¶</a></dt>
+<dd><p>An image fill, with optional scale and tint.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="gradient">Gradient<a class="headerlink" href="#gradient" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Gradient">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Gradient</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient" title="creator_studio_doc_format.core.Gradient.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient.is_advanced" title="creator_studio_doc_format.core.Gradient.is_advanced (Python field) — Whether the gradient is an advanced gradient. It's independent of the linear or radial flavor and doesn't affect rendering."><span class="n"><span class="pre">is_advanced</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient.stops" title="creator_studio_doc_format.core.Gradient.stops (Python field) — The color stops that define the gradient, ordered from the start of the gradient to its end. A gradient must have at least two stops. An array with fewer than two stops is padded to two on read; an empty one produces a fully transparent gradient. If a stop's fraction isn't greater than the previous stop's, it's shown immediately after the previous stop."><span class="n"><span class="pre">stops</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient.opacity" title="creator_studio_doc_format.core.Gradient.opacity (Python field) — The opacity of the gradient, in the range 0 to 1."><span class="n"><span class="pre">opacity</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient.flavor" title="creator_studio_doc_format.core.Gradient.flavor (Python field) — The kind of gradient, linear or radial, along with the geometry that positions it."><span class="n"><span class="pre">flavor</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Gradient" title="creator_studio_doc_format.core.Gradient.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Gradient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Gradient" title="Link to this definition">¶</a></dt>
+<dd><p>A fill with a continuous gradient between two or more colors.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Gradient.is_advanced">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_advanced</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Gradient.is_advanced" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the gradient is an advanced gradient. It’s independent of the linear or radial <code class="docutils literal notranslate"><span class="pre">flavor</span></code> and doesn’t affect rendering.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Gradient.stops">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stops</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.Stop" title="creator_studio_doc_format.core.Stop (Python model) — One color in the gradient, and its position along it."><span class="pre">Stop</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Gradient.stops" title="Link to this definition">¶</a></dt>
+<dd><p>The color stops that define the gradient, ordered from the start of the gradient to its end. A gradient must have at least two stops. An array with fewer than two stops is padded to two on read; an empty one produces a fully transparent gradient. If a stop’s <code class="docutils literal notranslate"><span class="pre">fraction</span></code> isn’t greater than the previous stop’s, it’s shown immediately after the previous stop.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Gradient.opacity">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">opacity</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">1</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Gradient.opacity" title="Link to this definition">¶</a></dt>
+<dd><p>The opacity of the gradient, in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Gradient.flavor">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">flavor</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Flavor" title="creator_studio_doc_format.core.Flavor (Python model) — A method for laying out a gradient's stops over the area being filled."><span class="pre">Flavor</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Gradient.flavor" title="Link to this definition">¶</a></dt>
+<dd><p>The kind of gradient, linear or radial, along with the geometry that positions it.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="stop">Stop<a class="headerlink" href="#stop" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Stop">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Stop</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Stop" title="creator_studio_doc_format.core.Stop.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Stop.color" title="creator_studio_doc_format.core.Stop.color (Python field) — The stop's color."><span class="n"><span class="pre">color</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Stop.fraction" title="creator_studio_doc_format.core.Stop.fraction (Python field) — The position of the stop within the entire gradient, in the range 0 to 1. Each stop must have its position at or after the position of the previous stop."><span class="n"><span class="pre">fraction</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Stop.inflection" title="creator_studio_doc_format.core.Stop.inflection (Python field) — A position between the stop and the following stop that defines where the halfway blend of the two stops' colors falls, as a fraction of the distance between them. An inflection of 0.5 blends two stops evenly; lower values pull the blend toward the stop, and higher values toward the following stop. Has no effect on the last stop."><span class="n"><span class="pre">inflection</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mf">0.5</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Stop" title="creator_studio_doc_format.core.Stop.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Stop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Stop" title="Link to this definition">¶</a></dt>
+<dd><p>One color in the gradient, and its position along it.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Stop.color">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">color</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="colors.html#creator_studio_doc_format.core.Color" title="creator_studio_doc_format.core.Color (Python model) — A color that the reader uses as part of a displayed object, in one of the forms the format supports."><span class="pre">Color</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Stop.color" title="Link to this definition">¶</a></dt>
+<dd><p>The stop’s color.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Stop.fraction">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fraction</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Stop.fraction" title="Link to this definition">¶</a></dt>
+<dd><p>The position of the stop within the entire gradient, in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>. Each stop must have its position at or after the position of the previous stop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Stop.inflection">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">inflection</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mf">0.5</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Stop.inflection" title="Link to this definition">¶</a></dt>
+<dd><p>A position between the stop and the following stop that defines where the halfway blend of the two stops’ colors falls, as a fraction of the distance between them. An inflection of 0.5 blends two stops evenly; lower values pull the blend toward the stop, and higher values toward the following stop. Has no effect on the last stop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="flavor">Flavor<a class="headerlink" href="#flavor" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Flavor">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Flavor</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Flavor" title="creator_studio_doc_format.core.Flavor.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Flavor.linear" title="creator_studio_doc_format.core.Flavor.linear (Python field) — A gradient that varies along a straight line between its stops."><span class="n"><span class="pre">linear</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Flavor.radial" title="creator_studio_doc_format.core.Flavor.radial (Python field) — A gradient that spreads outward from a center point."><span class="n"><span class="pre">radial</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Flavor" title="creator_studio_doc_format.core.Flavor.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Flavor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Flavor" title="Link to this definition">¶</a></dt>
+<dd><p>A method for laying out a gradient’s stops over the area being filled.</p>
+<p>Each case’s value gives the geometry that positions the stops.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Flavor.linear">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">linear</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Linear" title="creator_studio_doc_format.core.Linear (Python model) — A gradient that lays out its stops along a straight line."><span class="pre">Linear</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Flavor.linear" title="Link to this definition">¶</a></dt>
+<dd><p>A gradient that varies along a straight line between its stops.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Flavor.radial">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">radial</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Radial" title="creator_studio_doc_format.core.Radial (Python model) — A gradient that spreads its stops outward from a center point, with a second point fixing the radius and the direction of the outer edge."><span class="pre">Radial</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Flavor.radial" title="Link to this definition">¶</a></dt>
+<dd><p>A gradient that spreads outward from a center point.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="linear">Linear<a class="headerlink" href="#linear" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Linear">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Linear</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Linear" title="creator_studio_doc_format.core.Linear.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Linear.angle" title="creator_studio_doc_format.core.Linear.angle (Python field) — The angle in degrees at which the gradient runs, in the range 0 to 360 (exclusive) measured counterclockwise with 0 corresponding to horizontal left-to-right. Ignored if start_point, end_point, and base_natural_size are all present; angle remains the fallback for version 1.0 readers, which predate those properties."><span class="n"><span class="pre">angle</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Linear.start_point" title="creator_studio_doc_format.core.Linear.start_point (Python field) — If present, the starting point of the line along which the gradient's colors change, relative to a rectangle defined by base_natural_size. If it's present, it must be combined with end_point and base_natural_size; when all three are present, they take precedence over angle. Version 1.0 readers ignore it and render from angle."><span class="n"><span class="pre">start_point</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Linear.end_point" title="creator_studio_doc_format.core.Linear.end_point (Python field) — If present, the end point of the line along which the gradient's colors change, relative to a rectangle defined by base_natural_size. If it's present, it must be combined with start_point and base_natural_size. For details, see start_point."><span class="n"><span class="pre">end_point</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Linear.base_natural_size" title="creator_studio_doc_format.core.Linear.base_natural_size (Python field) — If present, the size of the rectangle that start_point and end_point are relative to. When filling an area, the gradient's start and end points are transformed so that this size covers the filled area. For details, see start_point."><span class="n"><span class="pre">base_natural_size</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Linear" title="creator_studio_doc_format.core.Linear.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Linear"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Linear" title="Link to this definition">¶</a></dt>
+<dd><p>A gradient that lays out its stops along a straight line.</p>
+<p><code class="docutils literal notranslate"><span class="pre">angle</span></code> alone fits the line to the filled shape’s bounds, so the whole stop range is visible. <code class="docutils literal notranslate"><span class="pre">start_point</span></code>, <code class="docutils literal notranslate"><span class="pre">end_point</span></code>, and <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code> place it exactly, possibly running past those bounds; the points are in the shape’s untransformed space, in points with y increasing downward, and rescale when the object’s size differs from <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>. Those three are read only together: with any of them missing, the gradient falls back to <code class="docutils literal notranslate"><span class="pre">angle</span></code> and discards the points.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Linear.angle">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">angle</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Linear.angle" title="Link to this definition">¶</a></dt>
+<dd><p>The angle in degrees at which the gradient runs, in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">360</span></code> (exclusive) measured counterclockwise with <code class="docutils literal notranslate"><span class="pre">0</span></code> corresponding to horizontal left-to-right. Ignored if <code class="docutils literal notranslate"><span class="pre">start_point</span></code>, <code class="docutils literal notranslate"><span class="pre">end_point</span></code>, and <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code> are all present; <code class="docutils literal notranslate"><span class="pre">angle</span></code> remains the fallback for version 1.0 readers, which predate those properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 360</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Linear.start_point">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">start_point</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Position" title="creator_studio_doc_format.core.Position (Python model) — A point, in points, in whichever coordinate space the property using it defines, measured downward from that space's top-left corner."><span class="pre">Position</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Linear.start_point" title="Link to this definition">¶</a></dt>
+<dd><p>If present, the starting point of the line along which the gradient’s colors change, relative to a rectangle defined by <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>. If it’s present, it must be combined with <code class="docutils literal notranslate"><span class="pre">end_point</span></code> and <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>; when all three are present, they take precedence over <code class="docutils literal notranslate"><span class="pre">angle</span></code>. Version 1.0 readers ignore it and render from <code class="docutils literal notranslate"><span class="pre">angle</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Linear.end_point">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">end_point</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Position" title="creator_studio_doc_format.core.Position (Python model) — A point, in points, in whichever coordinate space the property using it defines, measured downward from that space's top-left corner."><span class="pre">Position</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Linear.end_point" title="Link to this definition">¶</a></dt>
+<dd><p>If present, the end point of the line along which the gradient’s colors change, relative to a rectangle defined by <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>. If it’s present, it must be combined with <code class="docutils literal notranslate"><span class="pre">start_point</span></code> and <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>. For details, see <code class="docutils literal notranslate"><span class="pre">start_point</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Linear.base_natural_size">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">base_natural_size</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Size" title="creator_studio_doc_format.core.Size (Python model) — A width and height in whichever coordinate space the property using it defines."><span class="pre">Size</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Linear.base_natural_size" title="Link to this definition">¶</a></dt>
+<dd><p>If present, the size of the rectangle that <code class="docutils literal notranslate"><span class="pre">start_point</span></code> and <code class="docutils literal notranslate"><span class="pre">end_point</span></code> are relative to. When filling an area, the gradient’s start and end points are transformed so that this size covers the filled area. For details, see <code class="docutils literal notranslate"><span class="pre">start_point</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="radial">Radial<a class="headerlink" href="#radial" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Radial">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Radial</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Radial" title="creator_studio_doc_format.core.Radial.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Radial.start_point" title="creator_studio_doc_format.core.Radial.start_point (Python field) — The center point of the radial gradient, relative to a rectangle defined by base_natural_size."><span class="n"><span class="pre">start_point</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Radial.end_point" title="creator_studio_doc_format.core.Radial.end_point (Python field) — A point on the outer edge of the radial gradient, relative to a rectangle defined by base_natural_size. Together with start_point, it sets the gradient's radius and direction."><span class="n"><span class="pre">end_point</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Radial.base_natural_size" title="creator_studio_doc_format.core.Radial.base_natural_size (Python field) — The size of the rectangle that start_point and end_point are relative to. When filling an area, the gradient's start and end points are transformed so that this size covers the filled area."><span class="n"><span class="pre">base_natural_size</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Radial" title="creator_studio_doc_format.core.Radial.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Radial"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Radial" title="Link to this definition">¶</a></dt>
+<dd><p>A gradient that spreads its stops outward from a center point, with a second point fixing the radius and the direction of the outer edge.</p>
+<p>Both points are in the filled shape’s untransformed space, in points with y increasing downward; <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code> is the size that space was captured at, so the gradient rescales when the object’s size differs from it.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Radial.start_point">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">start_point</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Position" title="creator_studio_doc_format.core.Position (Python model) — A point, in points, in whichever coordinate space the property using it defines, measured downward from that space's top-left corner."><span class="pre">Position</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Radial.start_point" title="Link to this definition">¶</a></dt>
+<dd><p>The center point of the radial gradient, relative to a rectangle defined by <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Radial.end_point">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">end_point</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Position" title="creator_studio_doc_format.core.Position (Python model) — A point, in points, in whichever coordinate space the property using it defines, measured downward from that space's top-left corner."><span class="pre">Position</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Radial.end_point" title="Link to this definition">¶</a></dt>
+<dd><p>A point on the outer edge of the radial gradient, relative to a rectangle defined by <code class="docutils literal notranslate"><span class="pre">base_natural_size</span></code>. Together with <code class="docutils literal notranslate"><span class="pre">start_point</span></code>, it sets the gradient’s radius and direction.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Radial.base_natural_size">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">base_natural_size</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Size" title="creator_studio_doc_format.core.Size (Python model) — A width and height in whichever coordinate space the property using it defines."><span class="pre">Size</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Radial.base_natural_size" title="Link to this definition">¶</a></dt>
+<dd><p>The size of the rectangle that <code class="docutils literal notranslate"><span class="pre">start_point</span></code> and <code class="docutils literal notranslate"><span class="pre">end_point</span></code> are relative to. When filling an area, the gradient’s start and end points are transformed so that this size covers the filled area.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="imagefill">ImageFill<a class="headerlink" href="#imagefill" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ImageFill">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ImageFill</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill" title="creator_studio_doc_format.core.ImageFill.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill.resource" title="creator_studio_doc_format.core.ImageFill.resource (Python field) — The resource containing the image fill's data."><span class="n"><span class="pre">resource</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill.technique" title="creator_studio_doc_format.core.ImageFill.technique (Python field) — How the image fill covers the filled area."><span class="n"><span class="pre">technique</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill.scale_percent" title="creator_studio_doc_format.core.ImageFill.scale_percent (Python field) — A scale applied to the image resource's natural size, as a percentage in the range 10 to 200; a value of 100 shows the image at its natural size. Used only when technique is natural_size or tile."><span class="n"><span class="pre">scale_percent</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">100</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill.tint_color" title="creator_studio_doc_format.core.ImageFill.tint_color (Python field) — A color laid over the image, usually with an opacity less than 1. The default is none."><span class="n"><span class="pre">tint_color</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ImageFill" title="creator_studio_doc_format.core.ImageFill.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#ImageFill"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ImageFill" title="Link to this definition">¶</a></dt>
+<dd><p>An image that the reader uses to fill an area.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ImageFill.resource">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resource</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><span class="pre">Resource</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ImageFill.resource" title="Link to this definition">¶</a></dt>
+<dd><p>The resource containing the image fill’s data.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ImageFill.technique">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">technique</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Technique" title="creator_studio_doc_format.core.Technique (Python class) — The technique the reader uses to fit the image to the fill area."><span class="pre">Technique</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ImageFill.technique" title="Link to this definition">¶</a></dt>
+<dd><p>How the image fill covers the filled area.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ImageFill.scale_percent">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">scale_percent</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">100</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ImageFill.scale_percent" title="Link to this definition">¶</a></dt>
+<dd><p>A scale applied to the image resource’s natural size, as a percentage in the range <code class="docutils literal notranslate"><span class="pre">10</span></code> to <code class="docutils literal notranslate"><span class="pre">200</span></code>; a value of 100 shows the image at its natural size. Used only when <code class="docutils literal notranslate"><span class="pre">technique</span></code> is <code class="docutils literal notranslate"><span class="pre">natural_size</span></code> or <code class="docutils literal notranslate"><span class="pre">tile</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 10</p></li>
+<li><p><strong>le</strong> = 200</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ImageFill.tint_color">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tint_color</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="colors.html#creator_studio_doc_format.core.Color" title="creator_studio_doc_format.core.Color (Python model) — A color that the reader uses as part of a displayed object, in one of the forms the format supports."><span class="pre">Color</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ImageFill.tint_color" title="Link to this definition">¶</a></dt>
+<dd><p>A color laid over the image, usually with an opacity less than 1. The default is none.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="technique">Technique<a class="headerlink" href="#technique" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Technique</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Technique" title="creator_studio_doc_format.core.Technique.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Technique" title="creator_studio_doc_format.core.Technique.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Technique"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Technique" title="Link to this definition">¶</a></dt>
+<dd><p>The technique the reader uses to fit the image to the fill area.</p>
+<p>The technique also determines whether the image keeps its aspect ratio: one technique distorts the image to the area, two preserve the ratio (cropping the overhang or leaving the area showing through), and two show the image at a size of its own.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">Technique.NATURAL_SIZE</span></code> and <code class="docutils literal notranslate"><span class="pre">'natural_size'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique.NATURAL_SIZE">
+<span class="sig-name descname"><span class="pre">NATURAL_SIZE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'natural_size'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Technique.NATURAL_SIZE" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the image once at its own size, scaled by <code class="docutils literal notranslate"><span class="pre">Fill.ImageFill.scale_percent</span></code>, centered in the area and clipped by it, so a larger image is cropped on all four sides and a smaller one leaves the area showing around it.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique.SCALE_TO_FILL">
+<span class="sig-name descname"><span class="pre">SCALE_TO_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'scale_to_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Technique.SCALE_TO_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the image so that it keeps its aspect ratio and completely covers the filled area, cropping what overhangs on the longer axis.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique.SCALE_TO_FIT">
+<span class="sig-name descname"><span class="pre">SCALE_TO_FIT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'scale_to_fit'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Technique.SCALE_TO_FIT" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the image so that it keeps its aspect ratio and fits completely within the filled area, which shows through on the two sides where the image falls short.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique.STRETCH">
+<span class="sig-name descname"><span class="pre">STRETCH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'stretch'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Technique.STRETCH" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the image stretched over the filled area, scaling its width and height independently and distorting it unless the area already shares the image’s proportions.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Technique.TILE">
+<span class="sig-name descname"><span class="pre">TILE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'tile'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Technique.TILE" title="Link to this definition">¶</a></dt>
+<dd><p>Repeats the image at its own size, scaled by <code class="docutils literal notranslate"><span class="pre">Fill.ImageFill.scale_percent</span></code>, to cover the area. The first tile is placed at the filled area’s top-left corner.</p>
+</dd></dl>
+
+</dd></dl>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

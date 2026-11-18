@@ -1,0 +1,8 @@
+/* The theme drops "liga" from font-feature-settings for code elements only.
+   Signatures and parameter names are set in the code font without being code, so
+   they inherit the body's "liga" and render "fi" as one glyph. font-variant-ligatures
+   can't turn it off, as font-feature-settings wins over it. */
+.md-typeset dl.objdesc > dt,
+.md-typeset dl.api-field > dt {
+  font-feature-settings: "kern";
+}

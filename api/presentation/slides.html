@@ -1,0 +1,1351 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="canvas.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Slides - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#slide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Slides
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#slides-and-placement" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slides and placement</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slide" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidebackground" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Background</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidelayout" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Layout</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slideobject" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Object</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SlideObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholderinfo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Placeholder<wbr>Info</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholderdefinition" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Placeholder<wbr>Definition</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slideobjectplaceholderinfoplaceholderdefinitionkind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Object<wbr>Placeholder<wbr>Info<wbr>Placeholder<wbr>Definition<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcekind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Source<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="canvas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Canvas</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="positions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Positions</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#slide-content" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slide" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidebackground" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Background</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidelayout" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Layout</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slideobject" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Object</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SlideObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholderinfo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Placeholder<wbr>Info</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholderdefinition" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Placeholder<wbr>Definition</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slideobjectplaceholderinfoplaceholderdefinitionkind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Slide<wbr>Object<wbr>Placeholder<wbr>Info<wbr>Placeholder<wbr>Definition<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcekind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Source<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="slides">Slides<a class="headerlink" href="#slides" title="Link to this heading">¶</a></h1>
+<p>Build slides from the layouts a theme provides, and set the information a slide keeps
+about each object on it.</p>
+<h2 id="slide">Slide<a class="headerlink" href="#slide" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Slide">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Slide</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide" title="creator_studio_doc_format.core.Slide.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.identifier" title="creator_studio_doc_format.core.Slide.identifier (Python field) — The slide's identifier, which a link can use to point at the slide. Keynote writes a UUID string to this value; opening a presentation gives every slide a fresh identifier, so a value you supply for this identifier isn't kept."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.layout" title="creator_studio_doc_format.core.Slide.layout (Python field) — The slide layout of the slide. Keynote matches this value against each layout's SlideLayout.identifier, then its SlideLayout.name. If nothing matches, it uses the theme's first layout and reports a warning; if it's absent, it uses the first layout."><span class="n"><span class="pre">layout</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.contents" title="creator_studio_doc_format.core.Slide.contents (Python field) — The objects on the slide, ordered back to front, with the first one farthest back. This list includes objects that belong to the slide's layout, with SlideObject.source_kind set to layout, only when that layout sets SlideLayout.slide_objects_layer_with_layout; otherwise, this list doesn't include those objects, and the slide draws them behind everything in this list."><span class="n"><span class="pre">contents</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.background" title="creator_studio_doc_format.core.Slide.background (Python field) — Define the slide background as a color, gradient, or image, which overrides the default background inherited from the layout. A value of null removes the background entirely; if you omit the key, the slide retains the background associated with the specified layout."><span class="n"><span class="pre">background</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.depth" title="creator_studio_doc_format.core.Slide.depth (Python field) — The slide's indentation level in the slide navigator, on a scale of 1 to 6. A slide indented deeper than the one before it becomes its child. Keynote clamps rather than rejects a depth more than 6 or more than one level below the preceding slide, and the first slide is always at the top level. The default indentation level is 1."><span class="n"><span class="pre">depth</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Slide.note" title="creator_studio_doc_format.core.Slide.note (Python field) — The slide's presenter notes contains only text. Keynote removes inline objects with a warning, except for connection lines and non-table objects with an identifier, which prevent the document from loading. Image bullets whose image is missing and inline objects that aren't importable also halt loading, in contrast to slides, where they merely remove the text box. A paragraph that lacks a Paragraph.style defaults to the theme's Presenter Notes style, or the presentation's custom style if previously overridden, and Keynote omits Paragraph.style for paragraphs that already use the presentation's Presenter Notes style."><span class="n"><span class="pre">note</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Slide" title="creator_studio_doc_format.core.Slide.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Slide"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Slide" title="Link to this definition">¶</a></dt>
+<dd><p>A slide in a presentation.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The slide’s identifier, which a link can use to point at the slide. Keynote writes a UUID string to this value; opening a presentation gives every slide a fresh identifier, so a value you supply for this identifier isn’t kept.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.layout">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">layout</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.layout" title="Link to this definition">¶</a></dt>
+<dd><p>The slide layout of the slide. Keynote matches this value against each layout’s <code class="docutils literal notranslate"><span class="pre">SlideLayout.identifier</span></code>, then its <code class="docutils literal notranslate"><span class="pre">SlideLayout.name</span></code>. If nothing matches, it uses the theme’s first layout and reports a warning; if it’s absent, it uses the first layout.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.contents">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">contents</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.SlideObject" title="creator_studio_doc_format.core.SlideObject (Python model) — An object on a slide or slide layout, with slide-specific information about it."><span class="pre">SlideObject</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.contents" title="Link to this definition">¶</a></dt>
+<dd><p>The objects on the slide, ordered back to front, with the first one farthest back. This list includes objects that belong to the slide’s layout, with <code class="docutils literal notranslate"><span class="pre">SlideObject.source_kind</span></code> set to <code class="docutils literal notranslate"><span class="pre">layout</span></code>, only when that layout sets <code class="docutils literal notranslate"><span class="pre">SlideLayout.slide_objects_layer_with_layout</span></code>; otherwise, this list doesn’t include those objects, and the slide draws them behind everything in this list.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.background">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">background</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.SlideBackground" title="creator_studio_doc_format.core.SlideBackground (Python model) — The background of a slide."><span class="pre">SlideBackground</span></a><span class="p"><span class="pre">]</span></span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.background" title="Link to this definition">¶</a></dt>
+<dd><p>Define the slide background as a color, gradient, or image, which overrides the default background inherited from the layout. A value of <code class="docutils literal notranslate"><span class="pre">null</span></code> removes the background entirely; if you omit the key, the slide retains the background associated with the specified layout.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.depth">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">depth</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.depth" title="Link to this definition">¶</a></dt>
+<dd><p>The slide’s indentation level in the slide navigator, on a scale of <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">6</span></code>. A slide indented deeper than the one before it becomes its child. Keynote clamps rather than rejects a depth more than <code class="docutils literal notranslate"><span class="pre">6</span></code> or more than one level below the preceding slide, and the first slide is always at the top level. The default indentation level is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Slide.note">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">note</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="text.html#creator_studio_doc_format.core.Text" title="creator_studio_doc_format.core.Text (Python model) — A body of text, such as the text of a text box, a table cell, or a slide's presenter notes."><span class="pre">Text</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Slide.note" title="Link to this definition">¶</a></dt>
+<dd><p>The slide’s presenter notes contains only text. Keynote removes inline objects with a warning, except for connection lines and non-table objects with an identifier, which prevent the document from loading. Image bullets whose image is missing and inline objects that aren’t importable also halt loading, in contrast to slides, where they merely remove the text box. A paragraph that lacks a <code class="docutils literal notranslate"><span class="pre">Paragraph.style</span></code> defaults to the theme’s Presenter Notes style, or the presentation’s custom style if previously overridden, and Keynote omits <code class="docutils literal notranslate"><span class="pre">Paragraph.style</span></code> for paragraphs that already use the presentation’s Presenter Notes style.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="slidebackground">SlideBackground<a class="headerlink" href="#slidebackground" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.SlideBackground">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SlideBackground</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideBackground" title="creator_studio_doc_format.core.SlideBackground.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideBackground.standard" title="creator_studio_doc_format.core.SlideBackground.standard (Python field) — A static color, gradient, or image fill. When Keynote exports a presentation, it writes a dynamic background as this case too: an image fill holding one still frame of it, or a color fill when that frame can't be drawn."><span class="n"><span class="pre">standard</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.SlideBackground" title="creator_studio_doc_format.core.SlideBackground.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#SlideBackground"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SlideBackground" title="Link to this definition">¶</a></dt>
+<dd><p>The background of a slide.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideBackground.standard">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">standard</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="fills.html#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill (Python model) — A style that fills an area with exactly one of a solid color, a gradient, or an image."><span class="pre">Fill</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideBackground.standard" title="Link to this definition">¶</a></dt>
+<dd><p>A static color, gradient, or image fill. When Keynote exports a presentation, it writes a dynamic background as this case too: an image fill holding one still frame of it, or a color fill when that frame can’t be drawn.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="slidelayout">SlideLayout<a class="headerlink" href="#slidelayout" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.SlideLayout">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SlideLayout</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout" title="creator_studio_doc_format.core.SlideLayout.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout.identifier" title="creator_studio_doc_format.core.SlideLayout.identifier (Python field) — The layout's identifier, which Slide.layout is matched against before name. Keynote writes a UUID string here, but any string is accepted. Keep it unique within the theme, since two layouts sharing one can't be told apart."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout.name" title="creator_studio_doc_format.core.SlideLayout.name (Python field) — The name of the layout as shown in Keynote's layout list, such as Title &amp; Subtitle. It's matched by Slide.layout when no identifier matches. Keep it unique within the theme, since duplicate names can't be differentiated."><span class="n"><span class="pre">name</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout.contents" title="creator_studio_doc_format.core.SlideLayout.contents (Python field) — The objects on the layout, ordered back to front (the first one is farthest back)."><span class="n"><span class="pre">contents</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout.background" title="creator_studio_doc_format.core.SlideLayout.background (Python field) — The layout's background. Slides based on this layout inherit it unless they specify their own background. A background that can't be read (for example, a background image that is missing or isn't a valid image) removes the whole layout, including everything on it, and a warning is reported; slides that would have used the layout are given a different one (see Slide.layout)."><span class="n"><span class="pre">background</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout.slide_objects_layer_with_layout" title="creator_studio_doc_format.core.SlideLayout.slide_objects_layer_with_layout (Python field) — Whether slides using this layout let their own objects layer with the layout's objects (true), or always show their objects in front of every layout object (false). When false, all layout objects are drawn behind all slide objects regardless of contents order."><span class="n"><span class="pre">slide_objects_layer_with_layout</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.SlideLayout" title="creator_studio_doc_format.core.SlideLayout.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#SlideLayout"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout" title="Link to this definition">¶</a></dt>
+<dd><p>A slide layout in a Keynote theme.</p>
+<p>It provides the default arrangement of placeholders, styles, and background for the slides that refer to it by identifier or name.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideLayout.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The layout’s identifier, which <code class="docutils literal notranslate"><span class="pre">Slide.layout</span></code> is matched against before <code class="docutils literal notranslate"><span class="pre">name</span></code>. Keynote writes a UUID string here, but any string is accepted. Keep it unique within the theme, since two layouts sharing one can’t be told apart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideLayout.name">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">name</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout.name" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the layout as shown in Keynote’s layout list, such as <code class="docutils literal notranslate"><span class="pre">Title</span> <span class="pre">&amp;</span> <span class="pre">Subtitle</span></code>. It’s matched by <code class="docutils literal notranslate"><span class="pre">Slide.layout</span></code> when no identifier matches. Keep it unique within the theme, since duplicate names can’t be differentiated.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideLayout.contents">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">contents</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.SlideObject" title="creator_studio_doc_format.core.SlideObject (Python model) — An object on a slide or slide layout, with slide-specific information about it."><span class="pre">SlideObject</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout.contents" title="Link to this definition">¶</a></dt>
+<dd><p>The objects on the layout, ordered back to front (the first one is farthest back).</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideLayout.background">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">background</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.SlideBackground" title="creator_studio_doc_format.core.SlideBackground (Python model) — The background of a slide."><span class="pre">SlideBackground</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout.background" title="Link to this definition">¶</a></dt>
+<dd><p>The layout’s background. Slides based on this layout inherit it unless they specify their own background. A background that can’t be read (for example, a background image that is missing or isn’t a valid image) removes the whole layout, including everything on it, and a warning is reported; slides that would have used the layout are given a different one (see <code class="docutils literal notranslate"><span class="pre">Slide.layout</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideLayout.slide_objects_layer_with_layout">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">slide_objects_layer_with_layout</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideLayout.slide_objects_layer_with_layout" title="Link to this definition">¶</a></dt>
+<dd><p>Whether slides using this layout let their own objects layer with the layout’s objects (<code class="docutils literal notranslate"><span class="pre">true</span></code>), or always show their objects in front of every layout object (<code class="docutils literal notranslate"><span class="pre">false</span></code>). When <code class="docutils literal notranslate"><span class="pre">false</span></code>, all layout objects are drawn behind all slide objects regardless of <code class="docutils literal notranslate"><span class="pre">contents</span></code> order.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="slideobject">SlideObject<a class="headerlink" href="#slideobject" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.SlideObject">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SlideObject</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject" title="creator_studio_doc_format.core.SlideObject.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject.instructional_text" title="creator_studio_doc_format.core.SlideObject.instructional_text (Python field) — The placeholder text shown in the object while it's empty, such as “Title Text” or “Double-click to edit.” It stops showing as soon as the object has content of its own."><span class="n"><span class="pre">instructional_text</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject.is_locked" title="creator_studio_doc_format.core.SlideObject.is_locked (Python field) — Whether the object is locked to prevent editing. It's ignored when the document is read, so the object always opens unlocked."><span class="n"><span class="pre">is_locked</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject.object" title="creator_studio_doc_format.core.SlideObject.object (Python field) — The object itself, such as a shape, text box, image, movie, audio clip, table, chart, connection line, or group."><span class="n"><span class="pre">object</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject.placeholder_info" title="creator_studio_doc_format.core.SlideObject.placeholder_info (Python field) — The placeholder the object acts as, predefined or tagged. Setting it marks the object as a placeholder. A tagged placeholder is always shown, and PlaceholderDefinition gives the restrictions on a predefined one. When several objects use the same predefined placeholder, only the first is kept and the rest are dropped from the slide without a warning."><span class="n"><span class="pre">placeholder_info</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject.source_kind" title="creator_studio_doc_format.core.SlideObject.source_kind (Python field) — The source of the object. If it's absent, the object is treated as the slide's own. For the layout kind, the object's identifier is matched against the corresponding object in the layout the slide names; an identifier that matches nothing there creates a second, slide-owned copy alongside the layout's object."><span class="n"><span class="pre">source_kind</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObject" title="creator_studio_doc_format.core.SlideObject.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#SlideObject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject" title="Link to this definition">¶</a></dt>
+<dd><p>An object on a slide or slide layout, with slide-specific information about it.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObject.instructional_text">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">instructional_text</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject.instructional_text" title="Link to this definition">¶</a></dt>
+<dd><p>The placeholder text shown in the object while it’s empty, such as “Title Text” or “Double-click to edit.” It stops showing as soon as the object has content of its own.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObject.is_locked">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_locked</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject.is_locked" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the object is locked to prevent editing. It’s ignored when the document is read, so the object always opens unlocked.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObject.object">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">object</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="canvas.html#creator_studio_doc_format.core.CanvasObject" title="creator_studio_doc_format.core.CanvasObject (Python model) — The identity, placement, and accessibility properties shared by objects you can place on a slide, in a group, or inline in text."><span class="pre">CanvasObject</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject.object" title="Link to this definition">¶</a></dt>
+<dd><p>The object itself, such as a shape, text box, image, movie, audio clip, table, chart, connection line, or group.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObject.placeholder_info">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">placeholder_info</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PlaceholderInfo" title="creator_studio_doc_format.core.PlaceholderInfo (Python model) — The placeholder an object acts as on its slide."><span class="pre">PlaceholderInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject.placeholder_info" title="Link to this definition">¶</a></dt>
+<dd><p>The placeholder the object acts as, predefined or tagged. Setting it marks the object as a placeholder. A tagged placeholder is always shown, and <code class="docutils literal notranslate"><span class="pre">PlaceholderDefinition</span></code> gives the restrictions on a predefined one. When several objects use the same predefined placeholder, only the first is kept and the rest are dropped from the slide without a warning.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObject.source_kind">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">source_kind</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.SourceKind" title="creator_studio_doc_format.core.SourceKind (Python class) — The source of an object."><span class="pre">SourceKind</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObject.source_kind" title="Link to this definition">¶</a></dt>
+<dd><p>The source of the object. If it’s absent, the object is treated as the slide’s own. For the <code class="docutils literal notranslate"><span class="pre">layout</span></code> kind, the object’s identifier is matched against the corresponding object in the layout the slide names; an identifier that matches nothing there creates a second, slide-owned copy alongside the layout’s object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="placeholderinfo">PlaceholderInfo<a class="headerlink" href="#placeholderinfo" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PlaceholderInfo">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PlaceholderInfo</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderInfo" title="creator_studio_doc_format.core.PlaceholderInfo.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderInfo.defined" title="creator_studio_doc_format.core.PlaceholderInfo.defined (Python field) — One of the predefined placeholders that someone can turn on and off on any slide."><span class="n"><span class="pre">defined</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderInfo.tagged" title="creator_studio_doc_format.core.PlaceholderInfo.tagged (Python field) — A placeholder that has a tag associated with it. It can be an image, a movie, a shape, or a text box."><span class="n"><span class="pre">tagged</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderInfo" title="creator_studio_doc_format.core.PlaceholderInfo.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#PlaceholderInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderInfo" title="Link to this definition">¶</a></dt>
+<dd><p>The placeholder an object acts as on its slide.</p>
+<p>It’s either one of the predefined placeholders that a layout can turn on and off, or a placeholder identified by a custom tag.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaceholderInfo.defined">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">defined</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PlaceholderDefinition" title="creator_studio_doc_format.core.PlaceholderDefinition (Python model) — The predefined placeholder an object fills."><span class="pre">PlaceholderDefinition</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderInfo.defined" title="Link to this definition">¶</a></dt>
+<dd><p>One of the predefined placeholders that someone can turn on and off on any slide.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaceholderInfo.tagged">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tagged</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderInfo.tagged" title="Link to this definition">¶</a></dt>
+<dd><p>A placeholder that has a tag associated with it. It can be an image, a movie, a shape, or a text box.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="placeholderdefinition">PlaceholderDefinition<a class="headerlink" href="#placeholderdefinition" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PlaceholderDefinition">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PlaceholderDefinition</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderDefinition" title="creator_studio_doc_format.core.PlaceholderDefinition.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderDefinition.kind" title="creator_studio_doc_format.core.PlaceholderDefinition.kind (Python field) — The predefined placeholder this object fills."><span class="n"><span class="pre">kind</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderDefinition.is_visible" title="creator_studio_doc_format.core.PlaceholderDefinition.is_visible (Python field) — Whether this placeholder is turned on for the slide. The default is true. When it's false, the entry is still listed in Slide.contents, with its geometry and text, but isn't shown."><span class="n"><span class="pre">is_visible</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.PlaceholderDefinition" title="creator_studio_doc_format.core.PlaceholderDefinition.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#PlaceholderDefinition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderDefinition" title="Link to this definition">¶</a></dt>
+<dd><p>The predefined placeholder an object fills.</p>
+<p>Only a shape or a text box is accepted, and one with <code class="docutils literal notranslate"><span class="pre">is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code> is still used as the placeholder, keeping its geometry, style, and text. An object of any other kind leaves the placeholder unfilled: it stays on the slide as ordinary content while <code class="docutils literal notranslate"><span class="pre">is_visible</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, and is dropped altogether when it’s <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PlaceholderDefinition.kind">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">kind</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind" title="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind (Python class) — The predefined placeholders that someone can turn on and off on any slide."><span class="pre">SlideObjectPlaceholderInfoPlaceholderDefinitionKind</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderDefinition.kind" title="Link to this definition">¶</a></dt>
+<dd><p>The predefined placeholder this object fills.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaceholderDefinition.is_visible">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_visible</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaceholderDefinition.is_visible" title="Link to this definition">¶</a></dt>
+<dd><p>Whether this placeholder is turned on for the slide. The default is <code class="docutils literal notranslate"><span class="pre">true</span></code>. When it’s <code class="docutils literal notranslate"><span class="pre">false</span></code>, the entry is still listed in <code class="docutils literal notranslate"><span class="pre">Slide.contents</span></code>, with its geometry and text, but isn’t shown.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="slideobjectplaceholderinfoplaceholderdefinitionkind">SlideObjectPlaceholderInfoPlaceholderDefinitionKind<a class="headerlink" href="#slideobjectplaceholderinfoplaceholderdefinitionkind" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SlideObjectPlaceholderInfoPlaceholderDefinitionKind</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind" title="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind" title="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#SlideObjectPlaceholderInfoPlaceholderDefinitionKind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind" title="Link to this definition">¶</a></dt>
+<dd><p>The predefined placeholders that someone can turn on and off on any slide.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">SlideObjectPlaceholderInfoPlaceholderDefinitionKind.BODY</span></code> and <code class="docutils literal notranslate"><span class="pre">'body'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.BODY">
+<span class="sig-name descname"><span class="pre">BODY</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'body'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.BODY" title="Link to this definition">¶</a></dt>
+<dd><p>The slide’s main body text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.OBJECT">
+<span class="sig-name descname"><span class="pre">OBJECT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'object'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.OBJECT" title="Link to this definition">¶</a></dt>
+<dd><p>The object placeholder, a reserved area in which someone can place media or other content.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.SLIDE_NUMBER">
+<span class="sig-name descname"><span class="pre">SLIDE_NUMBER</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'slide_number'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.SLIDE_NUMBER" title="Link to this definition">¶</a></dt>
+<dd><p>The slide number, which updates automatically.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.TITLE">
+<span class="sig-name descname"><span class="pre">TITLE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'title'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SlideObjectPlaceholderInfoPlaceholderDefinitionKind.TITLE" title="Link to this definition">¶</a></dt>
+<dd><p>The slide’s title text.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="sourcekind">SourceKind<a class="headerlink" href="#sourcekind" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SourceKind">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SourceKind</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SourceKind" title="creator_studio_doc_format.core.SourceKind.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SourceKind" title="creator_studio_doc_format.core.SourceKind.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#SourceKind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SourceKind" title="Link to this definition">¶</a></dt>
+<dd><p>The source of an object.</p>
+<p><code class="docutils literal notranslate"><span class="pre">layout</span></code> means it appears on the slide because it belongs to the slide’s layout; <code class="docutils literal notranslate"><span class="pre">placeholder</span></code> means it appears because the corresponding layout placeholder was turned on; and <code class="docutils literal notranslate"><span class="pre">user</span></code> means someone added it to the slide directly.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">SourceKind.LAYOUT</span></code> and <code class="docutils literal notranslate"><span class="pre">'layout'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SourceKind.LAYOUT">
+<span class="sig-name descname"><span class="pre">LAYOUT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'layout'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SourceKind.LAYOUT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SourceKind.PLACEHOLDER">
+<span class="sig-name descname"><span class="pre">PLACEHOLDER</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'placeholder'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SourceKind.PLACEHOLDER" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SourceKind.USER">
+<span class="sig-name descname"><span class="pre">USER</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'user'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SourceKind.USER" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../guide/authoring.html#create-a-slide-from-a-layout"><span class="std std-ref">Create a slide from a layout</span></a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

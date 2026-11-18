@@ -1,0 +1,93 @@
+..
+    Copyright © 2026 Apple Inc.
+
+    Licensed under Apache License v2.0. For more information, see LICENSE.
+    SPDX-License-Identifier: Apache-2.0
+
+Creating and editing a presentation
+===================================
+
+Install the library, create a presentation with one slide and open it in Keynote,
+then edit it.
+
+A ``.keyx`` file stores a presentation in a form that code can read and write, and Keynote
+opens it like any other presentation. The library represents that file as Python
+objects. With the library, you build and change a presentation without writing the file's
+contents by hand.
+
+On this page, you install the library and save a presentation with one slide as
+``hello.keyx``. You then open that file, change its contents as you would any Python
+object, and save it again.
+
+Install the library
+-------------------
+
+Run pip in a terminal:
+
+.. code-block:: bash
+
+   % pip install creator-studio-doc-format
+
+Create a document
+-----------------
+
+A :term:`document` is a presentation together with its :term:`presets <preset>`,
+:term:`manifest`, and :term:`resources <resource>`. A
+:class:`~creator_studio_doc_format.core.Presentation` is a tree of
+:term:`model` instances.
+
+Build a ``Presentation`` with a slide that holds a text box, wrap it in a
+:class:`~creator_studio_doc_format.core.KeyxDocument`, and save it as ``hello.keyx``,
+which you can open in Keynote:
+
+.. literalinclude:: ../snippets/getting_started.py
+   :language: python
+   :start-after: # [create]
+   :end-before: # [/create]
+
+Most objects on a slide have a :class:`~creator_studio_doc_format.core.Geometry`,
+measured in points. The object sits inside a :class:`~creator_studio_doc_format.core.CanvasObject`,
+which sits inside a :class:`~creator_studio_doc_format.core.SlideObject`. ``slide_size``
+sets the slide's size in the same units.
+
+A position is measured from the slide's top-left corner, with *y* increasing downward.
+The format's :structure:`numeric conventions <Interpret-numeric-values>` give
+the units of angles and of the quantities that aren't lengths.
+
+Edit an existing document
+-------------------------
+
+Open a document with :meth:`KeyxDocument.open
+<creator_studio_doc_format.core.Package.open>`, change its model instances, and save it. To edit a
+presentation you made in Keynote, export it first by choosing File > Export To >
+Keynote X.
+
+.. important::
+
+   A ``.keyx`` file leaves out some Keynote features, such as transitions, builds, and
+   comments. The
+   :formatref:`format's release notes <keynote-interchange-format-release-notes>` list
+   each one. Exporting a presentation drops them, so the document you edit and save
+   holds none of them.
+
+Every model is a `Pydantic model`_, so you edit a model instance as you would any Python
+object. Read and assign its attributes, and change its lists in place. There are no
+getters or setters to call.
+
+The following example reads, assigns, constructs, and deletes model instances in ``hello.keyx``:
+
+.. literalinclude:: ../snippets/getting_started.py
+   :language: python
+   :start-after: # [edit]
+   :end-before: # [/edit]
+
+To catch an edit that :doc:`breaks the format's rules <validation>` before anything is
+written, pass :func:`~creator_studio_doc_format.validation.validate_document` in the
+``pre_save_hooks`` argument of ``save``.
+
+.. seealso::
+
+   - :doc:`adding_objects`
+   - :doc:`authoring`
+   - :doc:`validation`
+   - :doc:`navigation`

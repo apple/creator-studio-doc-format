@@ -1,0 +1,109 @@
+..
+    Copyright © 2026 Apple Inc.
+
+    Licensed under Apache License v2.0. For more information, see LICENSE.
+    SPDX-License-Identifier: Apache-2.0
+
+Creator Studio Document Format
+==============================
+
+A Python library for reading, creating, and editing Apple Creator Studio documents, starting with Keynote.
+
+This library works with Keynote presentations in `Keynote Interchange Format`_ (``.keyx``).
+You can use it to:
+
+- Read the slides, text, images, tables, charts, styles, and more in a ``.keyx`` file
+  exported from Keynote.
+- Create a presentation from scratch, or from a theme's slide layouts and styles.
+- Edit a presentation, and check it against the format's rules before you save it.
+
+The library reads and writes ``.keyx`` files itself, so it doesn't need Keynote, an Apple device, or a network connection.
+To preview a presentation, open it in Keynote on an Apple device. In other places, use
+the `Creator Studio Document Exporting API`_ to convert to other formats like PDF.
+
+.. The hidden toctrees build the sidebar, which shows the guide first and the API
+   reference after it.
+
+Guide
+-----
+
+Follow the tasks, from creating your first presentation to validating and navigating
+a document.
+
+Presentation content
+~~~~~~~~~~~~~~~~~~~~
+
+:doc:`guide/getting_started`
+    Install the library, create a presentation with one slide and open it in Keynote, then
+    edit it.
+
+:doc:`guide/adding_objects`
+    Add text, shapes, images, tables, and charts to a slide, and connect them with lines.
+
+:doc:`guide/authoring`
+    Build a styled document from a theme's slide layouts, and style new objects using its
+    presets.
+
+Validation and navigation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:doc:`guide/validation`
+    Check a document against the format's rules as you open, edit, and save it, so that
+    Keynote opens it as you wrote it.
+
+:doc:`guide/navigation`
+    Find the model instances you need without reading the whole document.
+
+Supporting material
+~~~~~~~~~~~~~~~~~~~
+
+:doc:`guide/glossary`
+    Look up the terms that the guide and the API use in a specific sense.
+
+`Keynote Interchange Format`_
+    Look up what each part of a document means in the format's own documentation.
+
+`Creator Studio Document Exporting API`_
+    Convert a presentation to other formats like PDF.
+
+`License <https://github.com/apple/creator-studio-doc-format/blob/main/LICENSE>`_
+    Read the terms that cover the library, Apache License v2.0.
+
+.. toctree::
+   :caption: Guide
+   :hidden:
+
+   guide/getting_started
+   guide/adding_objects
+   guide/authoring
+   guide/validation
+   guide/navigation
+   guide/glossary
+
+API reference
+-------------
+
+Look up every public symbol in the library, one page per topic.
+
+:doc:`api/presentation/index`
+    Build the presentation at a document's root, and every model it contains.
+
+:doc:`api/package`
+    Open and save a document, and manage the presets, manifest, and resources it stores
+    beside its presentation.
+
+:doc:`api/tools`
+    Build, search, and check a document.
+
+:doc:`api/models`
+    Set union cases and override values through the base classes that every model derives
+    from.
+
+.. toctree::
+   :caption: API reference
+   :hidden:
+
+   api/presentation/index
+   api/package
+   api/tools
+   api/models

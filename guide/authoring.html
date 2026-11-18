@@ -1,0 +1,1013 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="adding_objects.html">
+      
+      
+        <link rel="next" href="validation.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Authoring from a theme - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#explore-a-theme-s-slide-layouts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authoring from a theme
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-a-theme-s-slide-layouts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Explore a theme’s slide layouts</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-slide-from-a-layout" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="create-a-slide-from-a-layout (reference label)"><span>Create a slide from a layout</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-the-placeholders" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Set the placeholders</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-a-document-from-the-layouts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Build a document from the layouts</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-new-objects-using-presets" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Style new objects using presets</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/presentation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-a-theme-s-slide-layouts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Explore a theme’s slide layouts</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-slide-from-a-layout" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="create-a-slide-from-a-layout (reference label)"><span>Create a slide from a layout</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-the-placeholders" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Set the placeholders</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-a-document-from-the-layouts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Build a document from the layouts</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-new-objects-using-presets" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Style new objects using presets</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="authoring-from-a-theme">Authoring from a theme<a class="headerlink" href="#authoring-from-a-theme" title="Link to this heading">¶</a></h1>
+<p>Build a styled document from a theme’s slide layouts, and style new objects using its
+presets.</p>
+<p>A theme already provides the design. Its slide layouts set type, color, geometry, and
+spacing, and its presets define styles that new objects can reuse. In Keynote, export a
+presentation that uses the theme. Every document you build from that file starts with the
+theme’s slide layouts and presets. The functions in
+<a class="reference internal" href="../api/authoring.html#module-creator_studio_doc_format.authoring" title="creator_studio_doc_format.authoring (Python module)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">creator_studio_doc_format.authoring</span></code></a> fill in the placeholders of those slide layouts.</p>
+<h2 id="explore-a-theme-s-slide-layouts">Explore a theme’s slide layouts<a class="headerlink" href="#explore-a-theme-s-slide-layouts" title="Link to this heading">¶</a></h2>
+<p><a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.summarize_slide_layouts" title="creator_studio_doc_format.authoring.summarize_slide_layouts (Python function) — Returns the placeholders of each slide layout."><code class="xref py py-func docutils literal notranslate"><span class="pre">summarize_slide_layouts()</span></code></a> reports every slide
+layout by name, with the placeholders you can set in it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.authoring</span><span class="w"> </span><span class="kn">import</span> <span class="n">summarize_slide_layouts</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">KeyxDocument</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">KeyxDocument</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"themed.keyx"</span><span class="p">)</span>
+<span class="n">theme</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">presentation</span><span class="o">.</span><span class="n">theme</span>
+
+<span class="k">for</span> <span class="n">layout</span><span class="p">,</span> <span class="n">placeholders</span> <span class="ow">in</span> <span class="n">summarize_slide_layouts</span><span class="p">(</span><span class="n">theme</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">layout</span><span class="p">,</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">placeholders</span><span class="p">])</span>
+</code></pre></div>
+</div>
+<p>For <code class="docutils literal notranslate"><span class="pre">creator_studio_doc_format/examples/fixtures/Tidal_en.keyx</span></code>, part of the output
+is:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>Title ['TITLE', 'Subtitle']
+Title &amp; Bullets ['TITLE', 'BODY', 'Presentation Name', 'SLIDE_NUMBER']
+Title, Bullets &amp; Photo ['TITLE', 'BODY', 'Media']
+Quote ['Text', 'Text-1']
+Blank []
+</code></pre></div>
+</div>
+<p>Each placeholder that <code class="docutils literal notranslate"><span class="pre">summarize_slide_layouts</span></code> returns is a
+<a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.LayoutPlaceholderSummary" title="creator_studio_doc_format.authoring.LayoutPlaceholderSummary (Python class) — A read-only summary of a placeholder in a slide layout."><code class="xref py py-class docutils literal notranslate"><span class="pre">LayoutPlaceholderSummary</span></code></a>. The following
+example prints the ones from the <code class="docutils literal notranslate"><span class="pre">&quot;Title</span> <span class="pre">&amp;</span> <span class="pre">Bullets&quot;</span></code> layout:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pprint</span><span class="w"> </span><span class="kn">import</span> <span class="n">pprint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">placeholder</span> <span class="ow">in</span> <span class="n">summarize_slide_layouts</span><span class="p">(</span><span class="n">theme</span><span class="p">)[</span><span class="s2">"Title &amp; Bullets"</span><span class="p">]:</span>
+<span class="gp">... </span>    <span class="n">pprint</span><span class="p">(</span><span class="n">placeholder</span><span class="p">)</span>
+<span class="go">LayoutPlaceholderSummary(name='TITLE',</span>
+<span class="go">                         object_case='shape',</span>
+<span class="go">                         prompt='Title Text',</span>
+<span class="go">                         tag=None)</span>
+<span class="go">LayoutPlaceholderSummary(name='BODY',</span>
+<span class="go">                         object_case='shape',</span>
+<span class="go">                         prompt='Body Level One',</span>
+<span class="go">                         tag=None)</span>
+<span class="go">LayoutPlaceholderSummary(name='Presentation Name',</span>
+<span class="go">                         object_case='shape',</span>
+<span class="go">                         prompt='Example Company',</span>
+<span class="go">                         tag='Presentation Name')</span>
+<span class="go">LayoutPlaceholderSummary(name='SLIDE_NUMBER',</span>
+<span class="go">                         object_case='shape',</span>
+<span class="go">                         prompt=None,</span>
+<span class="go">                         tag=None)</span>
+</code></pre></div>
+</div>
+<p>Each summary tells you how to fill in the placeholder:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">name</span></code></dt><dd><p>Identifies the placeholder within its layout. You pass it to the function that fills
+the placeholder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">object_case</span></code></dt><dd><p>Names the kind of object the placeholder holds. An <code class="docutils literal notranslate"><span class="pre">&quot;image&quot;</span></code> placeholder takes an
+image, and a text placeholder takes text. For example, the <code class="docutils literal notranslate"><span class="pre">&quot;Title,</span> <span class="pre">Bullets</span> <span class="pre">&amp;</span> <span class="pre">Photo&quot;</span></code> layout has an
+image placeholder named <code class="docutils literal notranslate"><span class="pre">&quot;Media&quot;</span></code>. Keynote exports an object the format has no
+type for, such as a live video, as an image placeholder holding a picture of it.
+<a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.set_slide_placeholder_image" title="creator_studio_doc_format.authoring.set_slide_placeholder_image (Python function) — Points an image placeholder at a resource and returns the image."><code class="xref py py-func docutils literal notranslate"><span class="pre">set_slide_placeholder_image()</span></code></a> replaces that
+picture with yours.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">prompt</span></code></dt><dd><p>Holds the placeholder text Keynote shows, such as <code class="docutils literal notranslate"><span class="pre">&quot;Title</span> <span class="pre">Text&quot;</span></code>. It’s <code class="docutils literal notranslate"><span class="pre">None</span></code>
+when the placeholder has no text, as for <code class="docutils literal notranslate"><span class="pre">&quot;SLIDE_NUMBER&quot;</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">tag</span></code></dt><dd><p>Holds a label that the theme’s designer gives a custom placeholder, such as
+<code class="docutils literal notranslate"><span class="pre">&quot;Presentation</span> <span class="pre">Name&quot;</span></code>. It’s <code class="docutils literal notranslate"><span class="pre">None</span></code> for a predefined placeholder such as
+<code class="docutils literal notranslate"><span class="pre">&quot;TITLE&quot;</span></code>. A tagged placeholder’s <code class="docutils literal notranslate"><span class="pre">name</span></code> is its tag.</p>
+</dd>
+</dl>
+<h2 id="create-a-slide-from-a-layout"><span id="id1"></span>Create a slide from a layout<a class="headerlink" href="#create-a-slide-from-a-layout" title="Link to this heading">¶</a></h2>
+<p><a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.slide_from_layout" title="creator_studio_doc_format.authoring.slide_from_layout (Python function) — Returns a new slide made from a layout, as Keynote creates one."><code class="xref py py-func docutils literal notranslate"><span class="pre">slide_from_layout()</span></code></a> creates a slide the way
+Keynote does when you choose that layout, and returns it for you to add to the
+document:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.authoring</span><span class="w"> </span><span class="kn">import</span> <span class="n">slide_from_layout</span>
+
+<span class="n">slide</span> <span class="o">=</span> <span class="n">slide_from_layout</span><span class="p">(</span><span class="n">theme</span><span class="p">,</span> <span class="s2">"Title &amp; Bullets"</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="set-the-placeholders">Set the placeholders<a class="headerlink" href="#set-the-placeholders" title="Link to this heading">¶</a></h2>
+<p>Which function you use depends on the placeholder’s <code class="docutils literal notranslate"><span class="pre">object_case</span></code>:</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.set_slide_placeholder_text" title="creator_studio_doc_format.authoring.set_slide_placeholder_text (Python function) — Writes lines into a text placeholder and returns the paragraphs it wrote."><code class="xref py py-func docutils literal notranslate"><span class="pre">set_slide_placeholder_text()</span></code></a></dt><dd><p>Fills a text placeholder, which has an <code class="docutils literal notranslate"><span class="pre">object_case</span></code> of <code class="docutils literal notranslate"><span class="pre">&quot;shape&quot;</span></code> or
+<code class="docutils literal notranslate"><span class="pre">&quot;textbox&quot;</span></code>. It takes a string for one paragraph or a list of strings for several.
+Each paragraph gets the placeholder’s text style.</p>
+</dd>
+<dt><a class="reference internal" href="../api/authoring.html#creator_studio_doc_format.authoring.set_slide_placeholder_image" title="creator_studio_doc_format.authoring.set_slide_placeholder_image (Python function) — Points an image placeholder at a resource and returns the image."><code class="xref py py-func docutils literal notranslate"><span class="pre">set_slide_placeholder_image()</span></code></a></dt><dd><p>Fills an <code class="docutils literal notranslate"><span class="pre">&quot;image&quot;</span></code> placeholder by pointing its image at a <a class="reference internal" href="glossary.html#term-resource" title="resource (glossary term)"><span class="xref std std-term">resource</span></a>. It
+doesn’t store the image’s bytes. <a class="reference internal" href="adding_objects.html#add-media"><span class="std std-ref">Add them to the resource store</span></a>
+first.</p>
+</dd>
+</dl>
+<div class="important tip admonition">
+<p class="admonition-title">Important</p>
+<p><code class="docutils literal notranslate"><span class="pre">slide_from_layout</span></code> empties only the <code class="docutils literal notranslate"><span class="pre">&quot;TITLE&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;BODY&quot;</span></code> placeholders. As in
+Keynote, a tagged placeholder keeps its sample text and an image placeholder keeps
+its sample photo until you replace them.</p>
+</div>
+<p>The following example sets a slide’s text:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.authoring</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_slide_placeholder_text</span>
+
+<span class="n">set_slide_placeholder_text</span><span class="p">(</span><span class="n">slide</span><span class="p">,</span> <span class="s2">"TITLE"</span><span class="p">,</span> <span class="s2">"Baking Sourdough"</span><span class="p">)</span>
+<span class="n">set_slide_placeholder_text</span><span class="p">(</span>
+    <span class="n">slide</span><span class="p">,</span>
+    <span class="s2">"BODY"</span><span class="p">,</span>
+    <span class="p">[</span><span class="s2">"Feed the starter"</span><span class="p">,</span> <span class="s2">"Twice a day"</span><span class="p">],</span>
+    <span class="c1"># Sets each line's list level. Every level keeps the placeholder's</span>
+    <span class="c1"># paragraph style.</span>
+    <span class="n">list_levels</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="c1"># Passing None clears the tagged placeholder's sample text.</span>
+<span class="n">set_slide_placeholder_text</span><span class="p">(</span><span class="n">slide</span><span class="p">,</span> <span class="s2">"Presentation Name"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<p>The following example adds an image’s bytes, then sets the image:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.authoring</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_slide_placeholder_image</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">IndirectResource</span><span class="p">,</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">Size</span>
+
+<span class="n">photo</span> <span class="o">=</span> <span class="n">slide_from_layout</span><span class="p">(</span><span class="n">theme</span><span class="p">,</span> <span class="s2">"Title, Bullets &amp; Photo"</span><span class="p">)</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">resources</span><span class="o">.</span><span class="n">unique_filename</span><span class="p">(</span><span class="s2">"cover.png"</span><span class="p">)</span>
+<span class="n">doc</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="n">filename</span><span class="p">]</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"cover.png"</span><span class="p">)</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">()</span>
+<span class="n">set_slide_placeholder_image</span><span class="p">(</span>
+    <span class="n">photo</span><span class="p">,</span>
+    <span class="s2">"Media"</span><span class="p">,</span>
+    <span class="n">Resource</span><span class="p">(</span><span class="n">indirect</span><span class="o">=</span><span class="n">IndirectResource</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">)),</span>
+    <span class="c1"># The width and height of cover.png, so the image fills the</span>
+    <span class="c1"># placeholder's mask without stretching.</span>
+    <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">792</span><span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="build-a-document-from-the-layouts">Build a document from the layouts<a class="headerlink" href="#build-a-document-from-the-layouts" title="Link to this heading">¶</a></h2>
+<p>The following example replaces a themed document’s slides with ones that use its
+layouts, and saves the result as a new file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.validation</span><span class="w"> </span><span class="kn">import</span> <span class="n">validate_document</span>
+
+<span class="n">sections</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">"Baking Sourdough"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Feed the starter"</span><span class="p">,</span> <span class="s2">"Shape the loaf"</span><span class="p">]),</span>
+    <span class="p">(</span><span class="s2">"Baking Day"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Preheat the oven"</span><span class="p">]),</span>
+<span class="p">]</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">KeyxDocument</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"themed.keyx"</span><span class="p">)</span>
+<span class="n">theme</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">presentation</span><span class="o">.</span><span class="n">theme</span>
+
+<span class="n">slides</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">bullets</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
+    <span class="n">slide</span> <span class="o">=</span> <span class="n">slide_from_layout</span><span class="p">(</span><span class="n">theme</span><span class="p">,</span> <span class="s2">"Title &amp; Bullets"</span><span class="p">)</span>
+    <span class="n">set_slide_placeholder_text</span><span class="p">(</span><span class="n">slide</span><span class="p">,</span> <span class="s2">"TITLE"</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+    <span class="n">set_slide_placeholder_text</span><span class="p">(</span><span class="n">slide</span><span class="p">,</span> <span class="s2">"BODY"</span><span class="p">,</span> <span class="n">bullets</span><span class="p">)</span>
+    <span class="n">set_slide_placeholder_text</span><span class="p">(</span><span class="n">slide</span><span class="p">,</span> <span class="s2">"Presentation Name"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="n">slides</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">slide</span><span class="p">)</span>
+
+<span class="c1"># Replacing the slides in place keeps the theme, its presets, and everything</span>
+<span class="c1"># else in the document.</span>
+<span class="n">doc</span><span class="o">.</span><span class="n">presentation</span><span class="o">.</span><span class="n">slides</span> <span class="o">=</span> <span class="n">slides</span>
+<span class="n">doc</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"presentation.keyx"</span><span class="p">,</span> <span class="n">pre_save_hooks</span><span class="o">=</span><span class="p">[</span><span class="n">validate_document</span><span class="p">])</span>
+</code></pre></div>
+</div>
+<h2 id="style-new-objects-using-presets">Style new objects using presets<a class="headerlink" href="#style-new-objects-using-presets" title="Link to this heading">¶</a></h2>
+<p>When no layout fits, style the objects you create using the theme’s presets. A theme
+stores its style and appearance as <a class="reference internal" href="glossary.html#term-preset" title="preset (glossary term)"><span class="xref std std-term">presets</span></a>, such as the paragraph style
+for body text. You can <a class="reference internal" href="adding_objects.html#apply-a-preset"><span class="std std-ref">apply one</span></a> to a <a class="reference internal" href="glossary.html#term-model" title="model (glossary term)"><span class="xref std std-term">model</span></a> instance. To see what a
+preset provides, resolve it with
+<a class="reference internal" href="../api/presets.html#creator_studio_doc_format.core.PresetRegistry" title="creator_studio_doc_format.core.PresetRegistry (Python class) — A resolver of preset inheritance for decoding and encoding."><code class="xref py py-class docutils literal notranslate"><span class="pre">PresetRegistry</span></code></a>.</p>
+<p>The following example finds the theme’s Body style and prints the font and size it
+provides:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">PresetRegistry</span>
+
+<span class="n">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">style</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">style</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span><span class="n">preset_identifier</span>
+    <span class="k">for</span> <span class="n">style</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">presentation</span><span class="o">.</span><span class="n">stylesheet</span><span class="o">.</span><span class="n">paragraph_styles</span>
+    <span class="k">if</span> <span class="n">style</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span><span class="n">preset_identifier</span>
+<span class="p">}</span>
+<span class="n">registry</span> <span class="o">=</span> <span class="n">PresetRegistry</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">presets</span><span class="p">)</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">registry</span><span class="o">.</span><span class="n">resolved_properties</span><span class="p">(</span><span class="n">styles</span><span class="p">[</span><span class="s2">"Body"</span><span class="p">])[</span><span class="s2">"character_properties"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">font</span><span class="p">[</span><span class="s2">"font_name"</span><span class="p">],</span> <span class="n">font</span><span class="p">[</span><span class="s2">"font_size"</span><span class="p">])</span>
+</code></pre></div>
+</div>
+<p>A style property that a preset can supply is often an
+<a class="reference internal" href="../api/models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><code class="xref py py-class docutils literal notranslate"><span class="pre">Override</span></code></a> field. An <code class="docutils literal notranslate"><span class="pre">Override</span></code> keeps an omitted
+property apart from an explicit <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<div class="important tip admonition">
+<p class="admonition-title">Important</p>
+<p>Assigning <code class="docutils literal notranslate"><span class="pre">None</span></code> to an <code class="docutils literal notranslate"><span class="pre">Override</span></code> field clears it. For example,
+<code class="docutils literal notranslate"><span class="pre">shape.shadow</span> <span class="pre">=</span> <span class="pre">None</span></code> removes a shadow that the shape’s preset gives it. On a field
+that isn’t an <code class="docutils literal notranslate"><span class="pre">Override</span></code>, such as
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Shape.fill" title="creator_studio_doc_format.core.Shape.fill (Python field) — The fill of the shape's interior. If absent, it uses the the fill from the shape's preset style."><code class="xref py py-attr docutils literal notranslate"><span class="pre">Shape.fill</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code> omits the
+property.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">get()</span></code> method of an <code class="docutils literal notranslate"><span class="pre">Override</span></code> returns <code class="docutils literal notranslate"><span class="pre">None</span></code> both for an omitted property and
+for a <code class="docutils literal notranslate"><span class="pre">null</span></code>. To tell them apart, read <code class="docutils literal notranslate"><span class="pre">is_not_set</span></code> or <code class="docutils literal notranslate"><span class="pre">is_cleared</span></code>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

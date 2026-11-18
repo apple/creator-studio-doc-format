@@ -1,0 +1,2059 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="kinds.html">
+      
+      
+        <link rel="next" href="axes.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Chart data and series - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chartdata" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chart data and series
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_6" id="__nav_2_1_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Charts</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_6_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#chart-kinds-and-data" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart kinds and data</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_6_1" id="__nav_2_1_2_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Chart kinds and data</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kinds.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart kinds</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart data and series</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart data and series</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chartdata" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChartData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chartdatarow" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Row</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chartdatavalue" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Value</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chartdatasource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Source</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plotdirection" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Plot<wbr>Direction</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartseries" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Series</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChartSeries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valuelabelsselection" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Value<wbr>Labels<wbr>Selection</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixedseriestype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Mixed<wbr>Series<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seriessymboltype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Series<wbr>Symbol<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectionlinetype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Connection<wbr>Line<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillreuserule" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Fill<wbr>Reuse<wbr>Rule</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seriesvaluelabelposition" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Series<wbr>Value<wbr>Label<wbr>Position</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartlegend" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Legend</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#axes-and-shared-properties" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Axes and shared properties</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chartdata" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChartData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chartdatarow" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Row</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chartdatavalue" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Value</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chartdatasource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Data<wbr>Source</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plotdirection" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Plot<wbr>Direction</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartseries" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Series</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChartSeries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valuelabelsselection" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Value<wbr>Labels<wbr>Selection</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixedseriestype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Mixed<wbr>Series<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seriessymboltype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Series<wbr>Symbol<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectionlinetype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Connection<wbr>Line<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillreuserule" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Fill<wbr>Reuse<wbr>Rule</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seriesvaluelabelposition" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Series<wbr>Value<wbr>Label<wbr>Position</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartlegend" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart<wbr>Legend</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="chart-data-and-series">Chart data and series<a class="headerlink" href="#chart-data-and-series" title="Link to this heading">¶</a></h1>
+<p>Supply a chart’s data, and style the series it plots and its legend.</p>
+<h2 id="chartdata">ChartData<a class="headerlink" href="#chartdata" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartData">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartData</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData" title="creator_studio_doc_format.core.ChartData.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.plot_direction" title="creator_studio_doc_format.core.ChartData.plot_direction (Python field) — Whether the rows or the columns of the data grid become the chart's series. When omitted, the direction preferred by the chart type is kept."><span class="n"><span class="pre">plot_direction</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.shared_xvalues" title="creator_studio_doc_format.core.ChartData.shared_xvalues (Python field) — Whether the grid's first row or column holds the X values every series shares. It's true by default; when false, each series carries its own X values. Y values, and a bubble series' size values, follow in either case. Only scatter and bubble charts use it; other chart types ignore it."><span class="n"><span class="pre">shared_xvalues</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.chart_data_source" title="creator_studio_doc_format.core.ChartData.chart_data_source (Python field) — The source of the chart's data. Only chart_data_grid is supported: that is the value always written, and any other value is ignored, so the grid in rows is used either way."><span class="n"><span class="pre">chart_data_source</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.column_labels" title="creator_studio_doc_format.core.ChartData.column_labels (Python field) — The names of the grid's columns. The number of columns comes from the longest row of rows, so extra names are dropped and missing names become empty."><span class="n"><span class="pre">column_labels</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.row_labels" title="creator_studio_doc_format.core.ChartData.row_labels (Python field) — The names of the grid's rows. The number of rows comes from rows, so extra names are dropped and missing names become empty."><span class="n"><span class="pre">row_labels</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData.rows" title="creator_studio_doc_format.core.ChartData.rows (Python field) — The grid's data rows. The grid is made rectangular: it takes the length of the longest row, and shorter rows are padded with empty cells. When rows is empty or omitted, the chart keeps the placeholder data it was created with."><span class="n"><span class="pre">rows</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ChartData" title="creator_studio_doc_format.core.ChartData.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartData" title="Link to this definition">¶</a></dt>
+<dd><p>The chart’s data as a grid of cells, together with how that grid maps onto the chart.</p>
+<p><code class="docutils literal notranslate"><span class="pre">plot_direction</span></code> decides whether the grid’s rows or its columns become the series; the labels along the other direction name the categories.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.plot_direction">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">plot_direction</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PlotDirection" title="creator_studio_doc_format.core.PlotDirection (Python class) — The direction in which the data grid is read to produce the chart's series."><span class="pre">PlotDirection</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.plot_direction" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the rows or the columns of the data grid become the chart’s series. When omitted, the direction preferred by the chart type is kept.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.shared_xvalues">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">shared_xvalues</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.shared_xvalues" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the grid’s first row or column holds the X values every series shares. It’s <code class="docutils literal notranslate"><span class="pre">true</span></code> by default; when <code class="docutils literal notranslate"><span class="pre">false</span></code>, each series carries its own X values. Y values, and a bubble series’ size values, follow in either case. Only scatter and bubble charts use it; other chart types ignore it.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.chart_data_source">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">chart_data_source</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.ChartDataSource" title="creator_studio_doc_format.core.ChartDataSource (Python class) — The stated source of a chart's values."><span class="pre">ChartDataSource</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.chart_data_source" title="Link to this definition">¶</a></dt>
+<dd><p>The source of the chart’s data. Only <code class="docutils literal notranslate"><span class="pre">chart_data_grid</span></code> is supported: that is the value always written, and any other value is ignored, so the grid in <code class="docutils literal notranslate"><span class="pre">rows</span></code> is used either way.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.column_labels">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_labels</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.column_labels" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the grid’s columns. The number of columns comes from the longest row of <code class="docutils literal notranslate"><span class="pre">rows</span></code>, so extra names are dropped and missing names become empty.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.row_labels">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">row_labels</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.row_labels" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the grid’s rows. The number of rows comes from <code class="docutils literal notranslate"><span class="pre">rows</span></code>, so extra names are dropped and missing names become empty.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartData.rows">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rows</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.ChartDataRow" title="creator_studio_doc_format.core.ChartDataRow (Python model) — One row of the chart's data grid, holding its cells in column order."><span class="pre">ChartDataRow</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartData.rows" title="Link to this definition">¶</a></dt>
+<dd><p>The grid’s data rows. The grid is made rectangular: it takes the length of the longest row, and shorter rows are padded with empty cells. When <code class="docutils literal notranslate"><span class="pre">rows</span></code> is empty or omitted, the chart keeps the placeholder data it was created with.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="chartdatarow">ChartDataRow<a class="headerlink" href="#chartdatarow" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartDataRow">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartDataRow</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataRow" title="creator_studio_doc_format.core.ChartDataRow.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataRow.values" title="creator_studio_doc_format.core.ChartDataRow.values (Python field) — The row's cells, in column order. Rows need not be the same length: a short row is padded with empty cells to the length of the longest row."><span class="n"><span class="pre">values</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataRow" title="creator_studio_doc_format.core.ChartDataRow.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartDataRow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataRow" title="Link to this definition">¶</a></dt>
+<dd><p>One row of the chart’s data grid, holding its cells in column order.</p>
+<p>A row isn’t necessarily a series: <code class="docutils literal notranslate"><span class="pre">plot_direction</span></code> decides whether rows or columns become the chart’s series. Rows need not be the same length, because the grid is padded out to its longest row.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataRow.values">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">values</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.ChartDataValue" title="creator_studio_doc_format.core.ChartDataValue (Python model) — A single value in the chart's data grid."><span class="pre">ChartDataValue</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataRow.values" title="Link to this definition">¶</a></dt>
+<dd><p>The row’s cells, in column order. Rows need not be the same length: a short row is padded with empty cells to the length of the longest row.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="chartdatavalue">ChartDataValue<a class="headerlink" href="#chartdatavalue" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartDataValue">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartDataValue</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue" title="creator_studio_doc_format.core.ChartDataValue.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue.date" title="creator_studio_doc_format.core.ChartDataValue.date (Python field) — A cell holding a date."><span class="n"><span class="pre">date</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue.duration" title="creator_studio_doc_format.core.ChartDataValue.duration (Python field) — A cell holding a length of time."><span class="n"><span class="pre">duration</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue.empty" title="creator_studio_doc_format.core.ChartDataValue.empty (Python field) — An empty cell. Any cell that doesn't hold a number, a date, or a duration is written as empty."><span class="n"><span class="pre">empty</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue.number" title="creator_studio_doc_format.core.ChartDataValue.number (Python field) — A cell holding a number."><span class="n"><span class="pre">number</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataValue" title="creator_studio_doc_format.core.ChartDataValue.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartDataValue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataValue" title="Link to this definition">¶</a></dt>
+<dd><p>A single value in the chart’s data grid.</p>
+<p>A value is a number, a date, or a duration; a cell holding anything else, text included, is read as empty.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataValue.date">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">date</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../common_types.html#creator_studio_doc_format.core.Date" title="creator_studio_doc_format.core.Date (Python model) — An absolute point in time."><span class="pre">Date</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataValue.date" title="Link to this definition">¶</a></dt>
+<dd><p>A cell holding a date.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataValue.duration">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">duration</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../media.html#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration (Python model) — A length of time."><span class="pre">Duration</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataValue.duration" title="Link to this definition">¶</a></dt>
+<dd><p>A cell holding a length of time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataValue.empty">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">empty</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="k"><span class="pre">True</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataValue.empty" title="Link to this definition">¶</a></dt>
+<dd><p>An empty cell. Any cell that doesn’t hold a number, a date, or a duration is written as <code class="docutils literal notranslate"><span class="pre">empty</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataValue.number">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataValue.number" title="Link to this definition">¶</a></dt>
+<dd><p>A cell holding a number.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="chartdatasource">ChartDataSource<a class="headerlink" href="#chartdatasource" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataSource">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartDataSource</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataSource" title="creator_studio_doc_format.core.ChartDataSource.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartDataSource" title="creator_studio_doc_format.core.ChartDataSource.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartDataSource"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataSource" title="Link to this definition">¶</a></dt>
+<dd><p>The stated source of a chart’s values.</p>
+<p>It’s recorded for provenance only: the grid in <code class="docutils literal notranslate"><span class="pre">rows</span></code> is what is read, whatever this value is.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">ChartDataSource.CHART_DATA_GRID</span></code> and <code class="docutils literal notranslate"><span class="pre">'chart_data_grid'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataSource.CHART_DATA_GRID">
+<span class="sig-name descname"><span class="pre">CHART_DATA_GRID</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'chart_data_grid'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataSource.CHART_DATA_GRID" title="Link to this definition">¶</a></dt>
+<dd><p>The chart’s data is the grid carried in <code class="docutils literal notranslate"><span class="pre">rows</span></code>. This is the only supported source, and the only value ever written.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataSource.TABLE_FORMULA_REFERENCES">
+<span class="sig-name descname"><span class="pre">TABLE_FORMULA_REFERENCES</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'table_formula_references'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataSource.TABLE_FORMULA_REFERENCES" title="Link to this definition">¶</a></dt>
+<dd><p>Reserved for data drawn from table formula references and expressions. Not supported, and never written.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartDataSource.UNINITIALIZED">
+<span class="sig-name descname"><span class="pre">UNINITIALIZED</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'uninitialized'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartDataSource.UNINITIALIZED" title="Link to this definition">¶</a></dt>
+<dd><p>A value for a chart whose data source hasn’t been set. It’s never written and, like every other value of this property, has no effect: the grid in <code class="docutils literal notranslate"><span class="pre">rows</span></code> is used either way.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="plotdirection">PlotDirection<a class="headerlink" href="#plotdirection" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlotDirection">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PlotDirection</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlotDirection" title="creator_studio_doc_format.core.PlotDirection.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlotDirection" title="creator_studio_doc_format.core.PlotDirection.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#PlotDirection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PlotDirection" title="Link to this definition">¶</a></dt>
+<dd><p>The direction in which the data grid is read to produce the chart’s series.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">PlotDirection.COLUMNS_AS_SERIES</span></code> and <code class="docutils literal notranslate"><span class="pre">'columns_as_series'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlotDirection.COLUMNS_AS_SERIES">
+<span class="sig-name descname"><span class="pre">COLUMNS_AS_SERIES</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'columns_as_series'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlotDirection.COLUMNS_AS_SERIES" title="Link to this definition">¶</a></dt>
+<dd><p>Each column of the grid is a series, so <code class="docutils literal notranslate"><span class="pre">column_labels</span></code> name the series and <code class="docutils literal notranslate"><span class="pre">row_labels</span></code> name the categories.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlotDirection.ROWS_AS_SERIES">
+<span class="sig-name descname"><span class="pre">ROWS_AS_SERIES</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'rows_as_series'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlotDirection.ROWS_AS_SERIES" title="Link to this definition">¶</a></dt>
+<dd><p>Each row of the grid is a series, so <code class="docutils literal notranslate"><span class="pre">row_labels</span></code> name the series and <code class="docutils literal notranslate"><span class="pre">column_labels</span></code> name the categories.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="chartseries">ChartSeries<a class="headerlink" href="#chartseries" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartSeries">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartSeries</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries" title="creator_studio_doc_format.core.ChartSeries.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.label_format_type" title="creator_studio_doc_format.core.ChartSeries.label_format_type (Python field) — The kind of formatting applied to the label's value. It also selects which of label_number_format, label_currency_format, label_date_format, and label_duration_format applies. text, boolean, and base have no equivalent for chart labels and behave like number, which is also what omitting this property means."><span class="n"><span class="pre">label_format_type</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.label_date_format" title="creator_studio_doc_format.core.ChartSeries.label_date_format (Python field) — The date and time format of the label, used when label_format_type is date_time. An empty format string is treated as no format at all and isn't preserved."><span class="n"><span class="pre">label_date_format</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.label_duration_format" title="creator_studio_doc_format.core.ChartSeries.label_duration_format (Python field) — The label's duration format, used when label_format_type is duration. It covers automatic units, the smallest and largest unit, and the style."><span class="n"><span class="pre">label_duration_format</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.label_number_format" title="creator_studio_doc_format.core.ChartSeries.label_number_format (Python field) — The decimal places, negative-number style, and thousands separator of the label, used for number, percentage, and scientific labels. A value of 253 for decimal places means automatic. It's omitted for fraction, base, and custom labels, which have none of these attributes; a prefix or suffix, a fraction accuracy, and a custom format string aren't preserved. Currency labels use label_currency_format instead. On a stacked chart whose value axis has a ChartValueAxis.scale of percent, the value labels of each series don't use this format, and their decimal places, negative-number style, and thousands separator aren't preserved."><span class="n"><span class="pre">label_number_format</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.label_currency_format" title="creator_studio_doc_format.core.ChartSeries.label_currency_format (Python field) — The currency code, accounting style, decimal places, negative-number style, and thousands separator of the label, used when label_format_type is currency. It takes the place of label_number_format for currency labels, and it's what preserves the currency code; a prefix or suffix and a custom format string aren't preserved."><span class="n"><span class="pre">label_currency_format</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.series_index" title="creator_studio_doc_format.core.ChartSeries.series_index (Python field) — The zero-based index of the data series this entry applies to. If it's omitted, the entry's own position in the series array is used; an entry whose index is negative or past the last series in the data is ignored rather than treated as an error."><span class="n"><span class="pre">series_index</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.show_value_labels" title="creator_studio_doc_format.core.ChartSeries.show_value_labels (Python field) — Whether each data point in this series is labeled with its value."><span class="n"><span class="pre">show_value_labels</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.value_label_position" title="creator_studio_doc_format.core.ChartSeries.value_label_position (Python field) — The position of a data point's value label relative to the point. Not every chart type offers every position, and a position that isn't one of the values listed here isn't preserved."><span class="n"><span class="pre">value_label_position</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.value_label_text_style" title="creator_studio_doc_format.core.ChartSeries.value_label_text_style (Python field) — The text style of value labels drawn inside the series element."><span class="n"><span class="pre">value_label_text_style</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.value_label_outside_text_style" title="creator_studio_doc_format.core.ChartSeries.value_label_outside_text_style (Python field) — The text style of value labels drawn outside the series element."><span class="n"><span class="pre">value_label_outside_text_style</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.fill" title="creator_studio_doc_format.core.ChartSeries.fill (Python field) — The fill of the series' bars, columns, wedges, or area. null clears the fill; omitting the key inherits it from the chart's style. It's ignored when fill_reuse_rules derives the fill from another color instead."><span class="n"><span class="pre">fill</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.stroke" title="creator_studio_doc_format.core.ChartSeries.stroke (Python field) — The stroke of the series' line, or of the border of its bars, columns, or wedges. Bubble series have no such stroke (see symbol_stroke instead): a stroke supplied for one is ignored and isn't preserved."><span class="n"><span class="pre">stroke</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.symbol_type" title="creator_studio_doc_format.core.ChartSeries.symbol_type (Python field) — The shape of the data symbol drawn at each data point, or none for no data symbol. Data symbols exist only on 2D line, area, scatter, radar, and mixed line or area series, not on bubble or 3D series. Setting any shape other than none also turns data symbols on."><span class="n"><span class="pre">symbol_type</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.symbol_stroke" title="creator_studio_doc_format.core.ChartSeries.symbol_stroke (Python field) — The stroke of the data symbols drawn at each data point. It applies only to series that draw data symbols, which for this purpose include bubbles."><span class="n"><span class="pre">symbol_stroke</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.symbol_fill" title="creator_studio_doc_format.core.ChartSeries.symbol_fill (Python field) — The fill of the data symbols drawn at each data point. null clears the fill; omitting the key inherits it from the chart's style. It applies only to series that draw data symbols, which for this purpose include bubbles."><span class="n"><span class="pre">symbol_fill</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.symbol_size" title="creator_studio_doc_format.core.ChartSeries.symbol_size (Python field) — The size of the data symbols drawn at each data point, in points. Bubble series have no data symbol size, because a bubble is sized from its data value; a size of 0 is treated as unset and isn't preserved."><span class="n"><span class="pre">symbol_size</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.fill_reuse_rules" title="creator_studio_doc_format.core.ChartSeries.fill_reuse_rules (Python field) — The rules that derive the data symbol or series fill from another of the series' colors instead of an explicit fill."><span class="n"><span class="pre">fill_reuse_rules</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.fill_use_series_stroke_alpha_multiplier" title="creator_studio_doc_format.core.ChartSeries.fill_use_series_stroke_alpha_multiplier (Python field) — The alpha applied to the series stroke color to derive the series fill when fill_reuse_rules contains series_fill_use_series_stroke. It's ignored otherwise."><span class="n"><span class="pre">fill_use_series_stroke_alpha_multiplier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.connection_line_type" title="creator_studio_doc_format.core.ChartSeries.connection_line_type (Python field) — The style of the line joining this series' data points: none, straight, or curved. It applies only to series that draw a joining line, such as line, scatter, bubble, and radar series."><span class="n"><span class="pre">connection_line_type</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.value_labels_selection" title="creator_studio_doc_format.core.ChartSeries.value_labels_selection (Python field) — The values of a data point that appear in its value label on a bubble or scatter chart. It's ignored by other chart types; combinations other than the ones listed here aren't preserved."><span class="n"><span class="pre">value_labels_selection</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.show_negative_data" title="creator_studio_doc_format.core.ChartSeries.show_negative_data (Python field) — Whether a bubble chart shows a bubble for a negative value, sized from the value's magnitude. When it's false, negative values aren't plotted. It's ignored by other chart types."><span class="n"><span class="pre">show_negative_data</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.mixed_series_type" title="creator_studio_doc_format.core.ChartSeries.mixed_series_type (Python field) — The shape of this series on a mixed or two-axis chart: columns, a line, or an area. It's ignored by other chart types."><span class="n"><span class="pre">mixed_series_type</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries.y_axis_selection" title="creator_studio_doc_format.core.ChartSeries.y_axis_selection (Python field) — The value axis this series is plotted against on a two-axis chart: 0 for the primary axis and 1 for the secondary axis. It's ignored by other chart types. It's always written for a two-axis chart, including 0, because omitting the key leaves the series on its default axis, which is the secondary axis for every series after the first."><span class="n"><span class="pre">y_axis_selection</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ChartSeries" title="creator_studio_doc_format.core.ChartSeries.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartSeries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries" title="Link to this definition">¶</a></dt>
+<dd><p>The appearance and label formatting of one of a chart’s data series.</p>
+<p>It covers the series’ fill, stroke, data symbols, connecting line, and value labels; the plotted values come from the chart’s data grid. Many properties apply only to certain chart types and are ignored on the rest.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.label_format_type">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_format_type</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../tables/cell_formats.html#creator_studio_doc_format.core.FormatType" title="creator_studio_doc_format.core.FormatType (Python class) — The kind of formatting to apply to a cell's value."><span class="pre">FormatType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.label_format_type" title="Link to this definition">¶</a></dt>
+<dd><p>The kind of formatting applied to the label’s value. It also selects which of <code class="docutils literal notranslate"><span class="pre">label_number_format</span></code>, <code class="docutils literal notranslate"><span class="pre">label_currency_format</span></code>, <code class="docutils literal notranslate"><span class="pre">label_date_format</span></code>, and <code class="docutils literal notranslate"><span class="pre">label_duration_format</span></code> applies. <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">boolean</span></code>, and <code class="docutils literal notranslate"><span class="pre">base</span></code> have no equivalent for chart labels and behave like <code class="docutils literal notranslate"><span class="pre">number</span></code>, which is also what omitting this property means.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.label_date_format">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_date_format</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../tables/cell_formats.html#creator_studio_doc_format.core.DateTimeFormat" title="creator_studio_doc_format.core.DateTimeFormat (Python model) — Options for date and time formatting."><span class="pre">DateTimeFormat</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.label_date_format" title="Link to this definition">¶</a></dt>
+<dd><p>The date and time format of the label, used when <code class="docutils literal notranslate"><span class="pre">label_format_type</span></code> is <code class="docutils literal notranslate"><span class="pre">date_time</span></code>. An empty format string is treated as no format at all and isn’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.label_duration_format">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_duration_format</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../tables/cell_formats.html#creator_studio_doc_format.core.DurationFormat" title="creator_studio_doc_format.core.DurationFormat (Python model) — Options for duration formatting."><span class="pre">DurationFormat</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.label_duration_format" title="Link to this definition">¶</a></dt>
+<dd><p>The label’s duration format, used when <code class="docutils literal notranslate"><span class="pre">label_format_type</span></code> is <code class="docutils literal notranslate"><span class="pre">duration</span></code>. It covers automatic units, the smallest and largest unit, and the style.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.label_number_format">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_number_format</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../tables/cell_formats.html#creator_studio_doc_format.core.NumberFormat" title="creator_studio_doc_format.core.NumberFormat (Python model) — Options for plain numeric, percentage, and scientific formatting."><span class="pre">NumberFormat</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.label_number_format" title="Link to this definition">¶</a></dt>
+<dd><p>The decimal places, negative-number style, and thousands separator of the label, used for number, percentage, and scientific labels. A value of 253 for decimal places means automatic. It’s omitted for fraction, base, and custom labels, which have none of these attributes; a prefix or suffix, a fraction accuracy, and a custom format string aren’t preserved. Currency labels use <code class="docutils literal notranslate"><span class="pre">label_currency_format</span></code> instead. On a stacked chart whose value axis has a <code class="docutils literal notranslate"><span class="pre">ChartValueAxis.scale</span></code> of <code class="docutils literal notranslate"><span class="pre">percent</span></code>, the value labels of each series don’t use this format, and their decimal places, negative-number style, and thousands separator aren’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.label_currency_format">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_currency_format</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../tables/cell_formats.html#creator_studio_doc_format.core.CurrencyFormat" title="creator_studio_doc_format.core.CurrencyFormat (Python model) — Options for currency formatting."><span class="pre">CurrencyFormat</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.label_currency_format" title="Link to this definition">¶</a></dt>
+<dd><p>The currency code, accounting style, decimal places, negative-number style, and thousands separator of the label, used when <code class="docutils literal notranslate"><span class="pre">label_format_type</span></code> is <code class="docutils literal notranslate"><span class="pre">currency</span></code>. It takes the place of <code class="docutils literal notranslate"><span class="pre">label_number_format</span></code> for currency labels, and it’s what preserves the currency code; a prefix or suffix and a custom format string aren’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.series_index">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">series_index</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.series_index" title="Link to this definition">¶</a></dt>
+<dd><p>The zero-based index of the data series this entry applies to. If it’s omitted, the entry’s own position in the series array is used; an entry whose index is negative or past the last series in the data is ignored rather than treated as an error.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.show_value_labels">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">show_value_labels</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.show_value_labels" title="Link to this definition">¶</a></dt>
+<dd><p>Whether each data point in this series is labeled with its value.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.value_label_position">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value_label_position</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.SeriesValueLabelPosition" title="creator_studio_doc_format.core.SeriesValueLabelPosition (Python class) — The position of a data point's value label, for a series that shows value labels."><span class="pre">SeriesValueLabelPosition</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.value_label_position" title="Link to this definition">¶</a></dt>
+<dd><p>The position of a data point’s value label relative to the point. Not every chart type offers every position, and a position that isn’t one of the values listed here isn’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.value_label_text_style">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value_label_text_style</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../text.html#creator_studio_doc_format.core.ParagraphProperties" title="creator_studio_doc_format.core.ParagraphProperties (Python model) — The paragraph-level properties of text."><span class="pre">ParagraphProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.value_label_text_style" title="Link to this definition">¶</a></dt>
+<dd><p>The text style of value labels drawn inside the series element.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartSeries.value_label_outside_text_style">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value_label_outside_text_style</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../text.html#creator_studio_doc_format.core.ParagraphProperties" title="creator_studio_doc_format.core.ParagraphProperties (Python model) — The paragraph-level properties of text."><span class="pre">ParagraphProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.value_label_outside_text_style" title="Link to this definition">¶</a></dt>
+<dd><p>The text style of value labels drawn outside the series element.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.fill">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fill</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../../models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../fills.html#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill (Python model) — A style that fills an area with exactly one of a solid color, a gradient, or an image."><span class="pre">Fill</span></a><span class="p"><span class="pre">]</span></span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.fill" title="Link to this definition">¶</a></dt>
+<dd><p>The fill of the series’ bars, columns, wedges, or area. <code class="docutils literal notranslate"><span class="pre">null</span></code> clears the fill; omitting the key inherits it from the chart’s style. It’s ignored when <code class="docutils literal notranslate"><span class="pre">fill_reuse_rules</span></code> derives the fill from another color instead.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.stroke">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stroke</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../shapes.html#creator_studio_doc_format.core.Stroke" title="creator_studio_doc_format.core.Stroke (Python model) — A stroke drawn along a path, such as a border around an object."><span class="pre">Stroke</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.stroke" title="Link to this definition">¶</a></dt>
+<dd><p>The stroke of the series’ line, or of the border of its bars, columns, or wedges. Bubble series have no such stroke (see <code class="docutils literal notranslate"><span class="pre">symbol_stroke</span></code> instead): a stroke supplied for one is ignored and isn’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.symbol_type">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">symbol_type</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.SeriesSymbolType" title="creator_studio_doc_format.core.SeriesSymbolType (Python class) — The shape of the data symbol drawn at each of a series' data points."><span class="pre">SeriesSymbolType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.symbol_type" title="Link to this definition">¶</a></dt>
+<dd><p>The shape of the data symbol drawn at each data point, or <code class="docutils literal notranslate"><span class="pre">none</span></code> for no data symbol. Data symbols exist only on 2D line, area, scatter, radar, and mixed line or area series, not on bubble or 3D series. Setting any shape other than <code class="docutils literal notranslate"><span class="pre">none</span></code> also turns data symbols on.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.symbol_stroke">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">symbol_stroke</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../shapes.html#creator_studio_doc_format.core.Stroke" title="creator_studio_doc_format.core.Stroke (Python model) — A stroke drawn along a path, such as a border around an object."><span class="pre">Stroke</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.symbol_stroke" title="Link to this definition">¶</a></dt>
+<dd><p>The stroke of the data symbols drawn at each data point. It applies only to series that draw data symbols, which for this purpose include bubbles.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.symbol_fill">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">symbol_fill</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../../models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../fills.html#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill (Python model) — A style that fills an area with exactly one of a solid color, a gradient, or an image."><span class="pre">Fill</span></a><span class="p"><span class="pre">]</span></span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.symbol_fill" title="Link to this definition">¶</a></dt>
+<dd><p>The fill of the data symbols drawn at each data point. <code class="docutils literal notranslate"><span class="pre">null</span></code> clears the fill; omitting the key inherits it from the chart’s style. It applies only to series that draw data symbols, which for this purpose include bubbles.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.symbol_size">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">symbol_size</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.symbol_size" title="Link to this definition">¶</a></dt>
+<dd><p>The size of the data symbols drawn at each data point, in points. Bubble series have no data symbol size, because a bubble is sized from its data value; a size of <code class="docutils literal notranslate"><span class="pre">0</span></code> is treated as unset and isn’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartSeries.fill_reuse_rules">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fill_reuse_rules</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Annotated</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.FillReuseRule" title="creator_studio_doc_format.core.FillReuseRule (Python class) — A rule that reuses one of a series' own colors in place of an explicit fill."><span class="pre">FillReuseRule</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Strict</span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.fill_reuse_rules" title="Link to this definition">¶</a></dt>
+<dd><p>The rules that derive the data symbol or series fill from another of the series’ colors instead of an explicit fill.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.fill_use_series_stroke_alpha_multiplier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fill_use_series_stroke_alpha_multiplier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.fill_use_series_stroke_alpha_multiplier" title="Link to this definition">¶</a></dt>
+<dd><p>The alpha applied to the series stroke color to derive the series fill when <code class="docutils literal notranslate"><span class="pre">fill_reuse_rules</span></code> contains <code class="docutils literal notranslate"><span class="pre">series_fill_use_series_stroke</span></code>. It’s ignored otherwise.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.connection_line_type">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">connection_line_type</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.ConnectionLineType" title="creator_studio_doc_format.core.ConnectionLineType (Python class) — The style of the line drawn through a series' data points."><span class="pre">ConnectionLineType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.connection_line_type" title="Link to this definition">¶</a></dt>
+<dd><p>The style of the line joining this series’ data points: <code class="docutils literal notranslate"><span class="pre">none</span></code>, <code class="docutils literal notranslate"><span class="pre">straight</span></code>, or <code class="docutils literal notranslate"><span class="pre">curved</span></code>. It applies only to series that draw a joining line, such as line, scatter, bubble, and radar series.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.value_labels_selection">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value_labels_selection</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.ValueLabelsSelection" title="creator_studio_doc_format.core.ValueLabelsSelection (Python class) — The values of a data point that appear in its value label."><span class="pre">ValueLabelsSelection</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.value_labels_selection" title="Link to this definition">¶</a></dt>
+<dd><p>The values of a data point that appear in its value label on a bubble or scatter chart. It’s ignored by other chart types; combinations other than the ones listed here aren’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.show_negative_data">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">show_negative_data</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.show_negative_data" title="Link to this definition">¶</a></dt>
+<dd><p>Whether a bubble chart shows a bubble for a negative value, sized from the value’s magnitude. When it’s <code class="docutils literal notranslate"><span class="pre">false</span></code>, negative values aren’t plotted. It’s ignored by other chart types.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.mixed_series_type">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">mixed_series_type</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.MixedSeriesType" title="creator_studio_doc_format.core.MixedSeriesType (Python class) — The shape a single series takes on a mixed or two-axis chart."><span class="pre">MixedSeriesType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.mixed_series_type" title="Link to this definition">¶</a></dt>
+<dd><p>The shape of this series on a mixed or two-axis chart: columns, a line, or an area. It’s ignored by other chart types.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartSeries.y_axis_selection">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">y_axis_selection</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartSeries.y_axis_selection" title="Link to this definition">¶</a></dt>
+<dd><p>The value axis this series is plotted against on a two-axis chart: <code class="docutils literal notranslate"><span class="pre">0</span></code> for the primary axis and <code class="docutils literal notranslate"><span class="pre">1</span></code> for the secondary axis. It’s ignored by other chart types. It’s always written for a two-axis chart, including 0, because omitting the key leaves the series on its default axis, which is the secondary axis for every series after the first.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="valuelabelsselection">ValueLabelsSelection<a class="headerlink" href="#valuelabelsselection" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ValueLabelsSelection</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ValueLabelsSelection" title="creator_studio_doc_format.core.ValueLabelsSelection.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ValueLabelsSelection" title="creator_studio_doc_format.core.ValueLabelsSelection.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ValueLabelsSelection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection" title="Link to this definition">¶</a></dt>
+<dd><p>The values of a data point that appear in its value label.</p>
+<p>It applies only to bubble and scatter charts.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">ValueLabelsSelection.NONE</span></code> and <code class="docutils literal notranslate"><span class="pre">'none'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'none'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection.NONE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection.SIZE">
+<span class="sig-name descname"><span class="pre">SIZE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'size'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection.SIZE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection.X">
+<span class="sig-name descname"><span class="pre">X</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'x'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection.X" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection.X_AND_Y">
+<span class="sig-name descname"><span class="pre">X_AND_Y</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'x_and_y'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection.X_AND_Y" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ValueLabelsSelection.Y">
+<span class="sig-name descname"><span class="pre">Y</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'y'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ValueLabelsSelection.Y" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<h3 id="mixedseriestype">MixedSeriesType<a class="headerlink" href="#mixedseriestype" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.MixedSeriesType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">MixedSeriesType</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.MixedSeriesType" title="creator_studio_doc_format.core.MixedSeriesType.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.MixedSeriesType" title="creator_studio_doc_format.core.MixedSeriesType.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#MixedSeriesType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.MixedSeriesType" title="Link to this definition">¶</a></dt>
+<dd><p>The shape a single series takes on a mixed or two-axis chart.</p>
+<p>Each series on these charts can take a different shape, and these are the only chart types that read this value. The choice also determines which of the series’ other style properties apply, since a series drawn as columns has neither data symbols nor a connecting line.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">MixedSeriesType.AREA</span></code> and <code class="docutils literal notranslate"><span class="pre">'area'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.MixedSeriesType.AREA">
+<span class="sig-name descname"><span class="pre">AREA</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'area'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.MixedSeriesType.AREA" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.MixedSeriesType.COLUMN">
+<span class="sig-name descname"><span class="pre">COLUMN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'column'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.MixedSeriesType.COLUMN" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.MixedSeriesType.LINE">
+<span class="sig-name descname"><span class="pre">LINE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'line'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.MixedSeriesType.LINE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<h3 id="seriessymboltype">SeriesSymbolType<a class="headerlink" href="#seriessymboltype" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SeriesSymbolType</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SeriesSymbolType" title="creator_studio_doc_format.core.SeriesSymbolType.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SeriesSymbolType" title="creator_studio_doc_format.core.SeriesSymbolType.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#SeriesSymbolType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType" title="Link to this definition">¶</a></dt>
+<dd><p>The shape of the data symbol drawn at each of a series’ data points.</p>
+<p>It also sets whether data symbols are drawn at all: <code class="docutils literal notranslate"><span class="pre">none</span></code> turns them off, and any other case turns them on. Only a series that draws an editable data symbol uses it; a bubble series doesn’t, because its circles are sized from the data.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">SeriesSymbolType.CIRCLE</span></code> and <code class="docutils literal notranslate"><span class="pre">'circle'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.CIRCLE">
+<span class="sig-name descname"><span class="pre">CIRCLE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'circle'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.CIRCLE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.DIAMOND">
+<span class="sig-name descname"><span class="pre">DIAMOND</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'diamond'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.DIAMOND" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'none'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.NONE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.PLUS">
+<span class="sig-name descname"><span class="pre">PLUS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'plus'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.PLUS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.SQUARE">
+<span class="sig-name descname"><span class="pre">SQUARE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'square'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.SQUARE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.TRIANGLE">
+<span class="sig-name descname"><span class="pre">TRIANGLE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'triangle'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.TRIANGLE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.X">
+<span class="sig-name descname"><span class="pre">X</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'x'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.X" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesSymbolType.YIELD">
+<span class="sig-name descname"><span class="pre">YIELD</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'yield'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesSymbolType.YIELD" title="Link to this definition">¶</a></dt>
+<dd><p>A triangle pointing the opposite way from <code class="docutils literal notranslate"><span class="pre">triangle</span></code>, apex toward the bottom.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="connectionlinetype">ConnectionLineType<a class="headerlink" href="#connectionlinetype" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConnectionLineType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ConnectionLineType</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ConnectionLineType" title="creator_studio_doc_format.core.ConnectionLineType.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ConnectionLineType" title="creator_studio_doc_format.core.ConnectionLineType.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ConnectionLineType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ConnectionLineType" title="Link to this definition">¶</a></dt>
+<dd><p>The style of the line drawn through a series’ data points.</p>
+<p>It also sets whether a line is drawn at all: <code class="docutils literal notranslate"><span class="pre">none</span></code> removes the line rather than falling back to a default. Only a series that joins its points with a line uses it; elsewhere the value is ignored and isn’t written back out.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">ConnectionLineType.CURVED</span></code> and <code class="docutils literal notranslate"><span class="pre">'curved'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConnectionLineType.CURVED">
+<span class="sig-name descname"><span class="pre">CURVED</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'curved'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ConnectionLineType.CURVED" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConnectionLineType.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'none'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ConnectionLineType.NONE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConnectionLineType.STRAIGHT">
+<span class="sig-name descname"><span class="pre">STRAIGHT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'straight'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ConnectionLineType.STRAIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<h3 id="fillreuserule">FillReuseRule<a class="headerlink" href="#fillreuserule" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.FillReuseRule">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">FillReuseRule</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.FillReuseRule" title="creator_studio_doc_format.core.FillReuseRule.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.FillReuseRule" title="creator_studio_doc_format.core.FillReuseRule.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#FillReuseRule"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.FillReuseRule" title="Link to this definition">¶</a></dt>
+<dd><p>A rule that reuses one of a series’ own colors in place of an explicit fill.</p>
+<p>It lets data symbols track the series’ fill or stroke instead of carrying a color of their own.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">FillReuseRule.SERIES_FILL_USE_SERIES_STROKE</span></code> and <code class="docutils literal notranslate"><span class="pre">'series_fill_use_series_stroke'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.FillReuseRule.SERIES_FILL_USE_SERIES_STROKE">
+<span class="sig-name descname"><span class="pre">SERIES_FILL_USE_SERIES_STROKE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'series_fill_use_series_stroke'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.FillReuseRule.SERIES_FILL_USE_SERIES_STROKE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.FillReuseRule.SYMBOL_FILL_USES_SERIES_FILL">
+<span class="sig-name descname"><span class="pre">SYMBOL_FILL_USES_SERIES_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'symbol_fill_uses_series_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.FillReuseRule.SYMBOL_FILL_USES_SERIES_FILL" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.FillReuseRule.SYMBOL_FILL_USES_SERIES_STROKE">
+<span class="sig-name descname"><span class="pre">SYMBOL_FILL_USES_SERIES_STROKE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'symbol_fill_uses_series_stroke'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.FillReuseRule.SYMBOL_FILL_USES_SERIES_STROKE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<h3 id="seriesvaluelabelposition">SeriesValueLabelPosition<a class="headerlink" href="#seriesvaluelabelposition" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.SeriesValueLabelPosition">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">SeriesValueLabelPosition</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SeriesValueLabelPosition" title="creator_studio_doc_format.core.SeriesValueLabelPosition.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.SeriesValueLabelPosition" title="creator_studio_doc_format.core.SeriesValueLabelPosition.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#SeriesValueLabelPosition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition" title="Link to this definition">¶</a></dt>
+<dd><p>The position of a data point’s value label, for a series that shows value labels.</p>
+<p>Each chart type uses only the placements that suit it and replaces any other with one it supports. A pie wedge or donut segment, for instance, keeps <code class="docutils literal notranslate"><span class="pre">inside</span></code> and <code class="docutils literal notranslate"><span class="pre">outside</span></code>, and anything else (<code class="docutils literal notranslate"><span class="pre">auto</span></code> included) comes out as the automatic centered placement.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">SeriesValueLabelPosition.AUTO</span></code> and <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.AUTO">
+<span class="sig-name descname"><span class="pre">AUTO</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'auto'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.AUTO" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM">
+<span class="sig-name descname"><span class="pre">BOTTOM</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'bottom'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM_LEFT">
+<span class="sig-name descname"><span class="pre">BOTTOM_LEFT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'bottom_left'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM_LEFT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM_RIGHT">
+<span class="sig-name descname"><span class="pre">BOTTOM_RIGHT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'bottom_right'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.BOTTOM_RIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.CENTER">
+<span class="sig-name descname"><span class="pre">CENTER</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'center'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.CENTER" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE">
+<span class="sig-name descname"><span class="pre">INSIDE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'inside'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_BOTTOM">
+<span class="sig-name descname"><span class="pre">INSIDE_BOTTOM</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'inside_bottom'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_BOTTOM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_LEFT">
+<span class="sig-name descname"><span class="pre">INSIDE_LEFT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'inside_left'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_LEFT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_RIGHT">
+<span class="sig-name descname"><span class="pre">INSIDE_RIGHT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'inside_right'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_RIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_TOP">
+<span class="sig-name descname"><span class="pre">INSIDE_TOP</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'inside_top'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.INSIDE_TOP" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.LEFT">
+<span class="sig-name descname"><span class="pre">LEFT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'left'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.LEFT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.OUTSIDE">
+<span class="sig-name descname"><span class="pre">OUTSIDE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'outside'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.OUTSIDE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.OUTSIDE_TOP">
+<span class="sig-name descname"><span class="pre">OUTSIDE_TOP</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'outside_top'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.OUTSIDE_TOP" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.RIGHT">
+<span class="sig-name descname"><span class="pre">RIGHT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'right'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.RIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.TOP">
+<span class="sig-name descname"><span class="pre">TOP</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'top'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.TOP" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.TOP_LEFT">
+<span class="sig-name descname"><span class="pre">TOP_LEFT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'top_left'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.TOP_LEFT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.SeriesValueLabelPosition.TOP_RIGHT">
+<span class="sig-name descname"><span class="pre">TOP_RIGHT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'top_right'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.SeriesValueLabelPosition.TOP_RIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<h2 id="chartlegend">ChartLegend<a class="headerlink" href="#chartlegend" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ChartLegend">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ChartLegend</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartLegend" title="creator_studio_doc_format.core.ChartLegend.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartLegend.geometry" title="creator_studio_doc_format.core.ChartLegend.geometry (Python field) — The legend's position and size. Geometry.position is the offset from the center of the chart's plot area to the legend's top-left corner, so either coordinate can be negative, and Geometry.size is its width and height. Geometry.angle, Geometry.flip_horizontally, Geometry.width_valid, and Geometry.height_valid don't apply to a legend and aren't preserved."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ChartLegend.label_text_style" title="creator_studio_doc_format.core.ChartLegend.label_text_style (Python field) — The text style of the legend labels, such as their font, size, and alignment."><span class="n"><span class="pre">label_text_style</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ChartLegend" title="creator_studio_doc_format.core.ChartLegend.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ChartLegend"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ChartLegend" title="Link to this definition">¶</a></dt>
+<dd><p>The legend of a chart.</p>
+<p>Its position is an offset from the center of the plot area rather than a position on the slide. Whether it’s shown is set by <code class="docutils literal notranslate"><span class="pre">ChartCommon.show_legend</span></code>, and its entry labels come from the chart’s series.</p>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartLegend.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartLegend.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The legend’s position and size. <code class="docutils literal notranslate"><span class="pre">Geometry.position</span></code> is the offset from the center of the chart’s plot area to the legend’s top-left corner, so either coordinate can be negative, and <code class="docutils literal notranslate"><span class="pre">Geometry.size</span></code> is its width and height. <code class="docutils literal notranslate"><span class="pre">Geometry.angle</span></code>, <code class="docutils literal notranslate"><span class="pre">Geometry.flip_horizontally</span></code>, <code class="docutils literal notranslate"><span class="pre">Geometry.width_valid</span></code>, and <code class="docutils literal notranslate"><span class="pre">Geometry.height_valid</span></code> don’t apply to a legend and aren’t preserved.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ChartLegend.label_text_style">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">label_text_style</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../text.html#creator_studio_doc_format.core.ParagraphProperties" title="creator_studio_doc_format.core.ParagraphProperties (Python model) — The paragraph-level properties of text."><span class="pre">ParagraphProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ChartLegend.label_text_style" title="Link to this definition">¶</a></dt>
+<dd><p>The text style of the legend labels, such as their font, size, and alignment.</p>
+</dd></dl>
+
+</dd></dl>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../../_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>
