@@ -1,0 +1,1647 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="charts/shared.html">
+      
+      
+        <link rel="next" href="resources.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Media - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#audio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Media
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tables/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="charts/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Audio</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Image</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mask" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Mask</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instantalphapath" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Instant<wbr>Alpha<wbr>Path</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movie" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Movie</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playbackoptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Playback<wbr>Options</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PlaybackOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loopoption" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Loop<wbr>Option</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Duration</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Audio</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Image</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mask" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Mask</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instantalphapath" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Instant<wbr>Alpha<wbr>Path</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movie" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Movie</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playbackoptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Playback<wbr>Options</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PlaybackOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loopoption" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Loop<wbr>Option</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Duration</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="media">Media<a class="headerlink" href="#media" title="Link to this heading">¶</a></h1>
+<p>Add images, movies, and audio, and control how they play.</p>
+<h2 id="audio">Audio<a class="headerlink" href="#audio" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Audio">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Audio</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio" title="creator_studio_doc_format.core.Audio.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.identifier" title="creator_studio_doc_format.core.Audio.identifier (Python field) — An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.geometry" title="creator_studio_doc_format.core.Audio.geometry (Python field) — The object's position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.aspect_ratio_locked" title="creator_studio_doc_format.core.Audio.aspect_ratio_locked (Python field) — A Boolean value that indicates whether the object's width-to-height ratio is locked when the object resizes. The lock doesn't constrain the geometry property. If this property is absent, images, movies, and groups default to true, and other objects to false."><span class="n"><span class="pre">aspect_ratio_locked</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.description" title="creator_studio_doc_format.core.Audio.description (Python field) — The accessibility description for the object, read aloud by assistive technologies such as VoiceOver."><span class="n"><span class="pre">description</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.resource" title="creator_studio_doc_format.core.Audio.resource (Python field) — The resource that contains the audio data. If the resource isn't playable on the device, has no audio track, or contains video, the object has no effect."><span class="n"><span class="pre">resource</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.playback_options" title="creator_studio_doc_format.core.Audio.playback_options (Python field) — The playback settings for the audio, such as volume, start and end trim times, looping, and whether playback continues across slides."><span class="n"><span class="pre">playback_options</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Audio.native_audio_recording" title="creator_studio_doc_format.core.Audio.native_audio_recording (Python field) — A Boolean value that indicates whether to treat the audio as recorded into the document rather than imported as a sound file. Recorded audio can't loop back and forth, and instead plays from beginning to end: when this value is true, a Loop Back and Forth setting is replaced with no looping."><span class="n"><span class="pre">native_audio_recording</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Audio" title="creator_studio_doc_format.core.Audio.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Audio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Audio" title="Link to this definition">¶</a></dt>
+<dd><p>A sound attached to a slide.</p>
+<p>An audio object has no visible size of its own; it appears as a fixed-size icon, so Keynote ignores the size in <code class="docutils literal notranslate"><span class="pre">geometry</span></code> and only uses the position.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Audio.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Audio.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.aspect_ratio_locked">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">aspect_ratio_locked</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Audio.aspect_ratio_locked" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether the object’s width-to-height ratio is locked when the object resizes. The lock doesn’t constrain the <code class="docutils literal notranslate"><span class="pre">geometry</span></code> property. If this property is absent, images, movies, and groups default to <code class="docutils literal notranslate"><span class="pre">true</span></code>, and other objects to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.description">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">description</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Audio.description" title="Link to this definition">¶</a></dt>
+<dd><p>The accessibility description for the object, read aloud by assistive technologies such as VoiceOver.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.resource">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resource</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><span class="pre">Resource</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Audio.resource" title="Link to this definition">¶</a></dt>
+<dd><p>The resource that contains the audio data. If the resource isn’t playable on the device, has no audio track, or contains video, the object has no effect.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.playback_options">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">playback_options</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PlaybackOptions" title="creator_studio_doc_format.core.PlaybackOptions (Python model) — Options controlling playback of media."><span class="pre">PlaybackOptions</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Audio.playback_options" title="Link to this definition">¶</a></dt>
+<dd><p>The playback settings for the audio, such as volume, start and end trim times, looping, and whether playback continues across slides.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Audio.native_audio_recording">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">native_audio_recording</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Audio.native_audio_recording" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether to treat the audio as recorded into the document rather than imported as a sound file. Recorded audio can’t loop back and forth, and instead plays from beginning to end: when this value is <code class="docutils literal notranslate"><span class="pre">true</span></code>, a Loop Back and Forth setting is replaced with no looping.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="image">Image<a class="headerlink" href="#image" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Image">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Image</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image" title="creator_studio_doc_format.core.Image.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.identifier" title="creator_studio_doc_format.core.Image.identifier (Python field) — An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.geometry" title="creator_studio_doc_format.core.Image.geometry (Python field) — The object's position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.aspect_ratio_locked" title="creator_studio_doc_format.core.Image.aspect_ratio_locked (Python field) — Whether the image's width-to-height ratio is locked when the image is resized. The lock doesn't constrain the geometry property. The default is true."><span class="n"><span class="pre">aspect_ratio_locked</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.description" title="creator_studio_doc_format.core.Image.description (Python field) — The accessibility description for the object, read aloud by assistive technologies such as VoiceOver."><span class="n"><span class="pre">description</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.title" title="creator_studio_doc_format.core.Image.title (Python field) — The object's title."><span class="n"><span class="pre">title</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.title_is_positioned_on_top" title="creator_studio_doc_format.core.Image.title_is_positioned_on_top (Python field) — When true, the title appears above the object; when false, the title appears below the object, above the caption if there is one. Defaults to true. Keynote ignores this when the object has none, or when it's hidden with Label.is_visible set to false; Keynote places a hidden title above the object, where it appears when it shows again."><span class="n"><span class="pre">title_is_positioned_on_top</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.caption" title="creator_studio_doc_format.core.Image.caption (Python field) — The object's caption, which Keynote always places below the object. If a caption is off, you still write it out with Label.is_visible set to false, so having a value doesn't mean the caption shows."><span class="n"><span class="pre">caption</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.resource" title="creator_studio_doc_format.core.Image.resource (Python field) — The resource containing the image's data. The resource data must decode to a single-frame image; use Movie for multi-frame images. A multi-frame animated image, such as an animated GIF, is rejected and the object is dropped. When Keynote writes an image changed with Adjust Image, the resource holds the image with those changes applied, not the original."><span class="n"><span class="pre">resource</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.mask" title="creator_studio_doc_format.core.Image.mask (Python field) — A cropping mask that is applied to the image before it's shown. The mask's geometry is the visible frame, while the image's own geometry places the image resource. Decorations are shown relative to the intersection of the mask and the image. If absent, the image isn't cropped."><span class="n"><span class="pre">mask</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.instant_alpha_path" title="creator_studio_doc_format.core.Image.instant_alpha_path (Python field) — A cropping path applied to the image before it's shown, removing the image's background."><span class="n"><span class="pre">instant_alpha_path</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.stroke" title="creator_studio_doc_format.core.Image.stroke (Python field) — A border stroke drawn around the image. Defaults to no border."><span class="n"><span class="pre">stroke</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Stroke</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.opacity" title="creator_studio_doc_format.core.Image.opacity (Python field) — The image's opacity, in the range 0 to 1."><span class="n"><span class="pre">opacity</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.shadow" title="creator_studio_doc_format.core.Image.shadow (Python field) — The shadow shown beneath the image."><span class="n"><span class="pre">shadow</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.reflection" title="creator_studio_doc_format.core.Image.reflection (Python field) — The reflection shown for the image."><span class="n"><span class="pre">reflection</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.is_placeholder" title="creator_studio_doc_format.core.Image.is_placeholder (Python field) — Whether this image is a media placeholder, meant to be replaced with another image. When false, was_media_replaced is ignored and treated as false."><span class="n"><span class="pre">is_placeholder</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Image.was_media_replaced" title="creator_studio_doc_format.core.Image.was_media_replaced (Python field) — If this image is a placeholder, whether the resource in it was replaced."><span class="n"><span class="pre">was_media_replaced</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Image" title="creator_studio_doc_format.core.Image.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Image" title="Link to this definition">¶</a></dt>
+<dd><p>A picture defined by a resource with optional styling.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">geometry</span></code> is absent, the reader places the image at the natural size of <code class="docutils literal notranslate"><span class="pre">resource</span></code>. When Keynote exports a presentation, it writes an object the format has no type for as an image. A 3D object, a drawing, an image gallery, a web video, a live video, or a comment on a slide becomes a picture of the object as it appears, with its rotation, flip, title, and caption drawn in, so the image has no <code class="docutils literal notranslate"><span class="pre">title</span></code> or <code class="docutils literal notranslate"><span class="pre">caption</span></code>, and its <code class="docutils literal notranslate"><span class="pre">geometry</span></code> is an unrotated rectangle enclosing the whole picture, including any shadow or reflection. Keynote also writes such an image without a <code class="docutils literal notranslate"><span class="pre">description</span></code>, so the object’s accessibility description is lost. A comment appears in its image only if comments are shown when someone exports the presentation; otherwise the image is empty.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.aspect_ratio_locked">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">aspect_ratio_locked</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.aspect_ratio_locked" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the image’s width-to-height ratio is locked when the image is resized. The lock doesn’t constrain the <code class="docutils literal notranslate"><span class="pre">geometry</span></code> property. The default is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.description">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">description</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.description" title="Link to this definition">¶</a></dt>
+<dd><p>The accessibility description for the object, read aloud by assistive technologies such as VoiceOver.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.title">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.title" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s title.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.title_is_positioned_on_top">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">title_is_positioned_on_top</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.title_is_positioned_on_top" title="Link to this definition">¶</a></dt>
+<dd><p>When <code class="docutils literal notranslate"><span class="pre">true</span></code>, the title appears above the object; when <code class="docutils literal notranslate"><span class="pre">false</span></code>, the title appears below the object, above the caption if there is one. Defaults to <code class="docutils literal notranslate"><span class="pre">true</span></code>. Keynote ignores this when the object has none, or when it’s hidden with <code class="docutils literal notranslate"><span class="pre">Label.is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>; Keynote places a hidden title above the object, where it appears when it shows again.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.caption">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">caption</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.caption" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s caption, which Keynote always places below the object. If a caption is off, you still write it out with <code class="docutils literal notranslate"><span class="pre">Label.is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, so having a value doesn’t mean the caption shows.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.resource">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resource</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><span class="pre">Resource</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Image.resource" title="Link to this definition">¶</a></dt>
+<dd><p>The resource containing the image’s data. The resource data must decode to a single-frame image; use <code class="docutils literal notranslate"><span class="pre">Movie</span></code> for multi-frame images. A multi-frame animated image, such as an animated GIF, is rejected and the object is dropped. When Keynote writes an image changed with Adjust Image, the resource holds the image with those changes applied, not the original.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.mask">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">mask</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Mask" title="creator_studio_doc_format.core.Mask (Python model) — The crop applied to an image, clipping the resource to a path within the mask's own geometry."><span class="pre">Mask</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.mask" title="Link to this definition">¶</a></dt>
+<dd><p>A cropping mask that is applied to the image before it’s shown. The mask’s <code class="docutils literal notranslate"><span class="pre">geometry</span></code> is the visible frame, while the image’s own <code class="docutils literal notranslate"><span class="pre">geometry</span></code> places the image resource. Decorations are shown relative to the intersection of the mask and the image. If absent, the image isn’t cropped.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.instant_alpha_path">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">instant_alpha_path</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.InstantAlphaPath" title="creator_studio_doc_format.core.InstantAlphaPath (Python model) — A masking path applied to an image to clip out its background, with only the area it encloses shown."><span class="pre">InstantAlphaPath</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.instant_alpha_path" title="Link to this definition">¶</a></dt>
+<dd><p>A cropping path applied to the image before it’s shown, removing the image’s background.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.stroke">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stroke</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="shapes.html#creator_studio_doc_format.core.Stroke" title="creator_studio_doc_format.core.Stroke (Python model) — A stroke drawn along a path, such as a border around an object."><span class="pre">Stroke</span></a></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Stroke</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.stroke" title="Link to this definition">¶</a></dt>
+<dd><p>A border stroke drawn around the image. Defaults to no border.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.opacity">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">opacity</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">1</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.opacity" title="Link to this definition">¶</a></dt>
+<dd><p>The image’s opacity, in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.shadow">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">shadow</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="shadows.html#creator_studio_doc_format.core.Shadow" title="creator_studio_doc_format.core.Shadow (Python model) — The kind of shadow cast by an object, or none for no shadow."><span class="pre">Shadow</span></a><span class="p"><span class="pre">]</span></span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.shadow" title="Link to this definition">¶</a></dt>
+<dd><p>The shadow shown beneath the image.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.reflection">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">reflection</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="shadows.html#creator_studio_doc_format.core.Reflection" title="creator_studio_doc_format.core.Reflection (Python model) — A mirrored copy of the object that the reader drew directly below it on a ground plane aligned to the horizontal axis, fading out with distance."><span class="pre">Reflection</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.reflection" title="Link to this definition">¶</a></dt>
+<dd><p>The reflection shown for the image.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.is_placeholder">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_placeholder</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.is_placeholder" title="Link to this definition">¶</a></dt>
+<dd><p>Whether this image is a media placeholder, meant to be replaced with another image. When <code class="docutils literal notranslate"><span class="pre">false</span></code>, <code class="docutils literal notranslate"><span class="pre">was_media_replaced</span></code> is ignored and treated as <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Image.was_media_replaced">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">was_media_replaced</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Image.was_media_replaced" title="Link to this definition">¶</a></dt>
+<dd><p>If this image is a placeholder, whether the resource in it was replaced.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="mask">Mask<a class="headerlink" href="#mask" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Mask">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Mask</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Mask" title="creator_studio_doc_format.core.Mask.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Mask.geometry" title="creator_studio_doc_format.core.Mask.geometry (Python field) — The geometry of the frame used to crop the image's resource, in the same coordinate space as the image's own geometry. Either this or path must be present."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Mask.path" title="creator_studio_doc_format.core.Mask.path (Python field) — The path used to crop the image's resource, anchored within geometry if present. Either this or geometry must be present; if absent and geometry is used, the path is assumed to be rectangular."><span class="n"><span class="pre">path</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Mask" title="creator_studio_doc_format.core.Mask.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Mask" title="Link to this definition">¶</a></dt>
+<dd><p>The crop applied to an image, clipping the resource to a path within the mask’s own geometry.</p>
+<p>The part outside the crop is retained in the file rather than trimmed away. A mask whose path encloses no area would hide the image completely, so it’s discarded when it’s read, and the image isn’t cropped.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Mask.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Mask.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The geometry of the frame used to crop the image’s resource, in the same coordinate space as the image’s own <code class="docutils literal notranslate"><span class="pre">geometry</span></code>. Either this or <code class="docutils literal notranslate"><span class="pre">path</span></code> must be present.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Mask.path">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">path</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="shapes.html#creator_studio_doc_format.core.Path" title="creator_studio_doc_format.core.Path (Python model) — A path that traces the outline of a shape or of an image's mask."><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Mask.path" title="Link to this definition">¶</a></dt>
+<dd><p>The path used to crop the image’s resource, anchored within <code class="docutils literal notranslate"><span class="pre">geometry</span></code> if present. Either this or <code class="docutils literal notranslate"><span class="pre">geometry</span></code> must be present; if absent and <code class="docutils literal notranslate"><span class="pre">geometry</span></code> is used, the path is assumed to be rectangular.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="instantalphapath">InstantAlphaPath<a class="headerlink" href="#instantalphapath" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.InstantAlphaPath">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">InstantAlphaPath</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.InstantAlphaPath" title="creator_studio_doc_format.core.InstantAlphaPath.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.InstantAlphaPath.path" title="creator_studio_doc_format.core.InstantAlphaPath.path (Python field) — The outline of the visible area, in the syntax of an SVG &lt;path&gt; element's d attribute, with these differences: only the moveto (M), lineto (L), cubic and quadratic curveto (C and Q), and closepath (Z) commands are read; every segment must have its own command letter; separators must be spaces; and a lowercase command is read as absolute rather than relative. The value must begin with a moveto command. Reading stops at the first token that can't be read; the outline up to there is kept, including the interrupted segment, with its missing numbers taken as 0."><span class="n"><span class="pre">path</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.InstantAlphaPath.size" title="creator_studio_doc_format.core.InstantAlphaPath.size (Python field) — If present, path is treated as relative to a rectangle at the origin with this size, and then stretched to cover the natural size of the image. If absent, it's assumed to equal the natural size of the image."><span class="n"><span class="pre">size</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.InstantAlphaPath" title="creator_studio_doc_format.core.InstantAlphaPath.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#InstantAlphaPath"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.InstantAlphaPath" title="Link to this definition">¶</a></dt>
+<dd><p>A masking path applied to an image to clip out its background, with only the area it encloses shown.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">path</span></code> that comes out empty, encloses no area, or lies outside the image is discarded, and the image keeps its background.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.InstantAlphaPath.path">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">path</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.InstantAlphaPath.path" title="Link to this definition">¶</a></dt>
+<dd><p>The outline of the visible area, in the syntax of an SVG <code class="docutils literal notranslate"><span class="pre">&lt;path&gt;</span></code> element’s <code class="docutils literal notranslate"><span class="pre">d</span></code> attribute, with these differences: only the moveto (<code class="docutils literal notranslate"><span class="pre">M</span></code>), lineto (<code class="docutils literal notranslate"><span class="pre">L</span></code>), cubic and quadratic curveto (<code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span></code>), and closepath (<code class="docutils literal notranslate"><span class="pre">Z</span></code>) commands are read; every segment must have its own command letter; separators must be spaces; and a lowercase command is read as absolute rather than relative. The value must begin with a moveto command. Reading stops at the first token that can’t be read; the outline up to there is kept, including the interrupted segment, with its missing numbers taken as 0.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.InstantAlphaPath.size">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">size</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Size" title="creator_studio_doc_format.core.Size (Python model) — A width and height in whichever coordinate space the property using it defines."><span class="pre">Size</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.InstantAlphaPath.size" title="Link to this definition">¶</a></dt>
+<dd><p>If present, <code class="docutils literal notranslate"><span class="pre">path</span></code> is treated as relative to a rectangle at the origin with this size, and then stretched to cover the natural size of the image. If absent, it’s assumed to equal the natural size of the image.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="movie">Movie<a class="headerlink" href="#movie" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Movie">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie" title="creator_studio_doc_format.core.Movie.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.identifier" title="creator_studio_doc_format.core.Movie.identifier (Python field) — An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.geometry" title="creator_studio_doc_format.core.Movie.geometry (Python field) — The object's position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.aspect_ratio_locked" title="creator_studio_doc_format.core.Movie.aspect_ratio_locked (Python field) — Whether the movie's width-to-height ratio is locked when the movie is resized. The lock doesn't constrain the geometry property. The default is true."><span class="n"><span class="pre">aspect_ratio_locked</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.description" title="creator_studio_doc_format.core.Movie.description (Python field) — The accessibility description for the object, read aloud by assistive technologies such as VoiceOver."><span class="n"><span class="pre">description</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.title" title="creator_studio_doc_format.core.Movie.title (Python field) — The object's title."><span class="n"><span class="pre">title</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.title_is_positioned_on_top" title="creator_studio_doc_format.core.Movie.title_is_positioned_on_top (Python field) — When true, the title appears above the object; when false, the title appears below the object, above the caption if there is one. Defaults to true. Keynote ignores this when the object has none, or when it's hidden with Label.is_visible set to false; Keynote places a hidden title above the object, where it appears when it shows again."><span class="n"><span class="pre">title_is_positioned_on_top</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.caption" title="creator_studio_doc_format.core.Movie.caption (Python field) — The object's caption, which Keynote always places below the object. If a caption is off, you still write it out with Label.is_visible set to false, so having a value doesn't mean the caption shows."><span class="n"><span class="pre">caption</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.resource" title="creator_studio_doc_format.core.Movie.resource (Python field) — The resource containing the movie's data. The resource must decode to a multi-frame animated image or to a movie with a video track, playable on the device where the file is imported; if not, the object is skipped."><span class="n"><span class="pre">resource</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.poster_image" title="creator_studio_doc_format.core.Movie.poster_image (Python field) — The resource containing the data for the movie's poster image. The poster image is shown when the movie isn't playing; this resource is used only as a fallback when a poster image can't be generated from poster_time."><span class="n"><span class="pre">poster_image</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.poster_time" title="creator_studio_doc_format.core.Movie.poster_time (Python field) — A time, limited to the movie's duration, used to determine which frame of the movie is shown when the movie isn't playing. The default is 0, the first frame, which is also used for a negative or otherwise unusable time."><span class="n"><span class="pre">poster_time</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Duration</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.playback_options" title="creator_studio_doc_format.core.Movie.playback_options (Python field) — Playback settings for the movie, such as volume, start and end trim times, looping, and whether playback continues across slides."><span class="n"><span class="pre">playback_options</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.stroke" title="creator_studio_doc_format.core.Movie.stroke (Python field) — The border stroke drawn around the movie. The default is no border."><span class="n"><span class="pre">stroke</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Stroke</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.opacity" title="creator_studio_doc_format.core.Movie.opacity (Python field) — The opacity value of the movie, in the range 0 to 1."><span class="n"><span class="pre">opacity</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.shadow" title="creator_studio_doc_format.core.Movie.shadow (Python field) — The shadow shown beneath the movie."><span class="n"><span class="pre">shadow</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Movie.reflection" title="creator_studio_doc_format.core.Movie.reflection (Python field) — The reflection shown for the movie."><span class="n"><span class="pre">reflection</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Movie" title="creator_studio_doc_format.core.Movie.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Movie"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Movie" title="Link to this definition">¶</a></dt>
+<dd><p>A movie or animated image defined by a resource with optional styling.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">geometry</span></code> is omitted, the object takes the resource’s natural size, falling back to 640 × 480 points when the reader cannot measure that size. Placed inline in the text of a text box or shape, an unplayable movie removes that whole text box or shape, including all of its text; in a slide’s presenter notes, it stops the document from loading.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.aspect_ratio_locked">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">aspect_ratio_locked</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.aspect_ratio_locked" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the movie’s width-to-height ratio is locked when the movie is resized. The lock doesn’t constrain the <code class="docutils literal notranslate"><span class="pre">geometry</span></code> property. The default is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.description">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">description</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.description" title="Link to this definition">¶</a></dt>
+<dd><p>The accessibility description for the object, read aloud by assistive technologies such as VoiceOver.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.title">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.title" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s title.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.title_is_positioned_on_top">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">title_is_positioned_on_top</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.title_is_positioned_on_top" title="Link to this definition">¶</a></dt>
+<dd><p>When <code class="docutils literal notranslate"><span class="pre">true</span></code>, the title appears above the object; when <code class="docutils literal notranslate"><span class="pre">false</span></code>, the title appears below the object, above the caption if there is one. Defaults to <code class="docutils literal notranslate"><span class="pre">true</span></code>. Keynote ignores this when the object has none, or when it’s hidden with <code class="docutils literal notranslate"><span class="pre">Label.is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>; Keynote places a hidden title above the object, where it appears when it shows again.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.caption">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">caption</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.caption" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s caption, which Keynote always places below the object. If a caption is off, you still write it out with <code class="docutils literal notranslate"><span class="pre">Label.is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, so having a value doesn’t mean the caption shows.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.resource">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resource</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><span class="pre">Resource</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Movie.resource" title="Link to this definition">¶</a></dt>
+<dd><p>The resource containing the movie’s data. The resource must decode to a multi-frame animated image or to a movie with a video track, playable on the device where the file is imported; if not, the object is skipped.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.poster_image">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">poster_image</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><span class="pre">Resource</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.poster_image" title="Link to this definition">¶</a></dt>
+<dd><p>The resource containing the data for the movie’s poster image. The poster image is shown when the movie isn’t playing; this resource is used only as a fallback when a poster image can’t be generated from <code class="docutils literal notranslate"><span class="pre">poster_time</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.poster_time">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">poster_time</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration (Python model) — A length of time."><span class="pre">Duration</span></a></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Duration</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.poster_time" title="Link to this definition">¶</a></dt>
+<dd><p>A time, limited to the movie’s duration, used to determine which frame of the movie is shown when the movie isn’t playing. The default is 0, the first frame, which is also used for a negative or otherwise unusable time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.playback_options">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">playback_options</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PlaybackOptions" title="creator_studio_doc_format.core.PlaybackOptions (Python model) — Options controlling playback of media."><span class="pre">PlaybackOptions</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Movie.playback_options" title="Link to this definition">¶</a></dt>
+<dd><p>Playback settings for the movie, such as volume, start and end trim times, looping, and whether playback continues across slides.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.stroke">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stroke</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="shapes.html#creator_studio_doc_format.core.Stroke" title="creator_studio_doc_format.core.Stroke (Python model) — A stroke drawn along a path, such as a border around an object."><span class="pre">Stroke</span></a></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Stroke</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.stroke" title="Link to this definition">¶</a></dt>
+<dd><p>The border stroke drawn around the movie. The default is no border.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.opacity">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">opacity</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">1</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.opacity" title="Link to this definition">¶</a></dt>
+<dd><p>The opacity value of the movie, in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.shadow">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">shadow</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../models.html#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="shadows.html#creator_studio_doc_format.core.Shadow" title="creator_studio_doc_format.core.Shadow (Python model) — The kind of shadow cast by an object, or none for no shadow."><span class="pre">Shadow</span></a><span class="p"><span class="pre">]</span></span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">Override</span><span class="o">.</span><span class="n">not_set</span><span class="p">()</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.shadow" title="Link to this definition">¶</a></dt>
+<dd><p>The shadow shown beneath the movie.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Movie.reflection">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">reflection</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="shadows.html#creator_studio_doc_format.core.Reflection" title="creator_studio_doc_format.core.Reflection (Python model) — A mirrored copy of the object that the reader drew directly below it on a ground plane aligned to the horizontal axis, fading out with distance."><span class="pre">Reflection</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Movie.reflection" title="Link to this definition">¶</a></dt>
+<dd><p>The reflection shown for the movie.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="playbackoptions">PlaybackOptions<a class="headerlink" href="#playbackoptions" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PlaybackOptions">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PlaybackOptions</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions" title="creator_studio_doc_format.core.PlaybackOptions.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions.volume" title="creator_studio_doc_format.core.PlaybackOptions.volume (Python field) — The audio volume for playback, where 0.0 is silent and 1.0 is full volume."><span class="n"><span class="pre">volume</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions.start_time" title="creator_studio_doc_format.core.PlaybackOptions.start_time (Python field) — The playback start time. If it's absent, negative, or later than the end of the media, playback starts at the beginning."><span class="n"><span class="pre">start_time</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions.end_time" title="creator_studio_doc_format.core.PlaybackOptions.end_time (Python field) — The playback end time. If it's absent, later than the end of the media, or earlier than start_time, playback continues to the end of the media."><span class="n"><span class="pre">end_time</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions.loop_option" title="creator_studio_doc_format.core.PlaybackOptions.loop_option (Python field) — How playback repeats after reaching the end time."><span class="n"><span class="pre">loop_option</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">LoopOption</span><span class="o">.</span><span class="n">NONE</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions.plays_across_slides" title="creator_studio_doc_format.core.PlaybackOptions.plays_across_slides (Python field) — Whether the media plays across slides."><span class="n"><span class="pre">plays_across_slides</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.PlaybackOptions" title="creator_studio_doc_format.core.PlaybackOptions.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#PlaybackOptions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Options controlling playback of media.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaybackOptions.volume">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">volume</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">1</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions.volume" title="Link to this definition">¶</a></dt>
+<dd><p>The audio volume for playback, where 0.0 is silent and 1.0 is full volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaybackOptions.start_time">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">start_time</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration (Python model) — A length of time."><span class="pre">Duration</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions.start_time" title="Link to this definition">¶</a></dt>
+<dd><p>The playback start time. If it’s absent, negative, or later than the end of the media, playback starts at the beginning.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaybackOptions.end_time">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">end_time</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration (Python model) — A length of time."><span class="pre">Duration</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions.end_time" title="Link to this definition">¶</a></dt>
+<dd><p>The playback end time. If it’s absent, later than the end of the media, or earlier than <code class="docutils literal notranslate"><span class="pre">start_time</span></code>, playback continues to the end of the media.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaybackOptions.loop_option">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">loop_option</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.LoopOption" title="creator_studio_doc_format.core.LoopOption (Python class) — The behavior of playback when it reaches the end time."><span class="pre">LoopOption</span></a></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="n">LoopOption</span><span class="o">.</span><span class="n">NONE</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions.loop_option" title="Link to this definition">¶</a></dt>
+<dd><p>How playback repeats after reaching the end time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PlaybackOptions.plays_across_slides">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">plays_across_slides</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PlaybackOptions.plays_across_slides" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the media plays across slides.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="loopoption">LoopOption<a class="headerlink" href="#loopoption" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.LoopOption">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">LoopOption</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.LoopOption" title="creator_studio_doc_format.core.LoopOption.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.LoopOption" title="creator_studio_doc_format.core.LoopOption.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#LoopOption"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.LoopOption" title="Link to this definition">¶</a></dt>
+<dd><p>The behavior of playback when it reaches the end time.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">LoopOption.BACK_AND_FORTH</span></code> and <code class="docutils literal notranslate"><span class="pre">'back_and_forth'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.LoopOption.BACK_AND_FORTH">
+<span class="sig-name descname"><span class="pre">BACK_AND_FORTH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'back_and_forth'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.LoopOption.BACK_AND_FORTH" title="Link to this definition">¶</a></dt>
+<dd><p>Plays the media repeatedly forward from <code class="docutils literal notranslate"><span class="pre">start_time</span></code> to <code class="docutils literal notranslate"><span class="pre">end_time</span></code> and then backward from <code class="docutils literal notranslate"><span class="pre">end_time</span></code> to <code class="docutils literal notranslate"><span class="pre">start_time</span></code>. Not supported by all media; <code class="docutils literal notranslate"><span class="pre">none</span></code> is used instead. Shown in Keynote as Loop Back and Forth.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.LoopOption.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'none'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.LoopOption.NONE" title="Link to this definition">¶</a></dt>
+<dd><p>Plays the media once through and then stops.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.LoopOption.REPEATING">
+<span class="sig-name descname"><span class="pre">REPEATING</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'repeating'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.LoopOption.REPEATING" title="Link to this definition">¶</a></dt>
+<dd><p>Plays the media repeatedly from <code class="docutils literal notranslate"><span class="pre">start_time</span></code> to <code class="docutils literal notranslate"><span class="pre">end_time</span></code>. Shown in Keynote as Loop.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="duration">Duration<a class="headerlink" href="#duration" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Duration">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Duration</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Duration.seconds" title="creator_studio_doc_format.core.Duration.seconds (Python field) — A length of time in seconds."><span class="n"><span class="pre">seconds</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Duration" title="creator_studio_doc_format.core.Duration.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Duration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Duration" title="Link to this definition">¶</a></dt>
+<dd><p>A length of time.</p>
+<p>The only representation is a number of seconds.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Duration.seconds">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">seconds</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Duration.seconds" title="Link to this definition">¶</a></dt>
+<dd><p>A length of time in seconds.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../guide/adding_objects.html#add-media"><span class="std std-ref">Add an image</span></a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

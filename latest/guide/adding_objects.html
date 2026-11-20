@@ -1,0 +1,1176 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="getting_started.html">
+      
+      
+        <link rel="next" href="authoring.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Adding content to a slide - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#set-one-case-of-a-union" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Adding content to a slide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-one-case-of-a-union" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Set one case of a union</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-text" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-text (reference label)"><span>Add text</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-shape" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add a shape</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-image" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add an image</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-table" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-a-table (reference label)"><span>Add a table</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-chart" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-a-chart (reference label)"><span>Add a chart</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-connection-line" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add a connection line</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-content-with-a-preset" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Style content with a preset</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/presentation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-one-case-of-a-union" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Set one case of a union</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-text" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-text (reference label)"><span>Add text</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-shape" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add a shape</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-image" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add an image</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-table" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-a-table (reference label)"><span>Add a table</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-chart" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span title="add-a-chart (reference label)"><span>Add a chart</span></span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-connection-line" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Add a connection line</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-content-with-a-preset" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Style content with a preset</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="adding-content-to-a-slide">Adding content to a slide<a class="headerlink" href="#adding-content-to-a-slide" title="Link to this heading">¶</a></h1>
+<p>Add text, shapes, images, tables, and charts to a slide, and connect them with lines.</p>
+<p>Most content sets its position and size in its own
+<a class="reference internal" href="../api/presentation/positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><code class="xref py py-class docutils literal notranslate"><span class="pre">Geometry</span></code></a>. Wrap the content in a
+<a class="reference internal" href="../api/presentation/canvas.html#creator_studio_doc_format.core.CanvasObject" title="creator_studio_doc_format.core.CanvasObject (Python model) — The identity, placement, and accessibility properties shared by objects you can place on a slide, in a group, or inline in text."><code class="xref py py-class docutils literal notranslate"><span class="pre">CanvasObject</span></code></a>, which has one field for each kind
+of content, such as <code class="docutils literal notranslate"><span class="pre">textbox</span></code> or <code class="docutils literal notranslate"><span class="pre">shape</span></code>. The <code class="docutils literal notranslate"><span class="pre">CanvasObject</span></code> goes inside a
+<a class="reference internal" href="../api/presentation/slides.html#creator_studio_doc_format.core.SlideObject" title="creator_studio_doc_format.core.SlideObject (Python model) — An object on a slide or slide layout, with slide-specific information about it."><code class="xref py py-class docutils literal notranslate"><span class="pre">SlideObject</span></code></a> in the slide’s <code class="docutils literal notranslate"><span class="pre">contents</span></code>.</p>
+<p>The text example shows how to wrap content in a <code class="docutils literal notranslate"><span class="pre">CanvasObject</span></code> and a <code class="docutils literal notranslate"><span class="pre">SlideObject</span></code>.
+The examples after it build only the object.</p>
+<h2 id="set-one-case-of-a-union"><span id="set-one-case"></span>Set one case of a union<a class="headerlink" href="#set-one-case-of-a-union" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CanvasObject</span></code>, <a class="reference internal" href="../api/presentation/fills.html#creator_studio_doc_format.core.Fill" title="creator_studio_doc_format.core.Fill (Python model) — A style that fills an area with exactly one of a solid color, a gradient, or an image."><code class="xref py py-class docutils literal notranslate"><span class="pre">Fill</span></code></a>,
+<a class="reference internal" href="../api/presentation/colors.html#creator_studio_doc_format.core.Color" title="creator_studio_doc_format.core.Color (Python model) — A color that the reader uses as part of a displayed object, in one of the forms the format supports."><code class="xref py py-class docutils literal notranslate"><span class="pre">Color</span></code></a>, <a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Stroke" title="creator_studio_doc_format.core.Stroke (Python model) — A stroke drawn along a path, such as a border around an object."><code class="xref py py-class docutils literal notranslate"><span class="pre">Stroke</span></code></a>,
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Path" title="creator_studio_doc_format.core.Path (Python model) — A path that traces the outline of a shape or of an image's mask."><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, and other unions hold one of several kinds of value,
+called cases. Each case is an optional field. Set the one field for the case you want.
+Two examples below each set one case: <code class="docutils literal notranslate"><span class="pre">CanvasObject(textbox=...)</span></code> in the text example
+and <code class="docutils literal notranslate"><span class="pre">Path(bezier=...)</span></code> in the shape example.</p>
+<p>The following example builds a solid fill and a stroke with no line:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">RGBA</span><span class="p">,</span> <span class="n">Color</span><span class="p">,</span> <span class="n">Fill</span><span class="p">,</span> <span class="n">Stroke</span>
+
+<span class="c1"># `Fill.color` holds a `Color`, which is itself a union.</span>
+<span class="n">red</span> <span class="o">=</span> <span class="n">Fill</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="p">(</span><span class="n">rgba</span><span class="o">=</span><span class="n">RGBA</span><span class="p">(</span><span class="n">red</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">green</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">blue</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+<span class="n">no_border</span> <span class="o">=</span> <span class="n">Stroke</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># A case with no payload takes `True`.</span>
+</code></pre></div>
+</div>
+<p>A union with no case set raises <code class="docutils literal notranslate"><span class="pre">pydantic.ValidationError</span></code>. However, a union with two
+cases set raises nothing, and an app that opens the document uses only one of them.
+<a class="reference internal" href="../api/models.html#creator_studio_doc_format.core.TaggedUnionModel" title="creator_studio_doc_format.core.TaggedUnionModel (Python class) — The base for every tagged union, a property that holds one of several cases."><code class="xref py py-class docutils literal notranslate"><span class="pre">TaggedUnionModel</span></code></a> describes the
+full contract, and <a class="extlink-structure reference external" href="https://developer.apple.com/documentation/keynoteinterchangeformat/understanding-keynote-interchange-format-structure#Recognize-values-that-take-one-of-several-forms">Recognize values that take one of several forms</a> shows how a document writes a union.</p>
+<h2 id="add-text"><span id="id1"></span>Add text<a class="headerlink" href="#add-text" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">text</span></code> field of a
+<a class="reference internal" href="../api/presentation/text.html#creator_studio_doc_format.core.Textbox" title="creator_studio_doc_format.core.Textbox (Python model) — A container for text that someone places directly on a slide or slide layout."><code class="xref py py-class docutils literal notranslate"><span class="pre">Textbox</span></code></a> or a
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Shape" title="creator_studio_doc_format.core.Shape (Python model) — A path with a fill and a stroke."><code class="xref py py-class docutils literal notranslate"><span class="pre">Shape</span></code></a> holds a
+<a class="reference internal" href="../api/presentation/text.html#creator_studio_doc_format.core.Text" title="creator_studio_doc_format.core.Text (Python model) — A body of text, such as the text of a text box, a table cell, or a slide's presenter notes."><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a>, which holds one of three cases:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">string</span></code></dt><dd><p>Plain text.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">text_runs</span></code></dt><dd><p>A list of <a class="reference internal" href="../api/presentation/text.html#creator_studio_doc_format.core.TextRun" title="creator_studio_doc_format.core.TextRun (Python model) — A run of text with a single character style."><code class="xref py py-class docutils literal notranslate"><span class="pre">TextRun</span></code></a>, for text with a style
+that changes within a line.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">paragraphs</span></code></dt><dd><p>A list of <a class="reference internal" href="../api/presentation/text.html#creator_studio_doc_format.core.Paragraph" title="creator_studio_doc_format.core.Paragraph (Python model) — A paragraph of text."><code class="xref py py-class docutils literal notranslate"><span class="pre">Paragraph</span></code></a>, for several lines,
+alignment, or a list.</p>
+</dd>
+</dl>
+<p>Use the simplest case that holds your text:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">CanvasObject</span><span class="p">,</span>
+    <span class="n">CharacterProperties</span><span class="p">,</span>
+    <span class="n">Constituent</span><span class="p">,</span>
+    <span class="n">Paragraph</span><span class="p">,</span>
+    <span class="n">Slide</span><span class="p">,</span>
+    <span class="n">SlideObject</span><span class="p">,</span>
+    <span class="n">Text</span><span class="p">,</span>
+    <span class="n">Textbox</span><span class="p">,</span>
+    <span class="n">TextRun</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">plain</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">string</span><span class="o">=</span><span class="s2">"Stargazing Tips"</span><span class="p">)</span>
+<span class="n">styled</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+    <span class="n">text_runs</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">TextRun</span><span class="p">(</span><span class="n">string</span><span class="o">=</span><span class="s2">"Full moon"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">CharacterProperties</span><span class="p">(</span><span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+    <span class="n">paragraphs</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">Paragraph</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="p">[</span><span class="n">Constituent</span><span class="p">(</span><span class="n">run</span><span class="o">=</span><span class="n">TextRun</span><span class="p">(</span><span class="n">string</span><span class="o">=</span><span class="s2">"First line"</span><span class="p">))]),</span>
+        <span class="n">Paragraph</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="p">[</span><span class="n">Constituent</span><span class="p">(</span><span class="n">run</span><span class="o">=</span><span class="n">TextRun</span><span class="p">(</span><span class="n">string</span><span class="o">=</span><span class="s2">"Second line"</span><span class="p">))]),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># A content object goes on a slide inside a `SlideObject` and a `CanvasObject`.</span>
+<span class="n">slide</span> <span class="o">=</span> <span class="n">Slide</span><span class="p">(</span>
+    <span class="n">contents</span><span class="o">=</span><span class="p">[</span><span class="n">SlideObject</span><span class="p">(</span><span class="nb">object</span><span class="o">=</span><span class="n">CanvasObject</span><span class="p">(</span><span class="n">textbox</span><span class="o">=</span><span class="n">Textbox</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">plain</span><span class="p">)))]</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="add-a-shape"><span id="draw-a-shape"></span>Add a shape<a class="headerlink" href="#add-a-shape" title="Link to this heading">¶</a></h2>
+<p>A shape’s outline is
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Shape.path" title="creator_studio_doc_format.core.Shape.path (Python field) — The path that forms the shape's outline. Either this value or geometry must be present. If absent, Keynote assume this shape to be a rectangle the same size as geometry."><code class="xref py py-attr docutils literal notranslate"><span class="pre">Shape.path</span></code></a>, which holds a <code class="docutils literal notranslate"><span class="pre">Path</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">bezier</span></code> case of a <code class="docutils literal notranslate"><span class="pre">Path</span></code> holds SVG path data.
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.BezierPath.space" title="creator_studio_doc_format.core.BezierPath.space (Python field) — If present, path is treated as relative to this rectangle, and then stretched proportionally to cover the bounding box of the owner's geometry (Image.Mask.geometry for an image mask) before the owner's flip and rotation apply. The owner's size and position then become the bounds of the mapped path, so when space differs from the path's tight bounds, the owner's written size and position aren't preserved, unless the owner sizes itself to fit its text. When absent, the path's tight bounds are used. When the owner has no geometry, space must equal those bounds, and the points are then absolute coordinates in the containing slide."><code class="xref py py-attr docutils literal notranslate"><span class="pre">BezierPath.space</span></code></a> sets
+the path’s coordinate space, which Keynote stretches over the shape’s <code class="docutils literal notranslate"><span class="pre">geometry</span></code>. To
+move, resize, or rotate a shape, change <code class="docutils literal notranslate"><span class="pre">geometry</span></code> rather than the path.</p>
+<p>The simplest space is a unit box, where the path’s numbers are fractions of the shape:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">BezierPath</span><span class="p">,</span>
+    <span class="n">Geometry</span><span class="p">,</span>
+    <span class="n">Path</span><span class="p">,</span>
+    <span class="n">Position</span><span class="p">,</span>
+    <span class="n">Rect</span><span class="p">,</span>
+    <span class="n">Shape</span><span class="p">,</span>
+    <span class="n">Size</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">UNIT_BOX</span> <span class="o">=</span> <span class="n">Rect</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">OVAL</span> <span class="o">=</span> <span class="s2">"M 0,0.5 A 0.5,0.5 0 1 1 1,0.5 A 0.5,0.5 0 1 1 0,0.5 Z"</span>
+
+<span class="n">shape</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">(</span>
+    <span class="n">identifier</span><span class="o">=</span><span class="s2">"oval"</span><span class="p">,</span>
+    <span class="n">geometry</span><span class="o">=</span><span class="n">Geometry</span><span class="p">(</span>
+        <span class="n">position</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">200</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">180</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="n">bezier</span><span class="o">=</span><span class="n">BezierPath</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">OVAL</span><span class="p">,</span> <span class="n">space</span><span class="o">=</span><span class="n">UNIT_BOX</span><span class="p">)),</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="add-an-image"><span id="add-media"></span>Add an image<a class="headerlink" href="#add-an-image" title="Link to this heading">¶</a></h2>
+<p>An <a class="reference internal" href="../api/presentation/media.html#creator_studio_doc_format.core.Image" title="creator_studio_doc_format.core.Image (Python model) — A picture defined by a resource with optional styling."><code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code></a> refers to its bytes through a
+<a class="reference internal" href="../api/presentation/resources.html#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource (Python model) — The data used for image, movie, and audio media, and for image fills and image bullets."><code class="xref py py-class docutils literal notranslate"><span class="pre">Resource</span></code></a>. Most images use an
+<a class="reference internal" href="../api/presentation/resources.html#creator_studio_doc_format.core.IndirectResource" title="creator_studio_doc_format.core.IndirectResource (Python model) — A resource whose bytes are stored in a separate file rather than in the JSON."><code class="xref py py-class docutils literal notranslate"><span class="pre">IndirectResource</span></code></a>, which names a file in
+<code class="docutils literal notranslate"><span class="pre">doc.resources</span></code>. That store works like a dictionary of filenames to bytes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Image</span><span class="p">,</span>
+    <span class="n">IndirectResource</span><span class="p">,</span>
+    <span class="n">KeyxDocument</span><span class="p">,</span>
+    <span class="n">Resource</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">KeyxDocument</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"presentation.keyx"</span><span class="p">)</span>
+<span class="n">png_bytes</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">"cover.png"</span><span class="p">)</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">()</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">resources</span><span class="o">.</span><span class="n">unique_filename</span><span class="p">(</span><span class="s2">"cover.png"</span><span class="p">)</span>
+<span class="n">doc</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">png_bytes</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span>
+    <span class="n">resource</span><span class="o">=</span><span class="n">Resource</span><span class="p">(</span>
+        <span class="n">indirect</span><span class="o">=</span><span class="n">IndirectResource</span><span class="p">(</span><span class="n">identifier</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">"cover.png"</span><span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">geometry</span><span class="o">=</span><span class="n">Geometry</span><span class="p">(</span>
+        <span class="n">position</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">160</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">120</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">396</span><span class="p">)</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">unique_filename</span></code> returns a name no file in the document uses yet, such as
+<code class="docutils literal notranslate"><span class="pre">&quot;cover</span> <span class="pre">2.png&quot;</span></code> when the document already has a <code class="docutils literal notranslate"><span class="pre">cover.png</span></code>. <code class="docutils literal notranslate"><span class="pre">identifier</span></code> names the
+file that holds the bytes, and <code class="docutils literal notranslate"><span class="pre">filename</span></code> is the name Keynote shows. Without
+<code class="docutils literal notranslate"><span class="pre">identifier</span></code>, <code class="docutils literal notranslate"><span class="pre">filename</span></code> names the file too. A
+<a class="reference internal" href="../api/presentation/media.html#creator_studio_doc_format.core.Movie" title="creator_studio_doc_format.core.Movie (Python model) — A movie or animated image defined by a resource with optional styling."><code class="xref py py-class docutils literal notranslate"><span class="pre">Movie</span></code></a> or
+<a class="reference internal" href="../api/presentation/media.html#creator_studio_doc_format.core.Audio" title="creator_studio_doc_format.core.Audio (Python model) — A sound attached to a slide."><code class="xref py py-class docutils literal notranslate"><span class="pre">Audio</span></code></a> object refers to its file the same way.</p>
+<h2 id="add-a-table"><span id="id2"></span>Add a table<a class="headerlink" href="#add-a-table" title="Link to this heading">¶</a></h2>
+<p>A <a class="reference internal" href="../api/presentation/tables/index.html#creator_studio_doc_format.core.Table" title="creator_studio_doc_format.core.Table (Python model) — A table of cells, nested two levels deep."><code class="xref py py-class docutils literal notranslate"><span class="pre">Table</span></code></a> states its size in
+<code class="docutils literal notranslate"><span class="pre">number_of_rows</span></code> and <code class="docutils literal notranslate"><span class="pre">number_of_columns</span></code>. The counts must match the rows in <code class="docutils literal notranslate"><span class="pre">content</span></code>
+and the entries in <code class="docutils literal notranslate"><span class="pre">column_headers</span></code>. Every row also needs one cell for each column
+header. Adding a
+<a class="reference internal" href="../api/presentation/tables/rows_and_columns.html#creator_studio_doc_format.core.Row" title="creator_studio_doc_format.core.Row (Python model) — A row in a table."><code class="xref py py-class docutils literal notranslate"><span class="pre">Row</span></code></a> doesn’t update <code class="docutils literal notranslate"><span class="pre">number_of_rows</span></code>.</p>
+<div class="important tip admonition">
+<p class="admonition-title">Important</p>
+<p><code class="docutils literal notranslate"><span class="pre">value</span></code> is the cell’s formatted display string. A number, date, or Boolean cell
+needs a typed <code class="docutils literal notranslate"><span class="pre">unformatted_value</span></code>. Without one, Keynote treats the cell as text. A
+text cell can omit it.</p>
+</div>
+<p>The following example builds a table of two rows and two columns:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Cell</span><span class="p">,</span>
+    <span class="n">ColumnHeader</span><span class="p">,</span>
+    <span class="n">Row</span><span class="p">,</span>
+    <span class="n">Table</span><span class="p">,</span>
+    <span class="n">UnformattedValue</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">revenue_cell</span><span class="p">(</span><span class="n">millions</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Cell</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">Cell</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">millions</span><span class="p">),</span>
+        <span class="n">unformatted_value</span><span class="o">=</span><span class="n">UnformattedValue</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="n">millions</span><span class="p">),</span>
+    <span class="p">)</span>
+
+
+<span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span>
+    <span class="n">geometry</span><span class="o">=</span><span class="n">Geometry</span><span class="p">(</span>
+        <span class="n">position</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">160</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">260</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">160</span><span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">number_of_rows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">number_of_columns</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">column_headers</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">ColumnHeader</span><span class="p">(</span><span class="n">column_identifier</span><span class="o">=</span><span class="s2">"product"</span><span class="p">),</span>
+        <span class="n">ColumnHeader</span><span class="p">(</span><span class="n">column_identifier</span><span class="o">=</span><span class="s2">"revenue"</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">Row</span><span class="p">(</span>
+            <span class="n">row_identifier</span><span class="o">=</span><span class="s2">"coffee"</span><span class="p">,</span>
+            <span class="n">cells</span><span class="o">=</span><span class="p">[</span><span class="n">Cell</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">"Coffee"</span><span class="p">),</span> <span class="n">revenue_cell</span><span class="p">(</span><span class="mi">41</span><span class="p">)],</span>
+        <span class="p">),</span>
+        <span class="n">Row</span><span class="p">(</span>
+            <span class="n">row_identifier</span><span class="o">=</span><span class="s2">"tea"</span><span class="p">,</span>
+            <span class="n">cells</span><span class="o">=</span><span class="p">[</span><span class="n">Cell</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">"Tea"</span><span class="p">),</span> <span class="n">revenue_cell</span><span class="p">(</span><span class="mi">12</span><span class="p">)],</span>
+        <span class="p">),</span>
+    <span class="p">],</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="add-a-chart"><span id="id3"></span>Add a chart<a class="headerlink" href="#add-a-chart" title="Link to this heading">¶</a></h2>
+<p>Keynote offers <a class="reference internal" href="../api/presentation/charts/kinds.html"><span class="doc">more than 20 kinds of charts</span></a>.
+All of them take their data in the same grid, a
+<a class="reference internal" href="../api/presentation/charts/data_and_series.html#creator_studio_doc_format.core.ChartData" title="creator_studio_doc_format.core.ChartData (Python model) — The chart's data as a grid of cells, together with how that grid maps onto the chart."><code class="xref py py-class docutils literal notranslate"><span class="pre">ChartData</span></code></a>. Its <code class="docutils literal notranslate"><span class="pre">plot_direction</span></code>
+sets whether the grid’s rows or its columns become the series:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Chart</span><span class="p">,</span>
+    <span class="n">ChartData</span><span class="p">,</span>
+    <span class="n">ChartDataRow</span><span class="p">,</span>
+    <span class="n">ChartDataSource</span><span class="p">,</span>
+    <span class="n">ChartDataValue</span><span class="p">,</span>
+    <span class="n">ColumnChart</span><span class="p">,</span>
+    <span class="n">PlotDirection</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">revenue</span> <span class="o">=</span> <span class="n">ChartData</span><span class="p">(</span>
+    <span class="n">chart_data_source</span><span class="o">=</span><span class="n">ChartDataSource</span><span class="o">.</span><span class="n">CHART_DATA_GRID</span><span class="p">,</span>
+    <span class="n">plot_direction</span><span class="o">=</span><span class="n">PlotDirection</span><span class="o">.</span><span class="n">ROWS_AS_SERIES</span><span class="p">,</span>
+    <span class="n">row_labels</span><span class="o">=</span><span class="p">[</span><span class="s2">"Coffee"</span><span class="p">,</span> <span class="s2">"Tea"</span><span class="p">],</span>
+    <span class="n">column_labels</span><span class="o">=</span><span class="p">[</span><span class="s2">"Q1"</span><span class="p">,</span> <span class="s2">"Q2"</span><span class="p">,</span> <span class="s2">"Q3"</span><span class="p">],</span>
+    <span class="n">rows</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">ChartDataRow</span><span class="p">(</span>
+            <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">ChartDataValue</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">42.1</span><span class="p">,</span> <span class="mf">48.3</span><span class="p">,</span> <span class="mf">51.0</span><span class="p">)]</span>
+        <span class="p">),</span>
+        <span class="n">ChartDataRow</span><span class="p">(</span>
+            <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">ChartDataValue</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">38.5</span><span class="p">,</span> <span class="mf">41.0</span><span class="p">,</span> <span class="mf">44.2</span><span class="p">)]</span>
+        <span class="p">),</span>
+    <span class="p">],</span>
+<span class="p">)</span>
+<span class="n">chart</span> <span class="o">=</span> <span class="n">Chart</span><span class="p">(</span>
+    <span class="n">column</span><span class="o">=</span><span class="n">ColumnChart</span><span class="p">(</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">revenue</span><span class="p">,</span>
+        <span class="n">geometry</span><span class="o">=</span><span class="n">Geometry</span><span class="p">(</span>
+            <span class="n">position</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">160</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">200</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="add-a-connection-line"><span id="connect-objects"></span>Add a connection line<a class="headerlink" href="#add-a-connection-line" title="Link to this heading">¶</a></h2>
+<p>A <a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.ConnectionLine" title="creator_studio_doc_format.core.ConnectionLine (Python model) — A line drawn from its tail end to its head end, each of which can attach to another object."><code class="xref py py-class docutils literal notranslate"><span class="pre">ConnectionLine</span></code></a> takes its position from its
+two ends, each an <a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.End" title="creator_studio_doc_format.core.End (Python model) — One end of a connection line."><code class="xref py py-class docutils literal notranslate"><span class="pre">End</span></code></a>. An end attaches to an
+object through its <code class="docutils literal notranslate"><span class="pre">anchor</span></code>, which names the object by
+<a class="reference internal" href="../api/presentation/shapes.html#creator_studio_doc_format.core.Anchor.object_id" title="creator_studio_doc_format.core.Anchor.object_id (Python field) — The identifier of the object this end is connected to. The reference is resolved only among the connection line's siblings, not across the document, so the object must be a sibling of the connection line. It also can't be a connection line, a group, an audio clip, or a shape with a straight line path. If it can't be connected, this end is left unconnected at ConnectionLine.End.end_point and a warning is reported. An end connected to the object that fills the title, body, or slide_number placeholder, or a layout's object placeholder, is also left unconnected, but no warning is reported."><code class="xref py py-attr docutils literal notranslate"><span class="pre">Anchor.object_id</span></code></a>. The
+object must be in the same list of objects as the line, such as the slide’s
+<code class="docutils literal notranslate"><span class="pre">contents</span></code>.</p>
+<p>Wrap a line as <code class="docutils literal notranslate"><span class="pre">CanvasObject(connectionLine=...)</span></code>. <code class="docutils literal notranslate"><span class="pre">connectionLine</span></code> and
+<code class="docutils literal notranslate"><span class="pre">genericCanvasObject</span></code> are the two camelCase fields of <code class="docutils literal notranslate"><span class="pre">CanvasObject</span></code>. The rest are
+lowercase.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>Every end needs an <code class="docutils literal notranslate"><span class="pre">end_point</span></code>, even one that <code class="docutils literal notranslate"><span class="pre">anchor</span></code> attaches. Omitting it
+drops the whole line. For an attached end, use the object’s center.</p>
+</div>
+<p>An end with no <code class="docutils literal notranslate"><span class="pre">anchor</span></code> stays at its <code class="docutils literal notranslate"><span class="pre">end_point</span></code>. The following example attaches the
+arrow’s head to the oval from the shape example and leaves its tail unattached:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Anchor</span><span class="p">,</span> <span class="n">ConnectionLine</span><span class="p">,</span> <span class="n">End</span><span class="p">,</span> <span class="n">LineEnd</span>
+
+<span class="n">arrow</span> <span class="o">=</span> <span class="n">ConnectionLine</span><span class="p">(</span>
+    <span class="n">tail</span><span class="o">=</span><span class="n">End</span><span class="p">(</span><span class="n">end_point</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">450</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">290</span><span class="p">)),</span>
+    <span class="n">head</span><span class="o">=</span><span class="n">End</span><span class="p">(</span>
+        <span class="n">end_point</span><span class="o">=</span><span class="n">Position</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1090</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">290</span><span class="p">),</span>
+        <span class="n">anchor</span><span class="o">=</span><span class="n">Anchor</span><span class="p">(</span><span class="n">object_id</span><span class="o">=</span><span class="s2">"oval"</span><span class="p">),</span>
+        <span class="n">line_end</span><span class="o">=</span><span class="n">LineEnd</span><span class="o">.</span><span class="n">FILLED_ARROW</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="style-content-with-a-preset"><span id="apply-a-preset"></span>Style content with a preset<a class="headerlink" href="#style-content-with-a-preset" title="Link to this heading">¶</a></h2>
+<p>A <a class="reference internal" href="glossary.html#term-preset" title="preset (glossary term)"><span class="xref std std-term">preset</span></a> lets content share one set of properties, which keeps styling
+consistent and the document compact.</p>
+<p>The following example defines a body preset and a title preset that builds on it, then
+applies each to a run of text:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Preset</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">KeyxDocument</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"presentation.keyx"</span><span class="p">)</span>
+<span class="n">doc</span><span class="o">.</span><span class="n">presets</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="n">Preset</span><span class="p">(</span><span class="s2">"body"</span><span class="p">,</span> <span class="p">{</span><span class="s2">"font_name"</span><span class="p">:</span> <span class="s2">"Helvetica Neue"</span><span class="p">,</span> <span class="s2">"font_size"</span><span class="p">:</span> <span class="mi">24</span><span class="p">}),</span>
+        <span class="c1"># The title inherits `font_name` from the body.</span>
+        <span class="n">Preset</span><span class="p">(</span>
+            <span class="s2">"title"</span><span class="p">,</span> <span class="p">{</span><span class="s2">"font_size"</span><span class="p">:</span> <span class="mi">48</span><span class="p">,</span> <span class="s2">"bold"</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span> <span class="n">parent_identifier</span><span class="o">=</span><span class="s2">"body"</span>
+        <span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># A model instance adopts a preset through `preset_identifier`.</span>
+<span class="n">heading</span> <span class="o">=</span> <span class="n">TextRun</span><span class="p">(</span>
+    <span class="n">string</span><span class="o">=</span><span class="s2">"Baking Sourdough"</span><span class="p">,</span>
+    <span class="n">style</span><span class="o">=</span><span class="n">CharacterProperties</span><span class="p">(</span><span class="n">preset_identifier</span><span class="o">=</span><span class="s2">"title"</span><span class="p">),</span>
+<span class="p">)</span>
+<span class="n">step</span> <span class="o">=</span> <span class="n">TextRun</span><span class="p">(</span>
+    <span class="n">string</span><span class="o">=</span><span class="s2">"Feed the starter"</span><span class="p">,</span>
+    <span class="n">style</span><span class="o">=</span><span class="n">CharacterProperties</span><span class="p">(</span><span class="n">preset_identifier</span><span class="o">=</span><span class="s2">"body"</span><span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../api/presentation/index.html#api-content"><span class="std std-ref">Slide content</span></a>, the API reference’s page for each kind of content</p></li>
+<li><p><a class="reference internal" href="../api/resources.html"><span class="doc">Resource store</span></a>, which holds the bytes an image refers to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">creator_studio_doc_format/examples/</span></code>, a runnable script for each kind of slide
+content</p></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

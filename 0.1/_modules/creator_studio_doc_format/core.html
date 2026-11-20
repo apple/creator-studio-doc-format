@@ -1,0 +1,1409 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>creator_studio_doc_format.core - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              creator_studio_doc_format.core
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/presentation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1>Source code for creator_studio_doc_format.core</h1><div class="highlight"><pre>
+<span></span><code><span class="c1"># Copyright © 2026 Apple Inc.</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under Apache License v2.0. For more information, see LICENSE.</span>
+<span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
+
+<span class="sd">"""Keynote Interchange Format models, and the package that reads and writes them.</span>
+
+<span class="sd">Autogenerated. Don't edit.</span>
+<span class="sd">"""</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">._errors</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">DocumentError</span><span class="p">,</span>
+    <span class="n">DocumentPackageError</span><span class="p">,</span>
+    <span class="n">DocumentPackageErrorKind</span><span class="p">,</span>
+    <span class="n">DocumentVersionError</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._preset</span><span class="w"> </span><span class="kn">import</span> <span class="n">Preset</span><span class="p">,</span> <span class="n">PresetRegistry</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._wire</span><span class="w"> </span><span class="kn">import</span> <span class="n">ObjectModel</span><span class="p">,</span> <span class="n">Override</span><span class="p">,</span> <span class="n">TaggedUnionModel</span><span class="p">,</span> <span class="n">Version</span><span class="p">,</span> <span class="n">same_json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.keyx</span><span class="w"> </span><span class="kn">import</span> <span class="n">KeyxDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">RGBA</span><span class="p">,</span>
+    <span class="n">Accuracy</span><span class="p">,</span>
+    <span class="n">AlignmentType</span><span class="p">,</span>
+    <span class="n">Anchor</span><span class="p">,</span>
+    <span class="n">Area3DChart</span><span class="p">,</span>
+    <span class="n">AreaChart</span><span class="p">,</span>
+    <span class="n">Audio</span><span class="p">,</span>
+    <span class="n">AxisLabelOrientation</span><span class="p">,</span>
+    <span class="n">AxisScale</span><span class="p">,</span>
+    <span class="n">Bar3DChart</span><span class="p">,</span>
+    <span class="n">BarChart</span><span class="p">,</span>
+    <span class="n">BarInteractiveChart</span><span class="p">,</span>
+    <span class="n">Base64EncodedResource</span><span class="p">,</span>
+    <span class="n">BaseFormat</span><span class="p">,</span>
+    <span class="n">BaselineType</span><span class="p">,</span>
+    <span class="n">BezierPath</span><span class="p">,</span>
+    <span class="n">BodyStrokeProperties</span><span class="p">,</span>
+    <span class="n">BodyStrokeStyle</span><span class="p">,</span>
+    <span class="n">BoolFormat</span><span class="p">,</span>
+    <span class="n">BorderStyleType</span><span class="p">,</span>
+    <span class="n">BreakType</span><span class="p">,</span>
+    <span class="n">BubbleChart</span><span class="p">,</span>
+    <span class="n">BubbleInteractiveChart</span><span class="p">,</span>
+    <span class="n">CanvasObject</span><span class="p">,</span>
+    <span class="n">CapitalizationType</span><span class="p">,</span>
+    <span class="n">CaptionOwning</span><span class="p">,</span>
+    <span class="n">CategoryComparisonChart</span><span class="p">,</span>
+    <span class="n">CategoryRules</span><span class="p">,</span>
+    <span class="n">Cell</span><span class="p">,</span>
+    <span class="n">CellFormat</span><span class="p">,</span>
+    <span class="n">CellProperties</span><span class="p">,</span>
+    <span class="n">CellRange</span><span class="p">,</span>
+    <span class="n">CellReference</span><span class="p">,</span>
+    <span class="n">CellStyle</span><span class="p">,</span>
+    <span class="n">CharacterProperties</span><span class="p">,</span>
+    <span class="n">CharacterStyle</span><span class="p">,</span>
+    <span class="n">Chart</span><span class="p">,</span>
+    <span class="n">ChartAxisCommon</span><span class="p">,</span>
+    <span class="n">ChartCategoryAxis</span><span class="p">,</span>
+    <span class="n">ChartColor</span><span class="p">,</span>
+    <span class="n">ChartCommon</span><span class="p">,</span>
+    <span class="n">ChartData</span><span class="p">,</span>
+    <span class="n">ChartDataRow</span><span class="p">,</span>
+    <span class="n">ChartDataSource</span><span class="p">,</span>
+    <span class="n">ChartDataValue</span><span class="p">,</span>
+    <span class="n">ChartLabelFormatting</span><span class="p">,</span>
+    <span class="n">ChartLegend</span><span class="p">,</span>
+    <span class="n">ChartSeries</span><span class="p">,</span>
+    <span class="n">ChartValueAxis</span><span class="p">,</span>
+    <span class="n">Color</span><span class="p">,</span>
+    <span class="n">ColorSpace</span><span class="p">,</span>
+    <span class="n">Column3DChart</span><span class="p">,</span>
+    <span class="n">ColumnChart</span><span class="p">,</span>
+    <span class="n">ColumnHeader</span><span class="p">,</span>
+    <span class="n">ColumnInteractiveChart</span><span class="p">,</span>
+    <span class="n">ColumnMetrics</span><span class="p">,</span>
+    <span class="n">CombineMode</span><span class="p">,</span>
+    <span class="n">ConditionalStyleSet</span><span class="p">,</span>
+    <span class="n">ConditionType</span><span class="p">,</span>
+    <span class="n">ConnectionLine</span><span class="p">,</span>
+    <span class="n">ConnectionLineType</span><span class="p">,</span>
+    <span class="n">Constituent</span><span class="p">,</span>
+    <span class="n">ContactShadow</span><span class="p">,</span>
+    <span class="n">CorrelationChart</span><span class="p">,</span>
+    <span class="n">CurrencyFormat</span><span class="p">,</span>
+    <span class="n">CurvedShadow</span><span class="p">,</span>
+    <span class="n">CustomFormat</span><span class="p">,</span>
+    <span class="n">CustomFormatCondition</span><span class="p">,</span>
+    <span class="n">CustomFormatType</span><span class="p">,</span>
+    <span class="n">Date</span><span class="p">,</span>
+    <span class="n">DateQualifier</span><span class="p">,</span>
+    <span class="n">DateTimeFormat</span><span class="p">,</span>
+    <span class="n">Direction</span><span class="p">,</span>
+    <span class="n">DonutChart</span><span class="p">,</span>
+    <span class="n">DropShadow</span><span class="p">,</span>
+    <span class="n">Duration</span><span class="p">,</span>
+    <span class="n">DurationFormat</span><span class="p">,</span>
+    <span class="n">DurationUnit</span><span class="p">,</span>
+    <span class="n">Edge</span><span class="p">,</span>
+    <span class="n">End</span><span class="p">,</span>
+    <span class="n">EqualColumnsDescription</span><span class="p">,</span>
+    <span class="n">Fill</span><span class="p">,</span>
+    <span class="n">FillReuseRule</span><span class="p">,</span>
+    <span class="n">Filter</span><span class="p">,</span>
+    <span class="n">FilterSet</span><span class="p">,</span>
+    <span class="n">Flavor</span><span class="p">,</span>
+    <span class="n">FontFeaturesType</span><span class="p">,</span>
+    <span class="n">Format</span><span class="p">,</span>
+    <span class="n">FormatType</span><span class="p">,</span>
+    <span class="n">Formula</span><span class="p">,</span>
+    <span class="n">FractionFormat</span><span class="p">,</span>
+    <span class="n">Frame</span><span class="p">,</span>
+    <span class="n">GenericCanvasObject</span><span class="p">,</span>
+    <span class="n">GenericCaptionOwning</span><span class="p">,</span>
+    <span class="n">GenericCategoryComparisonChart</span><span class="p">,</span>
+    <span class="n">GenericChartAxisCommon</span><span class="p">,</span>
+    <span class="n">GenericChartCommon</span><span class="p">,</span>
+    <span class="n">GenericChartLabelFormatting</span><span class="p">,</span>
+    <span class="n">GenericCorrelationChart</span><span class="p">,</span>
+    <span class="n">GenericPlaceableTitleOwning</span><span class="p">,</span>
+    <span class="n">GenericTitleOwning</span><span class="p">,</span>
+    <span class="n">Geometry</span><span class="p">,</span>
+    <span class="n">Gradient</span><span class="p">,</span>
+    <span class="n">Group</span><span class="p">,</span>
+    <span class="n">HeaderFooterStrokeProperties</span><span class="p">,</span>
+    <span class="n">HeaderFooterStrokeStyle</span><span class="p">,</span>
+    <span class="n">Hyperlink</span><span class="p">,</span>
+    <span class="n">HyperlinkField</span><span class="p">,</span>
+    <span class="n">IdBasedFormula</span><span class="p">,</span>
+    <span class="n">Image</span><span class="p">,</span>
+    <span class="n">ImageFill</span><span class="p">,</span>
+    <span class="n">IndirectResource</span><span class="p">,</span>
+    <span class="n">Insets</span><span class="p">,</span>
+    <span class="n">InstantAlphaPath</span><span class="p">,</span>
+    <span class="n">KeynoteTheme</span><span class="p">,</span>
+    <span class="n">Label</span><span class="p">,</span>
+    <span class="n">LabelSpacing</span><span class="p">,</span>
+    <span class="n">LayoutProperties</span><span class="p">,</span>
+    <span class="n">LigatureType</span><span class="p">,</span>
+    <span class="n">Line</span><span class="p">,</span>
+    <span class="n">Line3DChart</span><span class="p">,</span>
+    <span class="n">Linear</span><span class="p">,</span>
+    <span class="n">LineChart</span><span class="p">,</span>
+    <span class="n">LineEnd</span><span class="p">,</span>
+    <span class="n">LineSpacingKindType</span><span class="p">,</span>
+    <span class="n">LineSpacingType</span><span class="p">,</span>
+    <span class="n">LineType</span><span class="p">,</span>
+    <span class="n">ListImageLabel</span><span class="p">,</span>
+    <span class="n">ListLabelType</span><span class="p">,</span>
+    <span class="n">ListLevelType</span><span class="p">,</span>
+    <span class="n">ListNumberLabel</span><span class="p">,</span>
+    <span class="n">ListProperties</span><span class="p">,</span>
+    <span class="n">ListStringLabel</span><span class="p">,</span>
+    <span class="n">ListStyle</span><span class="p">,</span>
+    <span class="n">LoopOption</span><span class="p">,</span>
+    <span class="n">Magnet</span><span class="p">,</span>
+    <span class="n">Mask</span><span class="p">,</span>
+    <span class="n">MediaProperties</span><span class="p">,</span>
+    <span class="n">MediaStyle</span><span class="p">,</span>
+    <span class="n">MixedChart</span><span class="p">,</span>
+    <span class="n">MixedSeriesType</span><span class="p">,</span>
+    <span class="n">Movie</span><span class="p">,</span>
+    <span class="n">Name</span><span class="p">,</span>
+    <span class="n">NegativeNumberStyle</span><span class="p">,</span>
+    <span class="n">NumberFormat</span><span class="p">,</span>
+    <span class="n">NumberFormatData</span><span class="p">,</span>
+    <span class="n">NumberFormatType</span><span class="p">,</span>
+    <span class="n">NumberFormatTypeKind</span><span class="p">,</span>
+    <span class="n">Offset</span><span class="p">,</span>
+    <span class="n">OverallProperties</span><span class="p">,</span>
+    <span class="n">OverallStyle</span><span class="p">,</span>
+    <span class="n">Paragraph</span><span class="p">,</span>
+    <span class="n">ParagraphProperties</span><span class="p">,</span>
+    <span class="n">ParagraphStyle</span><span class="p">,</span>
+    <span class="n">Path</span><span class="p">,</span>
+    <span class="n">Pattern</span><span class="p">,</span>
+    <span class="n">Pie3DChart</span><span class="p">,</span>
+    <span class="n">PieChart</span><span class="p">,</span>
+    <span class="n">PivotRules</span><span class="p">,</span>
+    <span class="n">PlaceableTitleOwning</span><span class="p">,</span>
+    <span class="n">PlaceholderDefinition</span><span class="p">,</span>
+    <span class="n">PlaceholderInfo</span><span class="p">,</span>
+    <span class="n">PlaybackOptions</span><span class="p">,</span>
+    <span class="n">PlotDirection</span><span class="p">,</span>
+    <span class="n">Position</span><span class="p">,</span>
+    <span class="n">Predicate</span><span class="p">,</span>
+    <span class="n">PredicateType</span><span class="p">,</span>
+    <span class="n">PremiumResourceInfo</span><span class="p">,</span>
+    <span class="n">Presentation</span><span class="p">,</span>
+    <span class="n">PresetKind</span><span class="p">,</span>
+    <span class="n">Qualifier</span><span class="p">,</span>
+    <span class="n">RadarChart</span><span class="p">,</span>
+    <span class="n">Radial</span><span class="p">,</span>
+    <span class="n">Rect</span><span class="p">,</span>
+    <span class="n">Reference</span><span class="p">,</span>
+    <span class="n">Reflection</span><span class="p">,</span>
+    <span class="n">Resource</span><span class="p">,</span>
+    <span class="n">Row</span><span class="p">,</span>
+    <span class="n">RowColumnIdRange</span><span class="p">,</span>
+    <span class="n">ScatterChart</span><span class="p">,</span>
+    <span class="n">ScatterInteractiveChart</span><span class="p">,</span>
+    <span class="n">Scope</span><span class="p">,</span>
+    <span class="n">SeriesSymbolType</span><span class="p">,</span>
+    <span class="n">SeriesValueLabelPosition</span><span class="p">,</span>
+    <span class="n">Shadow</span><span class="p">,</span>
+    <span class="n">Shape</span><span class="p">,</span>
+    <span class="n">ShapeProperties</span><span class="p">,</span>
+    <span class="n">ShapeStyle</span><span class="p">,</span>
+    <span class="n">Size</span><span class="p">,</span>
+    <span class="n">Slide</span><span class="p">,</span>
+    <span class="n">SlideBackground</span><span class="p">,</span>
+    <span class="n">SlideLayout</span><span class="p">,</span>
+    <span class="n">SlideObject</span><span class="p">,</span>
+    <span class="n">SlideObjectPlaceholderInfoPlaceholderDefinitionKind</span><span class="p">,</span>
+    <span class="n">SlideTarget</span><span class="p">,</span>
+    <span class="n">Sort</span><span class="p">,</span>
+    <span class="n">SourceKind</span><span class="p">,</span>
+    <span class="n">StackedArea3DChart</span><span class="p">,</span>
+    <span class="n">StackedAreaChart</span><span class="p">,</span>
+    <span class="n">StackedBar3DChart</span><span class="p">,</span>
+    <span class="n">StackedBarChart</span><span class="p">,</span>
+    <span class="n">StackedColumn3DChart</span><span class="p">,</span>
+    <span class="n">StackedColumnChart</span><span class="p">,</span>
+    <span class="n">Stop</span><span class="p">,</span>
+    <span class="n">StrikethroughType</span><span class="p">,</span>
+    <span class="n">Stroke</span><span class="p">,</span>
+    <span class="n">StrokePreset</span><span class="p">,</span>
+    <span class="n">Strokes</span><span class="p">,</span>
+    <span class="n">Structure</span><span class="p">,</span>
+    <span class="n">Style</span><span class="p">,</span>
+    <span class="n">Stylesheet</span><span class="p">,</span>
+    <span class="n">TabAlignmentKindType</span><span class="p">,</span>
+    <span class="n">Table</span><span class="p">,</span>
+    <span class="n">TableColumnHeaderGroupLabel</span><span class="p">,</span>
+    <span class="n">TableColumnHeaderKind</span><span class="p">,</span>
+    <span class="n">TableColumnHeaderVisibilityState</span><span class="p">,</span>
+    <span class="n">TableConditionalStyleSetRule</span><span class="p">,</span>
+    <span class="n">TableFilterSetFilterRule</span><span class="p">,</span>
+    <span class="n">TableRowGroupLabel</span><span class="p">,</span>
+    <span class="n">TableRowKind</span><span class="p">,</span>
+    <span class="n">TableRowVisibilityState</span><span class="p">,</span>
+    <span class="n">TableSortRule</span><span class="p">,</span>
+    <span class="n">TableStyleCollection</span><span class="p">,</span>
+    <span class="n">TabStopType</span><span class="p">,</span>
+    <span class="n">Technique</span><span class="p">,</span>
+    <span class="n">Text</span><span class="p">,</span>
+    <span class="n">Textbox</span><span class="p">,</span>
+    <span class="n">TextRun</span><span class="p">,</span>
+    <span class="n">TextStroke</span><span class="p">,</span>
+    <span class="n">TitleOwning</span><span class="p">,</span>
+    <span class="n">TransformationInfo</span><span class="p">,</span>
+    <span class="n">TwoAxisChart</span><span class="p">,</span>
+    <span class="n">UnderlineType</span><span class="p">,</span>
+    <span class="n">UnequalColumnsDescription</span><span class="p">,</span>
+    <span class="n">UnformattedValue</span><span class="p">,</span>
+    <span class="n">Unit</span><span class="p">,</span>
+    <span class="n">Value</span><span class="p">,</span>
+    <span class="n">ValueLabelsSelection</span><span class="p">,</span>
+    <span class="n">VerticalAlignmentType</span><span class="p">,</span>
+    <span class="n">VisualProperties</span><span class="p">,</span>
+    <span class="n">WritingDirectionType</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.package</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Manifest</span><span class="p">,</span>
+    <span class="n">Package</span><span class="p">,</span>
+    <span class="n">PayloadT</span><span class="p">,</span>
+    <span class="n">ResourceStore</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># The model class for each `type_identifier`.</span>
+<span class="n">_MODEL_FOR</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">type</span><span class="p">[</span><span class="n">ObjectModel</span> <span class="o">|</span> <span class="n">TaggedUnionModel</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"com.apple.apps.content-language.area-chart"</span><span class="p">:</span> <span class="n">AreaChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.area3-dchart"</span><span class="p">:</span> <span class="n">Area3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.audio"</span><span class="p">:</span> <span class="n">Audio</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.bar-chart"</span><span class="p">:</span> <span class="n">BarChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.bar-interactive-chart"</span><span class="p">:</span> <span class="n">BarInteractiveChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.bar3-dchart"</span><span class="p">:</span> <span class="n">Bar3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.bubble-chart"</span><span class="p">:</span> <span class="n">BubbleChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.bubble-interactive-chart"</span><span class="p">:</span> <span class="n">BubbleInteractiveChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.canvas-object"</span><span class="p">:</span> <span class="n">CanvasObject</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.canvas-object-generic"</span><span class="p">:</span> <span class="n">GenericCanvasObject</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.caption-owning"</span><span class="p">:</span> <span class="n">CaptionOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.caption-owning-generic"</span><span class="p">:</span> <span class="n">GenericCaptionOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.category-comparison-chart"</span><span class="p">:</span> <span class="n">CategoryComparisonChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.category-comparison-chart-generic"</span><span class="p">:</span> <span class="n">GenericCategoryComparisonChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.character-properties"</span><span class="p">:</span> <span class="n">CharacterProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.character-properties.font-features-type"</span><span class="p">:</span> <span class="n">FontFeaturesType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart"</span><span class="p">:</span> <span class="n">Chart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-axis-common"</span><span class="p">:</span> <span class="n">ChartAxisCommon</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-axis-common-generic"</span><span class="p">:</span> <span class="n">GenericChartAxisCommon</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-axis-common.axis-label-orientation"</span><span class="p">:</span> <span class="n">AxisLabelOrientation</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-category-axis"</span><span class="p">:</span> <span class="n">ChartCategoryAxis</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-category-axis.label-spacing"</span><span class="p">:</span> <span class="n">LabelSpacing</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-common"</span><span class="p">:</span> <span class="n">ChartCommon</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-common-generic"</span><span class="p">:</span> <span class="n">GenericChartCommon</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-common.chart-color"</span><span class="p">:</span> <span class="n">ChartColor</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-data"</span><span class="p">:</span> <span class="n">ChartData</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-data.chart-data-row"</span><span class="p">:</span> <span class="n">ChartDataRow</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-data.chart-data-value"</span><span class="p">:</span> <span class="n">ChartDataValue</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-label-formatting"</span><span class="p">:</span> <span class="n">ChartLabelFormatting</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-label-formatting-generic"</span><span class="p">:</span> <span class="n">GenericChartLabelFormatting</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-legend"</span><span class="p">:</span> <span class="n">ChartLegend</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-series"</span><span class="p">:</span> <span class="n">ChartSeries</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.chart-value-axis"</span><span class="p">:</span> <span class="n">ChartValueAxis</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.color"</span><span class="p">:</span> <span class="n">Color</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.color.rgba"</span><span class="p">:</span> <span class="n">RGBA</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column-chart"</span><span class="p">:</span> <span class="n">ColumnChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column-interactive-chart"</span><span class="p">:</span> <span class="n">ColumnInteractiveChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column-metrics"</span><span class="p">:</span> <span class="n">ColumnMetrics</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column-metrics.equal-columns-description"</span><span class="p">:</span> <span class="n">EqualColumnsDescription</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column-metrics.unequal-columns-description"</span><span class="p">:</span> <span class="n">UnequalColumnsDescription</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.column3-dchart"</span><span class="p">:</span> <span class="n">Column3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.connection-line"</span><span class="p">:</span> <span class="n">ConnectionLine</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.connection-line.end"</span><span class="p">:</span> <span class="n">End</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.connection-line.end.anchor"</span><span class="p">:</span> <span class="n">Anchor</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.connection-line.end.anchor.magnet"</span><span class="p">:</span> <span class="n">Magnet</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.connection-line.line-type"</span><span class="p">:</span> <span class="n">LineType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.contact-shadow"</span><span class="p">:</span> <span class="n">ContactShadow</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.correlation-chart"</span><span class="p">:</span> <span class="n">CorrelationChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.correlation-chart-generic"</span><span class="p">:</span> <span class="n">GenericCorrelationChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.curved-shadow"</span><span class="p">:</span> <span class="n">CurvedShadow</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.donut-chart"</span><span class="p">:</span> <span class="n">DonutChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.drop-shadow"</span><span class="p">:</span> <span class="n">DropShadow</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.duration"</span><span class="p">:</span> <span class="n">Duration</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill"</span><span class="p">:</span> <span class="n">Fill</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.gradient"</span><span class="p">:</span> <span class="n">Gradient</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.gradient.flavor"</span><span class="p">:</span> <span class="n">Flavor</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.gradient.flavor.linear"</span><span class="p">:</span> <span class="n">Linear</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.gradient.flavor.radial"</span><span class="p">:</span> <span class="n">Radial</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.gradient.stop"</span><span class="p">:</span> <span class="n">Stop</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.fill.image-fill"</span><span class="p">:</span> <span class="n">ImageFill</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.geometry"</span><span class="p">:</span> <span class="n">Geometry</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.group"</span><span class="p">:</span> <span class="n">Group</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.hyperlink"</span><span class="p">:</span> <span class="n">Hyperlink</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.hyperlink.slide-target"</span><span class="p">:</span> <span class="n">SlideTarget</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.image"</span><span class="p">:</span> <span class="n">Image</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.image.instant-alpha-path"</span><span class="p">:</span> <span class="n">InstantAlphaPath</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.image.mask"</span><span class="p">:</span> <span class="n">Mask</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.insets"</span><span class="p">:</span> <span class="n">Insets</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.keynote-theme"</span><span class="p">:</span> <span class="n">KeynoteTheme</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.label"</span><span class="p">:</span> <span class="n">Label</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.layout-properties"</span><span class="p">:</span> <span class="n">LayoutProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.line-chart"</span><span class="p">:</span> <span class="n">LineChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.line-spacing-type"</span><span class="p">:</span> <span class="n">LineSpacingType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.line3-dchart"</span><span class="p">:</span> <span class="n">Line3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-label-type"</span><span class="p">:</span> <span class="n">ListLabelType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-label-type.list-image-label"</span><span class="p">:</span> <span class="n">ListImageLabel</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-label-type.list-number-label"</span><span class="p">:</span> <span class="n">ListNumberLabel</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-label-type.list-string-label"</span><span class="p">:</span> <span class="n">ListStringLabel</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-level-type"</span><span class="p">:</span> <span class="n">ListLevelType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.list-properties"</span><span class="p">:</span> <span class="n">ListProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.mixed-chart"</span><span class="p">:</span> <span class="n">MixedChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.movie"</span><span class="p">:</span> <span class="n">Movie</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.number-format-type"</span><span class="p">:</span> <span class="n">NumberFormatType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.offset"</span><span class="p">:</span> <span class="n">Offset</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.paragraph"</span><span class="p">:</span> <span class="n">Paragraph</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.paragraph-properties"</span><span class="p">:</span> <span class="n">ParagraphProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.paragraph-properties.border-style-type"</span><span class="p">:</span> <span class="n">BorderStyleType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.paragraph.constituent"</span><span class="p">:</span> <span class="n">Constituent</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.paragraph.hyperlink-field"</span><span class="p">:</span> <span class="n">HyperlinkField</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.path"</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.path.bezier-path"</span><span class="p">:</span> <span class="n">BezierPath</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.pie-chart"</span><span class="p">:</span> <span class="n">PieChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.pie3-dchart"</span><span class="p">:</span> <span class="n">Pie3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.placeable-title-owning"</span><span class="p">:</span> <span class="n">PlaceableTitleOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.placeable-title-owning-generic"</span><span class="p">:</span> <span class="n">GenericPlaceableTitleOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.playback-options"</span><span class="p">:</span> <span class="n">PlaybackOptions</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.position"</span><span class="p">:</span> <span class="n">Position</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.presentation"</span><span class="p">:</span> <span class="n">Presentation</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.radar-chart"</span><span class="p">:</span> <span class="n">RadarChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.rect"</span><span class="p">:</span> <span class="n">Rect</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.reflection"</span><span class="p">:</span> <span class="n">Reflection</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.resource"</span><span class="p">:</span> <span class="n">Resource</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.resource.base64-encoded-resource"</span><span class="p">:</span> <span class="n">Base64EncodedResource</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.resource.indirect-resource"</span><span class="p">:</span> <span class="n">IndirectResource</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.resource.premium-resource-info"</span><span class="p">:</span> <span class="n">PremiumResourceInfo</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.scatter-chart"</span><span class="p">:</span> <span class="n">ScatterChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.scatter-interactive-chart"</span><span class="p">:</span> <span class="n">ScatterInteractiveChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.shadow"</span><span class="p">:</span> <span class="n">Shadow</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.shape"</span><span class="p">:</span> <span class="n">Shape</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.size"</span><span class="p">:</span> <span class="n">Size</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide"</span><span class="p">:</span> <span class="n">Slide</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide-background"</span><span class="p">:</span> <span class="n">SlideBackground</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide-layout"</span><span class="p">:</span> <span class="n">SlideLayout</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide-object"</span><span class="p">:</span> <span class="n">SlideObject</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide-object.placeholder-info"</span><span class="p">:</span> <span class="n">PlaceholderInfo</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.slide-object.placeholder-info.placeholder-definition"</span><span class="p">:</span> <span class="n">PlaceholderDefinition</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-area-chart"</span><span class="p">:</span> <span class="n">StackedAreaChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-area3-dchart"</span><span class="p">:</span> <span class="n">StackedArea3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-bar-chart"</span><span class="p">:</span> <span class="n">StackedBarChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-bar3-dchart"</span><span class="p">:</span> <span class="n">StackedBar3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-column-chart"</span><span class="p">:</span> <span class="n">StackedColumnChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stacked-column3-dchart"</span><span class="p">:</span> <span class="n">StackedColumn3DChart</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stroke"</span><span class="p">:</span> <span class="n">Stroke</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stroke.frame"</span><span class="p">:</span> <span class="n">Frame</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stroke.line"</span><span class="p">:</span> <span class="n">Line</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet"</span><span class="p">:</span> <span class="n">Stylesheet</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.character-style"</span><span class="p">:</span> <span class="n">CharacterStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.list-style"</span><span class="p">:</span> <span class="n">ListStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.media-style"</span><span class="p">:</span> <span class="n">MediaStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.media-style.media-properties"</span><span class="p">:</span> <span class="n">MediaProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.paragraph-style"</span><span class="p">:</span> <span class="n">ParagraphStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.shape-style"</span><span class="p">:</span> <span class="n">ShapeStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.shape-style.shape-properties"</span><span class="p">:</span> <span class="n">ShapeProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.table-style-collection"</span><span class="p">:</span> <span class="n">TableStyleCollection</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.table-style-collection.body-stroke-style"</span><span class="p">:</span> <span class="n">BodyStrokeStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.table-style-collection.cell-style"</span><span class="p">:</span> <span class="n">CellStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.table-style-collection.header-footer-stroke-style"</span><span class="p">:</span> <span class="n">HeaderFooterStrokeStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.stylesheet.table-style-collection.overall-style"</span><span class="p">:</span> <span class="n">OverallStyle</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.tab-stop-type"</span><span class="p">:</span> <span class="n">TabStopType</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table"</span><span class="p">:</span> <span class="n">Table</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.category-rules"</span><span class="p">:</span> <span class="n">CategoryRules</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell"</span><span class="p">:</span> <span class="n">Cell</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format"</span><span class="p">:</span> <span class="n">CellFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.base-format"</span><span class="p">:</span> <span class="n">BaseFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.bool-format"</span><span class="p">:</span> <span class="n">BoolFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.currency-format"</span><span class="p">:</span> <span class="n">CurrencyFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.date-time-format"</span><span class="p">:</span> <span class="n">DateTimeFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.duration-format"</span><span class="p">:</span> <span class="n">DurationFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.fraction-format"</span><span class="p">:</span> <span class="n">FractionFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-format.number-format"</span><span class="p">:</span> <span class="n">NumberFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-properties"</span><span class="p">:</span> <span class="n">CellProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-range"</span><span class="p">:</span> <span class="n">CellRange</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell-range.row-column-id-range"</span><span class="p">:</span> <span class="n">RowColumnIdRange</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell.formula"</span><span class="p">:</span> <span class="n">Formula</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell.formula.cell-reference"</span><span class="p">:</span> <span class="n">CellReference</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell.formula.id-based-formula"</span><span class="p">:</span> <span class="n">IdBasedFormula</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell.strokes"</span><span class="p">:</span> <span class="n">Strokes</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.cell.unformatted-value"</span><span class="p">:</span> <span class="n">UnformattedValue</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.column-header"</span><span class="p">:</span> <span class="n">ColumnHeader</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.column-header.group-label"</span><span class="p">:</span> <span class="n">TableColumnHeaderGroupLabel</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.column-header.kind"</span><span class="p">:</span> <span class="n">TableColumnHeaderKind</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.conditional-style-set"</span><span class="p">:</span> <span class="n">ConditionalStyleSet</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.conditional-style-set.rule"</span><span class="p">:</span> <span class="n">TableConditionalStyleSetRule</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.custom-format"</span><span class="p">:</span> <span class="n">CustomFormat</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.custom-format.custom-format-condition"</span><span class="p">:</span> <span class="n">CustomFormatCondition</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.custom-format.number-format-data"</span><span class="p">:</span> <span class="n">NumberFormatData</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.date"</span><span class="p">:</span> <span class="n">Date</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.filter-set"</span><span class="p">:</span> <span class="n">FilterSet</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.filter-set.filter"</span><span class="p">:</span> <span class="n">Filter</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.filter-set.filter.rule"</span><span class="p">:</span> <span class="n">TableFilterSetFilterRule</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.pivot-rules"</span><span class="p">:</span> <span class="n">PivotRules</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.predicate"</span><span class="p">:</span> <span class="n">Predicate</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.predicate.reference"</span><span class="p">:</span> <span class="n">Reference</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.predicate.value"</span><span class="p">:</span> <span class="n">Value</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.row"</span><span class="p">:</span> <span class="n">Row</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.row.group-label"</span><span class="p">:</span> <span class="n">TableRowGroupLabel</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.row.kind"</span><span class="p">:</span> <span class="n">TableRowKind</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.sort"</span><span class="p">:</span> <span class="n">Sort</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.sort.rule"</span><span class="p">:</span> <span class="n">TableSortRule</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.transformation-info"</span><span class="p">:</span> <span class="n">TransformationInfo</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.transformation-info.structure"</span><span class="p">:</span> <span class="n">Structure</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.visual-properties"</span><span class="p">:</span> <span class="n">VisualProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.visual-properties.body-stroke-properties"</span><span class="p">:</span> <span class="n">BodyStrokeProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.visual-properties.header-footer-stroke-properties"</span><span class="p">:</span> <span class="n">HeaderFooterStrokeProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.visual-properties.overall-properties"</span><span class="p">:</span> <span class="n">OverallProperties</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.table.visual-properties.stroke-preset"</span><span class="p">:</span> <span class="n">StrokePreset</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.text"</span><span class="p">:</span> <span class="n">Text</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.text-run"</span><span class="p">:</span> <span class="n">TextRun</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.text-stroke"</span><span class="p">:</span> <span class="n">TextStroke</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.textbox"</span><span class="p">:</span> <span class="n">Textbox</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.title-owning"</span><span class="p">:</span> <span class="n">TitleOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.title-owning-generic"</span><span class="p">:</span> <span class="n">GenericTitleOwning</span><span class="p">,</span>
+    <span class="s2">"com.apple.apps.content-language.two-axis-chart"</span><span class="p">:</span> <span class="n">TwoAxisChart</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<div class="viewcode-block" id="model_for">
+<a class="viewcode-back" href="../../api/models.html#creator_studio_doc_format.core.model_for">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">model_for</span><span class="p">(</span><span class="n">type_identifier</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">ObjectModel</span> <span class="o">|</span> <span class="n">TaggedUnionModel</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Returns the model class for a type identifier.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        type_identifier: The ``type_identifier`` that an object carries in the JSON.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        type[ObjectModel | TaggedUnionModel] | None: The generated model class, or</span>
+<span class="sd">        ``None`` if no model has that ``type_identifier``.</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="n">_MODEL_FOR</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">type_identifier</span><span class="p">)</span></div>
+
+
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"RGBA"</span><span class="p">,</span>
+    <span class="s2">"Accuracy"</span><span class="p">,</span>
+    <span class="s2">"AlignmentType"</span><span class="p">,</span>
+    <span class="s2">"Anchor"</span><span class="p">,</span>
+    <span class="s2">"Area3DChart"</span><span class="p">,</span>
+    <span class="s2">"AreaChart"</span><span class="p">,</span>
+    <span class="s2">"Audio"</span><span class="p">,</span>
+    <span class="s2">"AxisLabelOrientation"</span><span class="p">,</span>
+    <span class="s2">"AxisScale"</span><span class="p">,</span>
+    <span class="s2">"Bar3DChart"</span><span class="p">,</span>
+    <span class="s2">"BarChart"</span><span class="p">,</span>
+    <span class="s2">"BarInteractiveChart"</span><span class="p">,</span>
+    <span class="s2">"Base64EncodedResource"</span><span class="p">,</span>
+    <span class="s2">"BaseFormat"</span><span class="p">,</span>
+    <span class="s2">"BaselineType"</span><span class="p">,</span>
+    <span class="s2">"BezierPath"</span><span class="p">,</span>
+    <span class="s2">"BodyStrokeProperties"</span><span class="p">,</span>
+    <span class="s2">"BodyStrokeStyle"</span><span class="p">,</span>
+    <span class="s2">"BoolFormat"</span><span class="p">,</span>
+    <span class="s2">"BorderStyleType"</span><span class="p">,</span>
+    <span class="s2">"BreakType"</span><span class="p">,</span>
+    <span class="s2">"BubbleChart"</span><span class="p">,</span>
+    <span class="s2">"BubbleInteractiveChart"</span><span class="p">,</span>
+    <span class="s2">"CanvasObject"</span><span class="p">,</span>
+    <span class="s2">"CapitalizationType"</span><span class="p">,</span>
+    <span class="s2">"CaptionOwning"</span><span class="p">,</span>
+    <span class="s2">"CategoryComparisonChart"</span><span class="p">,</span>
+    <span class="s2">"CategoryRules"</span><span class="p">,</span>
+    <span class="s2">"Cell"</span><span class="p">,</span>
+    <span class="s2">"CellFormat"</span><span class="p">,</span>
+    <span class="s2">"CellProperties"</span><span class="p">,</span>
+    <span class="s2">"CellRange"</span><span class="p">,</span>
+    <span class="s2">"CellReference"</span><span class="p">,</span>
+    <span class="s2">"CellStyle"</span><span class="p">,</span>
+    <span class="s2">"CharacterProperties"</span><span class="p">,</span>
+    <span class="s2">"CharacterStyle"</span><span class="p">,</span>
+    <span class="s2">"Chart"</span><span class="p">,</span>
+    <span class="s2">"ChartAxisCommon"</span><span class="p">,</span>
+    <span class="s2">"ChartCategoryAxis"</span><span class="p">,</span>
+    <span class="s2">"ChartColor"</span><span class="p">,</span>
+    <span class="s2">"ChartCommon"</span><span class="p">,</span>
+    <span class="s2">"ChartData"</span><span class="p">,</span>
+    <span class="s2">"ChartDataRow"</span><span class="p">,</span>
+    <span class="s2">"ChartDataSource"</span><span class="p">,</span>
+    <span class="s2">"ChartDataValue"</span><span class="p">,</span>
+    <span class="s2">"ChartLabelFormatting"</span><span class="p">,</span>
+    <span class="s2">"ChartLegend"</span><span class="p">,</span>
+    <span class="s2">"ChartSeries"</span><span class="p">,</span>
+    <span class="s2">"ChartValueAxis"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">,</span>
+    <span class="s2">"ColorSpace"</span><span class="p">,</span>
+    <span class="s2">"Column3DChart"</span><span class="p">,</span>
+    <span class="s2">"ColumnChart"</span><span class="p">,</span>
+    <span class="s2">"ColumnHeader"</span><span class="p">,</span>
+    <span class="s2">"ColumnInteractiveChart"</span><span class="p">,</span>
+    <span class="s2">"ColumnMetrics"</span><span class="p">,</span>
+    <span class="s2">"CombineMode"</span><span class="p">,</span>
+    <span class="s2">"ConditionType"</span><span class="p">,</span>
+    <span class="s2">"ConditionalStyleSet"</span><span class="p">,</span>
+    <span class="s2">"ConnectionLine"</span><span class="p">,</span>
+    <span class="s2">"ConnectionLineType"</span><span class="p">,</span>
+    <span class="s2">"Constituent"</span><span class="p">,</span>
+    <span class="s2">"ContactShadow"</span><span class="p">,</span>
+    <span class="s2">"CorrelationChart"</span><span class="p">,</span>
+    <span class="s2">"CurrencyFormat"</span><span class="p">,</span>
+    <span class="s2">"CurvedShadow"</span><span class="p">,</span>
+    <span class="s2">"CustomFormat"</span><span class="p">,</span>
+    <span class="s2">"CustomFormatCondition"</span><span class="p">,</span>
+    <span class="s2">"CustomFormatType"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">,</span>
+    <span class="s2">"DateQualifier"</span><span class="p">,</span>
+    <span class="s2">"DateTimeFormat"</span><span class="p">,</span>
+    <span class="s2">"Direction"</span><span class="p">,</span>
+    <span class="s2">"DocumentError"</span><span class="p">,</span>
+    <span class="s2">"DocumentPackageError"</span><span class="p">,</span>
+    <span class="s2">"DocumentPackageErrorKind"</span><span class="p">,</span>
+    <span class="s2">"DocumentVersionError"</span><span class="p">,</span>
+    <span class="s2">"DonutChart"</span><span class="p">,</span>
+    <span class="s2">"DropShadow"</span><span class="p">,</span>
+    <span class="s2">"Duration"</span><span class="p">,</span>
+    <span class="s2">"DurationFormat"</span><span class="p">,</span>
+    <span class="s2">"DurationUnit"</span><span class="p">,</span>
+    <span class="s2">"Edge"</span><span class="p">,</span>
+    <span class="s2">"End"</span><span class="p">,</span>
+    <span class="s2">"EqualColumnsDescription"</span><span class="p">,</span>
+    <span class="s2">"Fill"</span><span class="p">,</span>
+    <span class="s2">"FillReuseRule"</span><span class="p">,</span>
+    <span class="s2">"Filter"</span><span class="p">,</span>
+    <span class="s2">"FilterSet"</span><span class="p">,</span>
+    <span class="s2">"Flavor"</span><span class="p">,</span>
+    <span class="s2">"FontFeaturesType"</span><span class="p">,</span>
+    <span class="s2">"Format"</span><span class="p">,</span>
+    <span class="s2">"FormatType"</span><span class="p">,</span>
+    <span class="s2">"Formula"</span><span class="p">,</span>
+    <span class="s2">"FractionFormat"</span><span class="p">,</span>
+    <span class="s2">"Frame"</span><span class="p">,</span>
+    <span class="s2">"GenericCanvasObject"</span><span class="p">,</span>
+    <span class="s2">"GenericCaptionOwning"</span><span class="p">,</span>
+    <span class="s2">"GenericCategoryComparisonChart"</span><span class="p">,</span>
+    <span class="s2">"GenericChartAxisCommon"</span><span class="p">,</span>
+    <span class="s2">"GenericChartCommon"</span><span class="p">,</span>
+    <span class="s2">"GenericChartLabelFormatting"</span><span class="p">,</span>
+    <span class="s2">"GenericCorrelationChart"</span><span class="p">,</span>
+    <span class="s2">"GenericPlaceableTitleOwning"</span><span class="p">,</span>
+    <span class="s2">"GenericTitleOwning"</span><span class="p">,</span>
+    <span class="s2">"Geometry"</span><span class="p">,</span>
+    <span class="s2">"Gradient"</span><span class="p">,</span>
+    <span class="s2">"Group"</span><span class="p">,</span>
+    <span class="s2">"HeaderFooterStrokeProperties"</span><span class="p">,</span>
+    <span class="s2">"HeaderFooterStrokeStyle"</span><span class="p">,</span>
+    <span class="s2">"Hyperlink"</span><span class="p">,</span>
+    <span class="s2">"HyperlinkField"</span><span class="p">,</span>
+    <span class="s2">"IdBasedFormula"</span><span class="p">,</span>
+    <span class="s2">"Image"</span><span class="p">,</span>
+    <span class="s2">"ImageFill"</span><span class="p">,</span>
+    <span class="s2">"IndirectResource"</span><span class="p">,</span>
+    <span class="s2">"Insets"</span><span class="p">,</span>
+    <span class="s2">"InstantAlphaPath"</span><span class="p">,</span>
+    <span class="s2">"KeynoteTheme"</span><span class="p">,</span>
+    <span class="s2">"KeyxDocument"</span><span class="p">,</span>
+    <span class="s2">"Label"</span><span class="p">,</span>
+    <span class="s2">"LabelSpacing"</span><span class="p">,</span>
+    <span class="s2">"LayoutProperties"</span><span class="p">,</span>
+    <span class="s2">"LigatureType"</span><span class="p">,</span>
+    <span class="s2">"Line"</span><span class="p">,</span>
+    <span class="s2">"Line3DChart"</span><span class="p">,</span>
+    <span class="s2">"LineChart"</span><span class="p">,</span>
+    <span class="s2">"LineEnd"</span><span class="p">,</span>
+    <span class="s2">"LineSpacingKindType"</span><span class="p">,</span>
+    <span class="s2">"LineSpacingType"</span><span class="p">,</span>
+    <span class="s2">"LineType"</span><span class="p">,</span>
+    <span class="s2">"Linear"</span><span class="p">,</span>
+    <span class="s2">"ListImageLabel"</span><span class="p">,</span>
+    <span class="s2">"ListLabelType"</span><span class="p">,</span>
+    <span class="s2">"ListLevelType"</span><span class="p">,</span>
+    <span class="s2">"ListNumberLabel"</span><span class="p">,</span>
+    <span class="s2">"ListProperties"</span><span class="p">,</span>
+    <span class="s2">"ListStringLabel"</span><span class="p">,</span>
+    <span class="s2">"ListStyle"</span><span class="p">,</span>
+    <span class="s2">"LoopOption"</span><span class="p">,</span>
+    <span class="s2">"Magnet"</span><span class="p">,</span>
+    <span class="s2">"Manifest"</span><span class="p">,</span>
+    <span class="s2">"Mask"</span><span class="p">,</span>
+    <span class="s2">"MediaProperties"</span><span class="p">,</span>
+    <span class="s2">"MediaStyle"</span><span class="p">,</span>
+    <span class="s2">"MixedChart"</span><span class="p">,</span>
+    <span class="s2">"MixedSeriesType"</span><span class="p">,</span>
+    <span class="s2">"Movie"</span><span class="p">,</span>
+    <span class="s2">"Name"</span><span class="p">,</span>
+    <span class="s2">"NegativeNumberStyle"</span><span class="p">,</span>
+    <span class="s2">"NumberFormat"</span><span class="p">,</span>
+    <span class="s2">"NumberFormatData"</span><span class="p">,</span>
+    <span class="s2">"NumberFormatType"</span><span class="p">,</span>
+    <span class="s2">"NumberFormatTypeKind"</span><span class="p">,</span>
+    <span class="s2">"ObjectModel"</span><span class="p">,</span>
+    <span class="s2">"Offset"</span><span class="p">,</span>
+    <span class="s2">"OverallProperties"</span><span class="p">,</span>
+    <span class="s2">"OverallStyle"</span><span class="p">,</span>
+    <span class="s2">"Override"</span><span class="p">,</span>
+    <span class="s2">"Package"</span><span class="p">,</span>
+    <span class="s2">"Paragraph"</span><span class="p">,</span>
+    <span class="s2">"ParagraphProperties"</span><span class="p">,</span>
+    <span class="s2">"ParagraphStyle"</span><span class="p">,</span>
+    <span class="s2">"Path"</span><span class="p">,</span>
+    <span class="s2">"Pattern"</span><span class="p">,</span>
+    <span class="s2">"PayloadT"</span><span class="p">,</span>
+    <span class="s2">"Pie3DChart"</span><span class="p">,</span>
+    <span class="s2">"PieChart"</span><span class="p">,</span>
+    <span class="s2">"PivotRules"</span><span class="p">,</span>
+    <span class="s2">"PlaceableTitleOwning"</span><span class="p">,</span>
+    <span class="s2">"PlaceholderDefinition"</span><span class="p">,</span>
+    <span class="s2">"PlaceholderInfo"</span><span class="p">,</span>
+    <span class="s2">"PlaybackOptions"</span><span class="p">,</span>
+    <span class="s2">"PlotDirection"</span><span class="p">,</span>
+    <span class="s2">"Position"</span><span class="p">,</span>
+    <span class="s2">"Predicate"</span><span class="p">,</span>
+    <span class="s2">"PredicateType"</span><span class="p">,</span>
+    <span class="s2">"PremiumResourceInfo"</span><span class="p">,</span>
+    <span class="s2">"Presentation"</span><span class="p">,</span>
+    <span class="s2">"Preset"</span><span class="p">,</span>
+    <span class="s2">"PresetKind"</span><span class="p">,</span>
+    <span class="s2">"PresetRegistry"</span><span class="p">,</span>
+    <span class="s2">"Qualifier"</span><span class="p">,</span>
+    <span class="s2">"RadarChart"</span><span class="p">,</span>
+    <span class="s2">"Radial"</span><span class="p">,</span>
+    <span class="s2">"Rect"</span><span class="p">,</span>
+    <span class="s2">"Reference"</span><span class="p">,</span>
+    <span class="s2">"Reflection"</span><span class="p">,</span>
+    <span class="s2">"Resource"</span><span class="p">,</span>
+    <span class="s2">"ResourceStore"</span><span class="p">,</span>
+    <span class="s2">"Row"</span><span class="p">,</span>
+    <span class="s2">"RowColumnIdRange"</span><span class="p">,</span>
+    <span class="s2">"ScatterChart"</span><span class="p">,</span>
+    <span class="s2">"ScatterInteractiveChart"</span><span class="p">,</span>
+    <span class="s2">"Scope"</span><span class="p">,</span>
+    <span class="s2">"SeriesSymbolType"</span><span class="p">,</span>
+    <span class="s2">"SeriesValueLabelPosition"</span><span class="p">,</span>
+    <span class="s2">"Shadow"</span><span class="p">,</span>
+    <span class="s2">"Shape"</span><span class="p">,</span>
+    <span class="s2">"ShapeProperties"</span><span class="p">,</span>
+    <span class="s2">"ShapeStyle"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">,</span>
+    <span class="s2">"Slide"</span><span class="p">,</span>
+    <span class="s2">"SlideBackground"</span><span class="p">,</span>
+    <span class="s2">"SlideLayout"</span><span class="p">,</span>
+    <span class="s2">"SlideObject"</span><span class="p">,</span>
+    <span class="s2">"SlideObjectPlaceholderInfoPlaceholderDefinitionKind"</span><span class="p">,</span>
+    <span class="s2">"SlideTarget"</span><span class="p">,</span>
+    <span class="s2">"Sort"</span><span class="p">,</span>
+    <span class="s2">"SourceKind"</span><span class="p">,</span>
+    <span class="s2">"StackedArea3DChart"</span><span class="p">,</span>
+    <span class="s2">"StackedAreaChart"</span><span class="p">,</span>
+    <span class="s2">"StackedBar3DChart"</span><span class="p">,</span>
+    <span class="s2">"StackedBarChart"</span><span class="p">,</span>
+    <span class="s2">"StackedColumn3DChart"</span><span class="p">,</span>
+    <span class="s2">"StackedColumnChart"</span><span class="p">,</span>
+    <span class="s2">"Stop"</span><span class="p">,</span>
+    <span class="s2">"StrikethroughType"</span><span class="p">,</span>
+    <span class="s2">"Stroke"</span><span class="p">,</span>
+    <span class="s2">"StrokePreset"</span><span class="p">,</span>
+    <span class="s2">"Strokes"</span><span class="p">,</span>
+    <span class="s2">"Structure"</span><span class="p">,</span>
+    <span class="s2">"Style"</span><span class="p">,</span>
+    <span class="s2">"Stylesheet"</span><span class="p">,</span>
+    <span class="s2">"TabAlignmentKindType"</span><span class="p">,</span>
+    <span class="s2">"TabStopType"</span><span class="p">,</span>
+    <span class="s2">"Table"</span><span class="p">,</span>
+    <span class="s2">"TableColumnHeaderGroupLabel"</span><span class="p">,</span>
+    <span class="s2">"TableColumnHeaderKind"</span><span class="p">,</span>
+    <span class="s2">"TableColumnHeaderVisibilityState"</span><span class="p">,</span>
+    <span class="s2">"TableConditionalStyleSetRule"</span><span class="p">,</span>
+    <span class="s2">"TableFilterSetFilterRule"</span><span class="p">,</span>
+    <span class="s2">"TableRowGroupLabel"</span><span class="p">,</span>
+    <span class="s2">"TableRowKind"</span><span class="p">,</span>
+    <span class="s2">"TableRowVisibilityState"</span><span class="p">,</span>
+    <span class="s2">"TableSortRule"</span><span class="p">,</span>
+    <span class="s2">"TableStyleCollection"</span><span class="p">,</span>
+    <span class="s2">"TaggedUnionModel"</span><span class="p">,</span>
+    <span class="s2">"Technique"</span><span class="p">,</span>
+    <span class="s2">"Text"</span><span class="p">,</span>
+    <span class="s2">"TextRun"</span><span class="p">,</span>
+    <span class="s2">"TextStroke"</span><span class="p">,</span>
+    <span class="s2">"Textbox"</span><span class="p">,</span>
+    <span class="s2">"TitleOwning"</span><span class="p">,</span>
+    <span class="s2">"TransformationInfo"</span><span class="p">,</span>
+    <span class="s2">"TwoAxisChart"</span><span class="p">,</span>
+    <span class="s2">"UnderlineType"</span><span class="p">,</span>
+    <span class="s2">"UnequalColumnsDescription"</span><span class="p">,</span>
+    <span class="s2">"UnformattedValue"</span><span class="p">,</span>
+    <span class="s2">"Unit"</span><span class="p">,</span>
+    <span class="s2">"Value"</span><span class="p">,</span>
+    <span class="s2">"ValueLabelsSelection"</span><span class="p">,</span>
+    <span class="s2">"Version"</span><span class="p">,</span>
+    <span class="s2">"VerticalAlignmentType"</span><span class="p">,</span>
+    <span class="s2">"VisualProperties"</span><span class="p">,</span>
+    <span class="s2">"WritingDirectionType"</span><span class="p">,</span>
+    <span class="s2">"model_for"</span><span class="p">,</span>
+    <span class="s2">"same_json"</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

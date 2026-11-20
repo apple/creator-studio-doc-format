@@ -1,0 +1,1918 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../shapes.html">
+      
+      
+        <link rel="next" href="rows_and_columns.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Tables - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#table" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tables
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__current-nested md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_1_2_5" id="__nav_2_1_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Tables</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2_5_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#table-structure" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Table structure</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_5_1" id="__nav_2_1_2_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Table structure</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rows_and_columns.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Rows and columns</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cells.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Cells</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#formats-and-styles" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Formats and styles</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_5_2" id="__nav_2_1_2_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Formats and styles</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cell_formats.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Cell formats</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appearance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Table appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conditional_styles.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Conditional styles</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#row-filters-and-sorts" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Row filters and sorts</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_5_3" id="__nav_2_1_2_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Row filters and sorts</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="transformations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Filters, sorts, and pivot tables</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+      
+    <li class="md-nav__item md-nav__item--active md-nav__current-toc">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columnmetrics" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Column<wbr>Metrics</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ColumnMetrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equalcolumnsdescription" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Equal<wbr>Columns<wbr>Description</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unequalcolumnsdescription" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Unequal<wbr>Columns<wbr>Description</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-structure" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table structure</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Table structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="rows_and_columns.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Rows and columns</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="cells.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Cells</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats-and-styles" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Formats and styles</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formats and styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="cell_formats.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Cell formats</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="appearance.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table appearance</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="conditional_styles.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Conditional styles</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-filters-and-sorts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Row filters and sorts</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Row filters and sorts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="transformations.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Filters, sorts, and pivot tables</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columnmetrics" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Column<wbr>Metrics</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ColumnMetrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equalcolumnsdescription" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Equal<wbr>Columns<wbr>Description</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unequalcolumnsdescription" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Unequal<wbr>Columns<wbr>Description</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-structure" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table structure</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats-and-styles" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Formats and styles</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-filters-and-sorts" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Row filters and sorts</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="tables">Tables<a class="headerlink" href="#tables" title="Link to this heading">¶</a></h1>
+<p>Add tables of cells, and arrange a text area in columns.</p>
+<h2 id="table">Table<a class="headerlink" href="#table" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Table">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Table</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table" title="creator_studio_doc_format.core.Table.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.identifier" title="creator_studio_doc_format.core.Table.identifier (Python field) — An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.geometry" title="creator_studio_doc_format.core.Table.geometry (Python field) — The object's position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind."><span class="n"><span class="pre">geometry</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.aspect_ratio_locked" title="creator_studio_doc_format.core.Table.aspect_ratio_locked (Python field) — A Boolean value that indicates whether the object's width-to-height ratio is locked when the object resizes. The lock doesn't constrain the geometry property. If this property is absent, images, movies, and groups default to true, and other objects to false."><span class="n"><span class="pre">aspect_ratio_locked</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.description" title="creator_studio_doc_format.core.Table.description (Python field) — The accessibility description for the object, read aloud by assistive technologies such as VoiceOver."><span class="n"><span class="pre">description</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.title" title="creator_studio_doc_format.core.Table.title (Python field) — The object's title."><span class="n"><span class="pre">title</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.caption" title="creator_studio_doc_format.core.Table.caption (Python field) — The object's caption, which Keynote always places below the object. If a caption is off, you still write it out with Label.is_visible set to false, so having a value doesn't mean the caption shows."><span class="n"><span class="pre">caption</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.table_name_border_enabled" title="creator_studio_doc_format.core.Table.table_name_border_enabled (Python field) — Whether a border is drawn around the table's name (title) box. The border uses the header row's border stroke, Table.VisualProperties.header_row_stroke_properties.border_stroke."><span class="n"><span class="pre">table_name_border_enabled</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.number_of_columns" title="creator_studio_doc_format.core.Table.number_of_columns (Python field) — The total number of columns in the table, including header, body, and hidden columns. A count below 1, or above the largest supported column count, is adjusted to the nearest supported count rather than rejected."><span class="n"><span class="pre">number_of_columns</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.number_of_rows" title="creator_studio_doc_format.core.Table.number_of_rows (Python field) — The total number of rows in the table, including header, body, footer, hidden, and filtered rows. A count below 1, or above the largest supported row count, is adjusted to the nearest supported count rather than rejected."><span class="n"><span class="pre">number_of_rows</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.number_of_header_rows" title="creator_studio_doc_format.core.Table.number_of_header_rows (Python field) — The number of header rows at the top of the table, which are styled separately from body rows and typically contain column titles. A negative count, or one greater than number_of_rows, is adjusted to fit rather than rejected."><span class="n"><span class="pre">number_of_header_rows</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">0</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.number_of_header_columns" title="creator_studio_doc_format.core.Table.number_of_header_columns (Python field) — The number of header columns at the leading edge of the table, which are styled separately from body columns and typically contain row labels. A negative count, or one greater than number_of_columns, is adjusted to fit rather than rejected."><span class="n"><span class="pre">number_of_header_columns</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">0</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.number_of_footer_rows" title="creator_studio_doc_format.core.Table.number_of_footer_rows (Python field) — The number of footer rows at the bottom of the table, which are styled separately from body rows and typically contain totals or summaries. A negative count is treated as zero, and if number_of_header_rows plus number_of_footer_rows would exceed number_of_rows, the footer count is reduced to fit rather than rejected."><span class="n"><span class="pre">number_of_footer_rows</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">0</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.default_column_width" title="creator_studio_doc_format.core.Table.default_column_width (Python field) — The default column width, in points, which must be greater than 0. It's used for any column that doesn't override it with Table.ColumnHeader.column_width."><span class="n"><span class="pre">default_column_width</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">98</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.default_row_height" title="creator_studio_doc_format.core.Table.default_row_height (Python field) — The default row height, in points, which must be greater than 0. It's used for any row that doesn't override it with Table.Row.row_height."><span class="n"><span class="pre">default_row_height</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">20</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.visual_properties" title="creator_studio_doc_format.core.Table.visual_properties (Python field) — The default styles for the whole table. These are table-level properties, such as strokes and alternating row fills, plus default cell and text properties for each region (body, header rows, header columns, and footer rows). Cell- and column-level overrides take precedence over these defaults."><span class="n"><span class="pre">visual_properties</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.column_headers" title="creator_studio_doc_format.core.Table.column_headers (Python field) — The metadata for each column, including its stable column ID, its display title, its default cell format, style, and text, and an optional column width override. It provides the column identity that formula references and merges use. There's one entry for each column, in left-to-right order, so an entry's position here is that column's position in every row's cells."><span class="n"><span class="pre">column_headers</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.content" title="creator_studio_doc_format.core.Table.content (Python field) — The table's rows as displayed, including header and footer rows; trailing blank rows can be omitted. Hidden and filtered rows are included, marked by their Table.Row.visibility_state."><span class="n"><span class="pre">content</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.merges" title="creator_studio_doc_format.core.Table.merges (Python field) — The cell ranges that are each visually merged into a single cell. The content is in the top-left cell, and the other cells in the range are blank. Each range names its corners by this table's row and column IDs. If a corner names a row or column the table doesn't have, or a range's end comes before its start, Keynote drops the whole table, with a warning, instead of loading the table without that merge."><span class="n"><span class="pre">merges</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.conditional_style_sets" title="creator_studio_doc_format.core.Table.conditional_style_sets (Python field) — The shared sets of conditional highlighting rules. Cells reference a set by ID in Table.Cell.conditional_style_set_identifier, so the same rules can be reused across many cells without duplication."><span class="n"><span class="pre">conditional_style_sets</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.custom_formats" title="creator_studio_doc_format.core.Table.custom_formats (Python field) — The shared custom-format definitions. Cells whose cell_format.format_type is custom reference one of these by ID in cell_format.custom_format_identifier, so the same format definition can be reused across many cells without duplication."><span class="n"><span class="pre">custom_formats</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Table.transformation" title="creator_studio_doc_format.core.Table.transformation (Python field) — The filter and sort rules applied to this table, in filter_set and sort; content holds the result."><span class="n"><span class="pre">transformation</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Table" title="creator_studio_doc_format.core.Table.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Table" title="Link to this definition">¶</a></dt>
+<dd><p>A table of cells, nested two levels deep.</p>
+<p><code class="docutils literal notranslate"><span class="pre">content</span></code> holds the table’s rows, ordered top to bottom, and each row’s <code class="docutils literal notranslate"><span class="pre">cells</span></code> holds that row’s cells, ordered left to right. The first <code class="docutils literal notranslate"><span class="pre">number_of_header_rows</span></code> rows are header rows, and the last <code class="docutils literal notranslate"><span class="pre">number_of_footer_rows</span></code> are footer rows. Rows and cells that carry nothing may be omitted, so <code class="docutils literal notranslate"><span class="pre">Table.Row.row_index</span></code> and <code class="docutils literal notranslate"><span class="pre">Table.Cell.column_index</span></code> mark where a run resumes after a gap. On a slide, a table whose <code class="docutils literal notranslate"><span class="pre">title</span></code> is absent, has no text, or reads <code class="docutils literal notranslate"><span class="pre">Unnamed</span></code> or <code class="docutils literal notranslate"><span class="pre">Unnamed</span> <span class="pre">Table</span></code> gets a default name such as Table <code class="docutils literal notranslate"><span class="pre">1</span></code> as its built-in title, and Keynote renames tables there that share a name the same way until each has its own; which of them keeps the name isn’t defined, and Keynote reports no warning.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>An identifier for this object that other objects use to refer to it. This identifier must be unique across the whole document.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.geometry">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">geometry</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../positions.html#creator_studio_doc_format.core.Geometry" title="creator_studio_doc_format.core.Geometry (Python model) — The bounding box in which an object is positioned."><span class="pre">Geometry</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.geometry" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s position and size. If this value is absent, Keynote places the object automatically, with a default position and size for its kind.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.aspect_ratio_locked">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">aspect_ratio_locked</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.aspect_ratio_locked" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether the object’s width-to-height ratio is locked when the object resizes. The lock doesn’t constrain the <code class="docutils literal notranslate"><span class="pre">geometry</span></code> property. If this property is absent, images, movies, and groups default to <code class="docutils literal notranslate"><span class="pre">true</span></code>, and other objects to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.description">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">description</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.description" title="Link to this definition">¶</a></dt>
+<dd><p>The accessibility description for the object, read aloud by assistive technologies such as VoiceOver.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.title">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.title" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s title.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.caption">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">caption</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../common_types.html#creator_studio_doc_format.core.Label" title="creator_studio_doc_format.core.Label (Python model) — Styled text that the reader uses as a title or caption on an object."><span class="pre">Label</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.caption" title="Link to this definition">¶</a></dt>
+<dd><p>The object’s caption, which Keynote always places below the object. If a caption is off, you still write it out with <code class="docutils literal notranslate"><span class="pre">Label.is_visible</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, so having a value doesn’t mean the caption shows.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.table_name_border_enabled">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">table_name_border_enabled</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.table_name_border_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Whether a border is drawn around the table’s name (title) box. The border uses the header row’s border stroke, <code class="docutils literal notranslate"><span class="pre">Table.VisualProperties.header_row_stroke_properties.border_stroke</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.number_of_columns">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_of_columns</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Table.number_of_columns" title="Link to this definition">¶</a></dt>
+<dd><p>The total number of columns in the table, including header, body, and hidden columns. A count below 1, or above the largest supported column count, is adjusted to the nearest supported count rather than rejected.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.number_of_rows">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_of_rows</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Table.number_of_rows" title="Link to this definition">¶</a></dt>
+<dd><p>The total number of rows in the table, including header, body, footer, hidden, and filtered rows. A count below 1, or above the largest supported row count, is adjusted to the nearest supported count rather than rejected.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.number_of_header_rows">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_of_header_rows</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">0</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.number_of_header_rows" title="Link to this definition">¶</a></dt>
+<dd><p>The number of header rows at the top of the table, which are styled separately from body rows and typically contain column titles. A negative count, or one greater than <code class="docutils literal notranslate"><span class="pre">number_of_rows</span></code>, is adjusted to fit rather than rejected.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.number_of_header_columns">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_of_header_columns</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">0</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.number_of_header_columns" title="Link to this definition">¶</a></dt>
+<dd><p>The number of header columns at the leading edge of the table, which are styled separately from body columns and typically contain row labels. A negative count, or one greater than <code class="docutils literal notranslate"><span class="pre">number_of_columns</span></code>, is adjusted to fit rather than rejected.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.number_of_footer_rows">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_of_footer_rows</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">0</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.number_of_footer_rows" title="Link to this definition">¶</a></dt>
+<dd><p>The number of footer rows at the bottom of the table, which are styled separately from body rows and typically contain totals or summaries. A negative count is treated as zero, and if <code class="docutils literal notranslate"><span class="pre">number_of_header_rows</span></code> plus <code class="docutils literal notranslate"><span class="pre">number_of_footer_rows</span></code> would exceed <code class="docutils literal notranslate"><span class="pre">number_of_rows</span></code>, the footer count is reduced to fit rather than rejected.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.default_column_width">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">default_column_width</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">98</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.default_column_width" title="Link to this definition">¶</a></dt>
+<dd><p>The default column width, in points, which must be greater than 0. It’s used for any column that doesn’t override it with <code class="docutils literal notranslate"><span class="pre">Table.ColumnHeader.column_width</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.default_row_height">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">default_row_height</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="mi">20</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.default_row_height" title="Link to this definition">¶</a></dt>
+<dd><p>The default row height, in points, which must be greater than 0. It’s used for any row that doesn’t override it with <code class="docutils literal notranslate"><span class="pre">Table.Row.row_height</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.visual_properties">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">visual_properties</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="appearance.html#creator_studio_doc_format.core.VisualProperties" title="creator_studio_doc_format.core.VisualProperties (Python model) — The default styling of a table, broken down by region."><span class="pre">VisualProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.visual_properties" title="Link to this definition">¶</a></dt>
+<dd><p>The default styles for the whole table. These are table-level properties, such as strokes and alternating row fills, plus default cell and text properties for each region (body, header rows, header columns, and footer rows). Cell- and column-level overrides take precedence over these defaults.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.column_headers">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_headers</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="rows_and_columns.html#creator_studio_doc_format.core.ColumnHeader" title="creator_studio_doc_format.core.ColumnHeader (Python model) — The metadata for a column in a table."><span class="pre">ColumnHeader</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.column_headers" title="Link to this definition">¶</a></dt>
+<dd><p>The metadata for each column, including its stable column ID, its display title, its default cell format, style, and text, and an optional column width override. It provides the column identity that formula references and merges use. There’s one entry for each column, in left-to-right order, so an entry’s position here is that column’s position in every row’s <code class="docutils literal notranslate"><span class="pre">cells</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.content">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">content</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="rows_and_columns.html#creator_studio_doc_format.core.Row" title="creator_studio_doc_format.core.Row (Python model) — A row in a table."><span class="pre">Row</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.content" title="Link to this definition">¶</a></dt>
+<dd><p>The table’s rows as displayed, including header and footer rows; trailing blank rows can be omitted. Hidden and filtered rows are included, marked by their <code class="docutils literal notranslate"><span class="pre">Table.Row.visibility_state</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.merges">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">merges</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="rows_and_columns.html#creator_studio_doc_format.core.CellRange" title="creator_studio_doc_format.core.CellRange (Python model) — A rectangular range of cells in a table."><span class="pre">CellRange</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.merges" title="Link to this definition">¶</a></dt>
+<dd><p>The cell ranges that are each visually merged into a single cell. The content is in the top-left cell, and the other cells in the range are blank. Each range names its corners by this table’s row and column IDs. If a corner names a row or column the table doesn’t have, or a range’s end comes before its start, Keynote drops the whole table, with a warning, instead of loading the table without that merge.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Table.conditional_style_sets">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">conditional_style_sets</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="conditional_styles.html#creator_studio_doc_format.core.ConditionalStyleSet" title="creator_studio_doc_format.core.ConditionalStyleSet (Python model) — A shared set of conditional highlighting rules that multiple cells can reference."><span class="pre">ConditionalStyleSet</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.conditional_style_sets" title="Link to this definition">¶</a></dt>
+<dd><p>The shared sets of conditional highlighting rules. Cells reference a set by ID in <code class="docutils literal notranslate"><span class="pre">Table.Cell.conditional_style_set_identifier</span></code>, so the same rules can be reused across many cells without duplication.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.custom_formats">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">custom_formats</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="cell_formats.html#creator_studio_doc_format.core.CustomFormat" title="creator_studio_doc_format.core.CustomFormat (Python model) — A user-defined format for a cell."><span class="pre">CustomFormat</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.custom_formats" title="Link to this definition">¶</a></dt>
+<dd><p>The shared custom-format definitions. Cells whose <code class="docutils literal notranslate"><span class="pre">cell_format.format_type</span></code> is <code class="docutils literal notranslate"><span class="pre">custom</span></code> reference one of these by ID in <code class="docutils literal notranslate"><span class="pre">cell_format.custom_format_identifier</span></code>, so the same format definition can be reused across many cells without duplication.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Table.transformation">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">transformation</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="transformations.html#creator_studio_doc_format.core.TransformationInfo" title="creator_studio_doc_format.core.TransformationInfo (Python model) — Information about how the reader derives a table."><span class="pre">TransformationInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Table.transformation" title="Link to this definition">¶</a></dt>
+<dd><p>The filter and sort rules applied to this table, in <code class="docutils literal notranslate"><span class="pre">filter_set</span></code> and <code class="docutils literal notranslate"><span class="pre">sort</span></code>; <code class="docutils literal notranslate"><span class="pre">content</span></code> holds the result.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="columnmetrics">ColumnMetrics<a class="headerlink" href="#columnmetrics" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ColumnMetrics">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ColumnMetrics</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ColumnMetrics" title="creator_studio_doc_format.core.ColumnMetrics.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ColumnMetrics.equal" title="creator_studio_doc_format.core.ColumnMetrics.equal (Python field) — All the columns are the same width, and so are all the gutters."><span class="n"><span class="pre">equal</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ColumnMetrics.single" title="creator_studio_doc_format.core.ColumnMetrics.single (Python field) — A single column."><span class="n"><span class="pre">single</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ColumnMetrics.unequal" title="creator_studio_doc_format.core.ColumnMetrics.unequal (Python field) — Each of the column and gutter widths is specified."><span class="n"><span class="pre">unequal</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ColumnMetrics" title="creator_studio_doc_format.core.ColumnMetrics.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ColumnMetrics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ColumnMetrics" title="Link to this definition">¶</a></dt>
+<dd><p>The arrangement of a text area into columns, and the width of the gutters between them.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ColumnMetrics.equal">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">equal</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.EqualColumnsDescription" title="creator_studio_doc_format.core.EqualColumnsDescription (Python model) — An arrangement of a text area into columns of equal width."><span class="pre">EqualColumnsDescription</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ColumnMetrics.equal" title="Link to this definition">¶</a></dt>
+<dd><p>All the columns are the same width, and so are all the gutters.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ColumnMetrics.single">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">single</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="k"><span class="pre">True</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ColumnMetrics.single" title="Link to this definition">¶</a></dt>
+<dd><p>A single column.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ColumnMetrics.unequal">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">unequal</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.UnequalColumnsDescription" title="creator_studio_doc_format.core.UnequalColumnsDescription (Python model) — An arrangement of a text area into columns of specified widths."><span class="pre">UnequalColumnsDescription</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.ColumnMetrics.unequal" title="Link to this definition">¶</a></dt>
+<dd><p>Each of the column and gutter widths is specified.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="equalcolumnsdescription">EqualColumnsDescription<a class="headerlink" href="#equalcolumnsdescription" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.EqualColumnsDescription">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">EqualColumnsDescription</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.EqualColumnsDescription" title="creator_studio_doc_format.core.EqualColumnsDescription.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.EqualColumnsDescription.count" title="creator_studio_doc_format.core.EqualColumnsDescription.count (Python field) — The number of columns."><span class="n"><span class="pre">count</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.EqualColumnsDescription.gutter_width" title="creator_studio_doc_format.core.EqualColumnsDescription.gutter_width (Python field) — The width of the gutter between adjacent columns, the same between every pair, as a percentage of the width available for text inside the container (its width less its padding). It's only meaningful when count is greater than 1; the default is 5%."><span class="n"><span class="pre">gutter_width</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.EqualColumnsDescription" title="creator_studio_doc_format.core.EqualColumnsDescription.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#EqualColumnsDescription"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.EqualColumnsDescription" title="Link to this definition">¶</a></dt>
+<dd><p>An arrangement of a text area into columns of equal width.</p>
+<p>Only <code class="docutils literal notranslate"><span class="pre">count</span></code> and <code class="docutils literal notranslate"><span class="pre">gutter_width</span></code> are specified; each column takes an equal share of the width the gutters leave. The gutters together are clamped to 75% of the text width, so a large <code class="docutils literal notranslate"><span class="pre">gutter_width</span></code> is silently narrowed.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.EqualColumnsDescription.count">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">count</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">int</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.EqualColumnsDescription.count" title="Link to this definition">¶</a></dt>
+<dd><p>The number of columns.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 1</p></li>
+<li><p><strong>le</strong> = 10</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.EqualColumnsDescription.gutter_width">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">gutter_width</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.EqualColumnsDescription.gutter_width" title="Link to this definition">¶</a></dt>
+<dd><p>The width of the gutter between adjacent columns, the same between every pair, as a percentage of the width available for text inside the container (its width less its padding). It’s only meaningful when <code class="docutils literal notranslate"><span class="pre">count</span></code> is greater than <code class="docutils literal notranslate"><span class="pre">1</span></code>; the default is 5%.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ge</strong> = 0</p></li>
+<li><p><strong>le</strong> = 75</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="unequalcolumnsdescription">UnequalColumnsDescription<a class="headerlink" href="#unequalcolumnsdescription" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.UnequalColumnsDescription">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">UnequalColumnsDescription</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.UnequalColumnsDescription" title="creator_studio_doc_format.core.UnequalColumnsDescription.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.UnequalColumnsDescription.column_widths" title="creator_studio_doc_format.core.UnequalColumnsDescription.column_widths (Python field) — The width of each column, as a percentage of the width available for text inside the container (its width less its padding). The number of columns is the length of this array, and the column widths together with the gutter widths must total 100."><span class="n"><span class="pre">column_widths</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.UnequalColumnsDescription.gutter_widths" title="creator_studio_doc_format.core.UnequalColumnsDescription.gutter_widths (Python field) — The width of the gutter following each column, as a percentage of the width available for text inside the container (its width less its padding). The array's length must be exactly one less than the number of column widths, or the content is rejected; if it's omitted, there are no gutters, which is valid only for a single column."><span class="n"><span class="pre">gutter_widths</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.UnequalColumnsDescription" title="creator_studio_doc_format.core.UnequalColumnsDescription.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#UnequalColumnsDescription"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.UnequalColumnsDescription" title="Link to this definition">¶</a></dt>
+<dd><p>An arrangement of a text area into columns of specified widths.</p>
+<p>Each of the column and gutter widths is specified, and together they must total 100.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.UnequalColumnsDescription.column_widths">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_widths</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.UnequalColumnsDescription.column_widths" title="Link to this definition">¶</a></dt>
+<dd><p>The width of each column, as a percentage of the width available for text inside the container (its width less its padding). The number of columns is the length of this array, and the column widths together with the gutter widths must total 100.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_length</strong> = 1</p></li>
+<li><p><strong>max_length</strong> = 10</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.UnequalColumnsDescription.gutter_widths">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">gutter_widths</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.UnequalColumnsDescription.gutter_widths" title="Link to this definition">¶</a></dt>
+<dd><p>The width of the gutter following each column, as a percentage of the width available for text inside the container (its width less its padding). The array’s length must be exactly one less than the number of column widths, or the content is rejected; if it’s omitted, there are no gutters, which is valid only for a single column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_length</strong> = 1</p></li>
+<li><p><strong>max_length</strong> = 9</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="table-structure">Table structure<a class="headerlink" href="#table-structure" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="rows_and_columns.html"><span class="doc">Rows and columns</span></a></dt><dd><p>Define a table’s rows and column headers, and the ranges of cells across them.</p>
+</dd>
+<dt><a class="reference internal" href="cells.html"><span class="doc">Cells</span></a></dt><dd><p>Set the values, formulas, and appearance of a table’s cells.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="formats-and-styles">Formats and styles<a class="headerlink" href="#formats-and-styles" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="cell_formats.html"><span class="doc">Cell formats</span></a></dt><dd><p>Control how Keynote displays a cell’s value.</p>
+</dd>
+<dt><a class="reference internal" href="appearance.html"><span class="doc">Table appearance</span></a></dt><dd><p>Set a table’s overall properties and the strokes around and between its cells.</p>
+</dd>
+<dt><a class="reference internal" href="conditional_styles.html"><span class="doc">Conditional styles</span></a></dt><dd><p>Style a cell when its value meets a condition.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="row-filters-and-sorts">Row filters and sorts<a class="headerlink" href="#row-filters-and-sorts" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="transformations.html"><span class="doc">Filters, sorts, and pivot tables</span></a></dt><dd><p>Filter and sort a table’s rows, and find the types the format reserves for categorized and
+pivot tables.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../guide/adding_objects.html#add-a-table"><span class="std std-ref">Add a table</span></a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

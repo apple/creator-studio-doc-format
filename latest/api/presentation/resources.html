@@ -1,0 +1,1265 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="media.html">
+      
+      
+        <link rel="next" href="styling.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Resource references - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#resource" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Resource references
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tables/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="charts/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="media.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Resource</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indirectresource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Indirect<wbr>Resource</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base64encodedresource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Base64Encoded<wbr>Resource</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#premiumresourceinfo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Premium<wbr>Resource<wbr>Info</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Resource</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indirectresource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Indirect<wbr>Resource</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base64encodedresource" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Base64Encoded<wbr>Resource</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#premiumresourceinfo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Premium<wbr>Resource<wbr>Info</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="resource-references">Resource references<a class="headerlink" href="#resource-references" title="Link to this heading">¶</a></h1>
+<p>Refer to the data that media, image fills, and image bullets use.</p>
+<h2 id="resource">Resource<a class="headerlink" href="#resource" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Resource">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Resource</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Resource.base64_encoded" title="creator_studio_doc_format.core.Resource.base64_encoded (Python field) — Data carried inline in the resource."><span class="n"><span class="pre">base64_encoded</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Resource.indirect" title="creator_studio_doc_format.core.Resource.indirect (Python field) — Data stored in a separate file, identified by name rather than carried in the resource."><span class="n"><span class="pre">indirect</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Resource" title="creator_studio_doc_format.core.Resource.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Resource"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Resource" title="Link to this definition">¶</a></dt>
+<dd><p>The data used for image, movie, and audio media, and for image fills and image bullets.</p>
+<p>Resources can be carried inline (<code class="docutils literal notranslate"><span class="pre">base64_encoded</span></code>), which makes the JSON self-contained, or refer to files stored alongside the JSON in the archive (<code class="docutils literal notranslate"><span class="pre">indirect</span></code>), which keeps large assets out of the JSON but can be read only when those files are present. What happens when bytes can’t be read (an <code class="docutils literal notranslate"><span class="pre">indirect</span></code> name that matches no file, or a <code class="docutils literal notranslate"><span class="pre">base64_encoded</span></code> string that isn’t valid Base64) depends on where the resource is used. An image, movie, or audio object whose media can’t be read is dropped with a warning, though a <code class="docutils literal notranslate"><span class="pre">Movie.poster_image</span></code> that can’t be read doesn’t drop the movie. Such an object placed inline in the text of a text box or shape removes the whole text box or shape, including all of its text, and so does an image bullet in that text. An image fill in a <code class="docutils literal notranslate"><span class="pre">SlideLayout.background</span></code> removes that whole layout, and one anywhere else is left out. An image bullet or such an object in a slide’s presenter notes (<code class="docutils literal notranslate"><span class="pre">Slide.note</span></code>), or an image bullet in a list style in <code class="docutils literal notranslate"><span class="pre">Presentation.stylesheet</span></code>, stops the document from loading.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Resource.base64_encoded">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">base64_encoded</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource" title="creator_studio_doc_format.core.Base64EncodedResource (Python model) — A resource whose bytes are carried as Base64 in the resource itself, so the JSON needs no companion files."><span class="pre">Base64EncodedResource</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Resource.base64_encoded" title="Link to this definition">¶</a></dt>
+<dd><p>Data carried inline in the resource.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Resource.indirect">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">indirect</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.IndirectResource" title="creator_studio_doc_format.core.IndirectResource (Python model) — A resource whose bytes are stored in a separate file rather than in the JSON."><span class="pre">IndirectResource</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Resource.indirect" title="Link to this definition">¶</a></dt>
+<dd><p>Data stored in a separate file, identified by name rather than carried in the resource.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="indirectresource">IndirectResource<a class="headerlink" href="#indirectresource" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.IndirectResource">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">IndirectResource</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.IndirectResource" title="creator_studio_doc_format.core.IndirectResource.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.IndirectResource.identifier" title="creator_studio_doc_format.core.IndirectResource.identifier (Python field) — The name of the file inside the archive's Data directory that contains the data for this resource. If missing, filename is used as the identifier. When no data can be found for it, the resource can't be loaded (see Resource for what happens then)."><span class="n"><span class="pre">identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.IndirectResource.filename" title="creator_studio_doc_format.core.IndirectResource.filename (Python field) — The filename shown for the resource, including its filename extension, in the user interface. This value need not match identifier; see identifier for what happens when that's absent. The extension is significant: it's preserved when the resource is stored."><span class="n"><span class="pre">filename</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.IndirectResource.premium_resource_info" title="creator_studio_doc_format.core.IndirectResource.premium_resource_info (Python field) — Additional metadata for premium resources from the Content Hub."><span class="n"><span class="pre">premium_resource_info</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.IndirectResource" title="creator_studio_doc_format.core.IndirectResource.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#IndirectResource"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.IndirectResource" title="Link to this definition">¶</a></dt>
+<dd><p>A resource whose bytes are stored in a separate file rather than in the JSON.</p>
+<p>In a <code class="docutils literal notranslate"><span class="pre">.keyx</span></code> file, the <code class="docutils literal notranslate"><span class="pre">identifier</span></code> names a file in the archive’s <code class="docutils literal notranslate"><span class="pre">Data</span></code> directory. A name the reader can’t resolve is an error rather than an empty asset; what happens then depends on where the resource is used (see <code class="docutils literal notranslate"><span class="pre">Resource</span></code>).</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.IndirectResource.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.IndirectResource.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the file inside the archive’s <code class="docutils literal notranslate"><span class="pre">Data</span></code> directory that contains the data for this resource. If missing, <code class="docutils literal notranslate"><span class="pre">filename</span></code> is used as the identifier. When no data can be found for it, the resource can’t be loaded (see <code class="docutils literal notranslate"><span class="pre">Resource</span></code> for what happens then).</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.IndirectResource.filename">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">filename</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.IndirectResource.filename" title="Link to this definition">¶</a></dt>
+<dd><p>The filename shown for the resource, including its filename extension, in the user interface. This value need not match <code class="docutils literal notranslate"><span class="pre">identifier</span></code>; see <code class="docutils literal notranslate"><span class="pre">identifier</span></code> for what happens when that’s absent. The extension is significant: it’s preserved when the resource is stored.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.IndirectResource.premium_resource_info">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">premium_resource_info</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo" title="creator_studio_doc_format.core.PremiumResourceInfo (Python model) — Additional metadata that marks a resource as premium content that the reader originally sourced from the content hub."><span class="pre">PremiumResourceInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.IndirectResource.premium_resource_info" title="Link to this definition">¶</a></dt>
+<dd><p>Additional metadata for premium resources from the Content Hub.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="base64encodedresource">Base64EncodedResource<a class="headerlink" href="#base64encodedresource" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Base64EncodedResource">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Base64EncodedResource</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource" title="creator_studio_doc_format.core.Base64EncodedResource.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource.string" title="creator_studio_doc_format.core.Base64EncodedResource.string (Python field) — The resource's bytes as a Base64-encoded string. If the string can't be decoded, reading fails."><span class="n"><span class="pre">string</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource.filename" title="creator_studio_doc_format.core.Base64EncodedResource.filename (Python field) — The filename shown for the resource, including its filename extension, in the user interface. It becomes the name of the resource decoded from string."><span class="n"><span class="pre">filename</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource.premium_resource_info" title="creator_studio_doc_format.core.Base64EncodedResource.premium_resource_info (Python field) — Additional metadata for premium resources from the Content Hub."><span class="n"><span class="pre">premium_resource_info</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Base64EncodedResource" title="creator_studio_doc_format.core.Base64EncodedResource.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#Base64EncodedResource"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Base64EncodedResource" title="Link to this definition">¶</a></dt>
+<dd><p>A resource whose bytes are carried as Base64 in the resource itself, so the JSON needs no companion files.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">string</span></code> doesn’t decode, what happens depends on where the resource is used (see <code class="docutils literal notranslate"><span class="pre">Resource</span></code>).</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Base64EncodedResource.string">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">string</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Base64EncodedResource.string" title="Link to this definition">¶</a></dt>
+<dd><p>The resource’s bytes as a Base64-encoded string. If the string can’t be decoded, reading fails.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Base64EncodedResource.filename">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">filename</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Base64EncodedResource.filename" title="Link to this definition">¶</a></dt>
+<dd><p>The filename shown for the resource, including its filename extension, in the user interface. It becomes the name of the resource decoded from <code class="docutils literal notranslate"><span class="pre">string</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Base64EncodedResource.premium_resource_info">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">premium_resource_info</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo" title="creator_studio_doc_format.core.PremiumResourceInfo (Python model) — Additional metadata that marks a resource as premium content that the reader originally sourced from the content hub."><span class="pre">PremiumResourceInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Base64EncodedResource.premium_resource_info" title="Link to this definition">¶</a></dt>
+<dd><p>Additional metadata for premium resources from the Content Hub.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="premiumresourceinfo">PremiumResourceInfo<a class="headerlink" href="#premiumresourceinfo" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PremiumResourceInfo">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PremiumResourceInfo</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo" title="creator_studio_doc_format.core.PremiumResourceInfo.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo.asset_uuid" title="creator_studio_doc_format.core.PremiumResourceInfo.asset_uuid (Python field) — The UUID of the premium resource's asset in the media library, written as a standard UUID string. If the value isn't a valid UUID, it's ignored, and the resource then loses its media library association and its watermark information."><span class="n"><span class="pre">asset_uuid</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo.is_derived_asset" title="creator_studio_doc_format.core.PremiumResourceInfo.is_derived_asset (Python field) — Whether the resource was edited or otherwise derived from its original Content Hub data; if false, it's the unmodified original."><span class="n"><span class="pre">is_derived_asset</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo.may_need_watermark" title="creator_studio_doc_format.core.PremiumResourceInfo.may_need_watermark (Python field) — Whether the resource may be shown with a watermark for customers without an active subscription. When the document is read, the resource is treated as newly added, so such a customer can see a watermark on media that the original presentation showed without one."><span class="n"><span class="pre">may_need_watermark</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.PremiumResourceInfo" title="creator_studio_doc_format.core.PremiumResourceInfo.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/creator_studio_doc_format/core/models.html#PremiumResourceInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PremiumResourceInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Additional metadata that marks a resource as premium content that the reader originally sourced from the content hub.</p>
+<p>It carries the watermarking terms attached to the resource.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PremiumResourceInfo.asset_uuid">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">asset_uuid</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.PremiumResourceInfo.asset_uuid" title="Link to this definition">¶</a></dt>
+<dd><p>The UUID of the premium resource’s asset in the media library, written as a standard UUID string. If the value isn’t a valid UUID, it’s ignored, and the resource then loses its media library association and its watermark information.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PremiumResourceInfo.is_derived_asset">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_derived_asset</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.PremiumResourceInfo.is_derived_asset" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the resource was edited or otherwise derived from its original Content Hub data; if <code class="docutils literal notranslate"><span class="pre">false</span></code>, it’s the unmodified original.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PremiumResourceInfo.may_need_watermark">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">may_need_watermark</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.PremiumResourceInfo.may_need_watermark" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the resource may be shown with a watermark for customers without an active subscription. When the document is read, the resource is treated as newly added, so such a customer can see a watermark on media that the original presentation showed without one.</p>
+</dd></dl>
+
+</dd></dl>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1123 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="validation.html">
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Model bases - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#objectmodel" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model bases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="presentation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectmodel" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Object<wbr>Model</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taggedunionmodel" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Tagged<wbr>Union<wbr>Model</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Override</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payloadt" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Payload<wbr>T</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-lookup-and-comparison" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Model lookup and comparison</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectmodel" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Object<wbr>Model</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taggedunionmodel" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Tagged<wbr>Union<wbr>Model</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Override</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payloadt" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Payload<wbr>T</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-lookup-and-comparison" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Model lookup and comparison</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="model-bases">Model bases<a class="headerlink" href="#model-bases" title="Link to this heading">¶</a></h1>
+<p id="module-creator_studio_doc_format.core">Set union cases and override values through the base classes that every model derives
+from.</p>
+<h2 id="objectmodel">ObjectModel<a class="headerlink" href="#objectmodel" title="Link to this heading">¶</a></h2>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ObjectModel">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ObjectModel</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ObjectModel" title="creator_studio_doc_format.core.ObjectModel.__init__.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ObjectModel" title="creator_studio_doc_format.core.ObjectModel.__init__.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#ObjectModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ObjectModel" title="Link to this definition">¶</a></dt>
+<dd><p>The base for the model of every object that isn’t a tagged union.</p>
+<p>Besides the fields, the JSON carries an envelope that keeps documents compatible
+across versions, backward and forward. <code class="docutils literal notranslate"><span class="pre">model_dump</span></code> writes its <code class="docutils literal notranslate"><span class="pre">type_identifier</span></code>
+and <code class="docutils literal notranslate"><span class="pre">version</span></code> itself, so neither is a field. Dumping a whole document isn’t
+recommended, because it’s large as JSON, but a small model like this one is fine:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Size</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dumped</span> <span class="o">=</span> <span class="n">Size</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">100.0</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">50.0</span><span class="p">)</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"json"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dumped</span><span class="p">[</span><span class="s2">"type_identifier"</span><span class="p">],</span> <span class="n">dumped</span><span class="p">[</span><span class="s2">"version"</span><span class="p">]</span>
+<span class="go">('com.apple.apps.content-language.size', '1.0')</span>
+</code></pre></div>
+</div>
+<p>An assignment such as <code class="docutils literal notranslate"><span class="pre">m.field</span> <span class="pre">=</span> <span class="pre">x</span></code> validates as strictly as construction does. A
+change in place, such as <code class="docutils literal notranslate"><span class="pre">m.items.append(bad)</span></code> or <code class="docutils literal notranslate"><span class="pre">m.mapping[k]</span> <span class="pre">=</span> <span class="pre">bad</span></code>, skips
+validation. Reassign the whole field to revalidate it.</p>
+<p>The model handles the envelope and preset inheritance itself, so <code class="docutils literal notranslate"><span class="pre">model_dump</span></code> and
+<code class="docutils literal notranslate"><span class="pre">model_dump_json</span></code> raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> for the options that filter fields, such as
+<code class="docutils literal notranslate"><span class="pre">exclude_unset</span></code> and <code class="docutils literal notranslate"><span class="pre">exclude_none</span></code>.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<h2 id="taggedunionmodel">TaggedUnionModel<a class="headerlink" href="#taggedunionmodel" title="Link to this heading">¶</a></h2>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.TaggedUnionModel">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">TaggedUnionModel</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TaggedUnionModel" title="creator_studio_doc_format.core.TaggedUnionModel.__init__.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.TaggedUnionModel" title="creator_studio_doc_format.core.TaggedUnionModel.__init__.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#TaggedUnionModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel" title="Link to this definition">¶</a></dt>
+<dd><p>The base for every tagged union, a property that holds one of several cases.</p>
+<p>A subclass declares one optional attribute per case: the payload type, or
+<code class="docutils literal notranslate"><span class="pre">Literal[True]</span></code> for a case with no payload. A document can also hold a second
+case, such as a newer encoding beside an older one. The primary case is the one a
+reader acts on, and editing only the primary leaves the others stale.</p>
+<p>Read a value with a <code class="docutils literal notranslate"><span class="pre">match</span></code> on <code class="docutils literal notranslate"><span class="pre">union_primary()</span></code> that ends in <code class="docutils literal notranslate"><span class="pre">assert_never</span></code>,
+so a case added later is a type error. An <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">…</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></code> chain would skip it
+instead.</p>
+<p>A union adopts a preset through <code class="docutils literal notranslate"><span class="pre">preset_identifier</span></code>, as an object does. Without a
+designation, the preset can supply the primary, so pin it with <code class="docutils literal notranslate"><span class="pre">union_of</span></code>.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TaggedUnionModel.union_of">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">union_of</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TaggedUnionModel.union_of.primary" title="creator_studio_doc_format.core.TaggedUnionModel.union_of.primary (Python parameter) — The name of the case a reader acts on."><span class="n"><span class="pre">primary</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.TaggedUnionModel.union_of.cases" title="creator_studio_doc_format.core.TaggedUnionModel.union_of.cases (Python parameter) — The payload of each case, keyed by case name."><span class="n"><span class="pre">cases</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#TaggedUnionModel.union_of"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_of" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a value from its cases, with one designated as the primary case.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="creator_studio_doc_format.core.TaggedUnionModel.union_of.primary"><span class="sig-name descname">primary</span><span class="p"> : </span><span class="desctype"><span class="desctype">str</span></span><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_of.primary" title="Permalink to this definition">¶</a></dt><dd><p>The name of the case a reader acts on. <code class="docutils literal notranslate"><span class="pre">cases</span></code> must set it.</p>
+</dd>
+<dt id="creator_studio_doc_format.core.TaggedUnionModel.union_of.cases"><span class="sig-name descname">**cases</span><span class="p"> : </span><span class="desctype"><span class="desctype">Any</span></span><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_of.cases" title="Permalink to this definition">¶</a></dt><dd><p>The payload of each case, keyed by case name.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The value, with <code class="docutils literal notranslate"><span class="pre">primary</span></code> designated.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">_E</span></code></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ValueError</span></code> – <code class="docutils literal notranslate"><span class="pre">primary</span></code> names no case of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TaggedUnionModel.union_cases">
+<span class="sig-name descname"><span class="pre">union_cases</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#TaggedUnionModel.union_cases"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_cases" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the cases that a value holds, primary first, then the others by name.</p>
+<p>The primary is the designated case, else the newest. The first entry is the
+<code class="docutils literal notranslate"><span class="pre">primary_case</span></code> that <code class="docutils literal notranslate"><span class="pre">model_dump</span></code> writes when all of these hold:</p>
+<ul class="simple">
+<li><p>The primary is a case this build knows.</p></li>
+<li><p>The value holds every case its preset supplies.</p></li>
+<li><p>The value has a designation, or holds no unknown case.</p></li>
+</ul>
+<p>Cases this build doesn’t know are left out, though a round trip still preserves
+them. The result is empty only for a value with no case set, which
+<code class="docutils literal notranslate"><span class="pre">model_dump</span></code> rejects unless the value adopts a preset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A <code class="docutils literal notranslate"><span class="pre">(case_name,</span> <span class="pre">payload)</span></code> pair for each
+present case.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">tuple</span><span class="pre">[</span><span class="pre">tuple</span><span class="pre">[</span><span class="pre">str</span><span class="pre">,</span> <span class="pre">Any</span><span class="pre">]</span><span class="pre">,</span> <span class="pre">…</span><span class="pre">]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TaggedUnionModel.union_primary">
+<span class="sig-name descname"><span class="pre">union_primary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#TaggedUnionModel.union_primary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_primary" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the case that a reader acts on, with its payload.</p>
+<p>Prefer it to <code class="docutils literal notranslate"><span class="pre">union_primary_name</span></code> plus <code class="docutils literal notranslate"><span class="pre">getattr</span></code>: the payload comes back
+resolved, as <code class="docutils literal notranslate"><span class="pre">True</span></code> for a valueless case, and the pair destructures in a
+<code class="docutils literal notranslate"><span class="pre">match</span></code>. The primary is the case the document designates, so pick another
+representation, such as plain text, from <code class="docutils literal notranslate"><span class="pre">union_cases()</span></code>. The payload is the
+live model, not a copy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The <code class="docutils literal notranslate"><span class="pre">(case_name,</span> <span class="pre">payload)</span></code> pair, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no
+case is set.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">tuple</span><span class="pre">[</span><span class="pre">str</span><span class="pre">,</span> <span class="pre">Any</span><span class="pre">]</span> <span class="pre">|</span> <span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TaggedUnionModel.union_primary_name">
+<span class="sig-name descname"><span class="pre">union_primary_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#TaggedUnionModel.union_primary_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TaggedUnionModel.union_primary_name" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of the case that a reader acts on.</p>
+<p>The name is also the attribute name, so it suits classifying a value without
+touching the payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The case name, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no case is set.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="override">Override<a class="headerlink" href="#override" title="Link to this heading">¶</a></h2>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Override</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override.__init__.state (Python parameter)"><span class="n"><span class="pre">state</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override.__init__.value (Python parameter)"><span class="n"><span class="pre">value</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#Override"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Override" title="Link to this definition">¶</a></dt>
+<dd><p>A property value that tells an omitted property, a null, and a value apart.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Override.not_set()</span></code>: omitted from the JSON, so the property can inherit a
+value.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Override.cleared()</span></code>: an explicit null, which blocks inheritance and clears the
+value.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Override.value(x)</span></code>: the value <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p></li>
+</ul>
+<p>A field uses <code class="docutils literal notranslate"><span class="pre">Override</span></code> because <code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">|</span> <span class="pre">None</span></code> can’t tell an omitted property from a
+null one. The JSON keeps the two apart. Assigning a bare value to an <code class="docutils literal notranslate"><span class="pre">Override</span></code>
+field wraps it. <code class="docutils literal notranslate"><span class="pre">None</span></code> becomes <code class="docutils literal notranslate"><span class="pre">.cleared()</span></code>, and any other value becomes
+<code class="docutils literal notranslate"><span class="pre">.value(x)</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">creator_studio_doc_format.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">CellProperties</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">CellProperties</span><span class="o">.</span><span class="n">model_validate</span><span class="p">({</span><span class="s2">"fill"</span><span class="p">:</span> <span class="kc">None</span><span class="p">})</span><span class="o">.</span><span class="n">fill</span><span class="o">.</span><span class="n">is_cleared</span>
+<span class="go">True</span>
+</code></pre></div>
+</div>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.state">
+<span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Override.state" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.not_set">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">not_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#Override.not_set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Override.not_set" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an override for an omitted property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An override that leaves the property free to inherit a value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><a class="reference internal" href="#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="pre">[</span><span class="pre">_OT</span><span class="pre">]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.cleared">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cleared</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#Override.cleared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Override.cleared" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an override for an explicit null.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An override that blocks inheritance and clears the value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><a class="reference internal" href="#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="pre">[</span><span class="pre">_OT</span><span class="pre">]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.value">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Override.value.value" title="creator_studio_doc_format.core.Override.value.value (Python parameter) — The property's value."><span class="n"><span class="pre">value</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#Override.value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Override.value" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an override that holds a value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="creator_studio_doc_format.core.Override.value.value"><span class="sig-name descname">value</span><span class="p"> : </span><span class="desctype"><span class="desctype">_OT</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Override.value.value" title="Permalink to this definition">¶</a></dt><dd><p>The property’s value.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An override that holds <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><a class="reference internal" href="#creator_studio_doc_format.core.Override" title="creator_studio_doc_format.core.Override (Python class) — A property value that tells an omitted property, a null, and a value apart."><span class="pre">Override</span></a><span class="pre">[</span><span class="pre">_OT</span><span class="pre">]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.is_not_set">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_not_set</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Override.is_not_set" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether the property is omitted.</p>
+</dd></dl>
+
+<dl class="py property objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.is_cleared">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_cleared</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Override.is_cleared" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether the property is an explicit null.</p>
+</dd></dl>
+
+<dl class="py property objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.is_value">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_value</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Override.is_value" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean value that indicates whether the property has a value.</p>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Override.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#Override.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Override.get" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the property’s value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The value, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if the property is omitted or cleared.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">_OT</span> <span class="pre">|</span> <span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="payloadt">PayloadT<a class="headerlink" href="#payloadt" title="Link to this heading">¶</a></h2>
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PayloadT">
+<span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PayloadT</span></span><a class="headerlink" href="#creator_studio_doc_format.core.PayloadT" title="Link to this definition">¶</a></dt>
+<dd><p>The type variable for the root model of a
+<a class="reference internal" href="document.html#creator_studio_doc_format.core.Package" title="creator_studio_doc_format.core.Package (Python class) — A document package in memory, with its payload, presets, manifest, and resources."><code class="xref py py-class docutils literal notranslate"><span class="pre">Package</span></code></a>, bound to
+<a class="reference internal" href="#creator_studio_doc_format.core.ObjectModel" title="creator_studio_doc_format.core.ObjectModel (Python class) — The base for the model of every object that isn't a tagged union."><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectModel</span></code></a>. <code class="docutils literal notranslate"><span class="pre">KeyxDocument</span></code> binds it to
+<code class="docutils literal notranslate"><span class="pre">Presentation</span></code>.</p>
+</dd></dl>
+
+<h2 id="model-lookup-and-comparison">Model lookup and comparison<a class="headerlink" href="#model-lookup-and-comparison" title="Link to this heading">¶</a></h2>
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.model_for">
+<span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">model_for</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.model_for.type_identifier" title="creator_studio_doc_format.core.model_for.type_identifier (Python parameter) — The type_identifier that an object carries in the JSON."><span class="n"><span class="pre">type_identifier</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core.html#model_for"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.model_for" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the model class for a type identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="creator_studio_doc_format.core.model_for.type_identifier"><span class="sig-name descname">type_identifier</span><span class="p"> : </span><span class="desctype"><span class="desctype">str</span></span><a class="headerlink" href="#creator_studio_doc_format.core.model_for.type_identifier" title="Permalink to this definition">¶</a></dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">type_identifier</span></code> that an object carries in the JSON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The generated model class, or
+<code class="docutils literal notranslate"><span class="pre">None</span></code> if no model has that <code class="docutils literal notranslate"><span class="pre">type_identifier</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">type</span><span class="pre">[</span><a class="reference internal" href="#creator_studio_doc_format.core.ObjectModel" title="creator_studio_doc_format.core.ObjectModel (Python class) — The base for the model of every object that isn't a tagged union."><span class="pre">ObjectModel</span></a> <span class="pre">|</span> <a class="reference internal" href="#creator_studio_doc_format.core.TaggedUnionModel" title="creator_studio_doc_format.core.TaggedUnionModel (Python class) — The base for every tagged union, a property that holds one of several cases."><span class="pre">TaggedUnionModel</span></a><span class="pre">]</span> <span class="pre">|</span> <span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.same_json">
+<span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">same_json</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.same_json.a" title="creator_studio_doc_format.core.same_json.a (Python parameter) — A parsed JSON value."><span class="n"><span class="pre">a</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.same_json.b" title="creator_studio_doc_format.core.same_json.b (Python parameter) — A parsed JSON value."><span class="n"><span class="pre">b</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/creator_studio_doc_format/core/_wire.html#same_json"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.same_json" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a Boolean value that indicates whether two parsed JSON values are equal.</p>
+<p>Two strings of JSON text compare only as strings, so parse the text first. Key order
+doesn’t matter, but array order does. Numbers compare by value, so <code class="docutils literal notranslate"><span class="pre">1</span></code> equals
+<code class="docutils literal notranslate"><span class="pre">1.0</span></code>. <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> never equal <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span></code>. A <code class="docutils literal notranslate"><span class="pre">null</span></code> differs from
+an absent key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="creator_studio_doc_format.core.same_json.a"><span class="sig-name descname">a</span><span class="p"> : </span><span class="desctype"><span class="desctype">Any</span></span><a class="headerlink" href="#creator_studio_doc_format.core.same_json.a" title="Permalink to this definition">¶</a></dt><dd><p>A parsed JSON value.</p>
+</dd>
+<dt id="creator_studio_doc_format.core.same_json.b"><span class="sig-name descname">b</span><span class="p"> : </span><span class="desctype"><span class="desctype">Any</span></span><a class="headerlink" href="#creator_studio_doc_format.core.same_json.b" title="Permalink to this definition">¶</a></dt><dd><p>A parsed JSON value.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are the same JSON, or <code class="docutils literal notranslate"><span class="pre">False</span></code> if they
+aren’t.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<p><a class="extlink-authoring reference external" href="https://developer.apple.com/documentation/keynoteinterchangeformat/understanding-authoring-requirements-for-keynote-interchange-format#Write-nulls-only-where-you-mean-them">Write nulls only where you mean them</a> in the format’s authoring requirements, and
+<a class="extlink-structure reference external" href="https://developer.apple.com/documentation/keynoteinterchangeformat/understanding-keynote-interchange-format-structure#Turn-off-an-inherited-value">Turn off an inherited value</a> for what a null
+means.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

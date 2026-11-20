@@ -1,0 +1,1617 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tables/transformations.html">
+      
+      
+        <link rel="next" href="kinds.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Charts - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chart" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Charts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__current-nested md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_1_2_6" id="__nav_2_1_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Charts</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2_6_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#chart-kinds-and-data" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart kinds and data</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_6_1" id="__nav_2_1_2_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Chart kinds and data</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kinds.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart kinds</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="data_and_series.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart data and series</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2_6_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="#axes-and-shared-properties" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Axes and shared properties</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_6_2" id="__nav_2_1_2_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Axes and shared properties</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="axes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Chart axes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shared.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shared chart properties</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+      
+    <li class="md-nav__item md-nav__item--active md-nav__current-toc">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chart-kinds-and-data" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart kinds and data</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chart kinds and data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="kinds.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart kinds</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="data_and_series.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart data and series</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axes-and-shared-properties" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Axes and shared properties</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Axes and shared properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="axes.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart axes</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="shared.html" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Shared chart properties</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chart-kinds-and-data" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Chart kinds and data</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axes-and-shared-properties" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Axes and shared properties</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="charts">Charts<a class="headerlink" href="#charts" title="Link to this heading">¶</a></h1>
+<p>Add column, pie, scatter, and other charts to a slide.</p>
+<h2 id="chart">Chart<a class="headerlink" href="#chart" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Chart">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Chart</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart" title="creator_studio_doc_format.core.Chart.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.area" title="creator_studio_doc_format.core.Chart.area (Python field) — A line chart with the region between the line and the axis filled, one region for each series."><span class="n"><span class="pre">area</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.area_3d" title="creator_studio_doc_format.core.Chart.area_3d (Python field) — A 3D area chart."><span class="n"><span class="pre">area_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.bar" title="creator_studio_doc_format.core.Chart.bar (Python field) — Values as horizontal bars, one bar for each series within each category."><span class="n"><span class="pre">bar</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.bar_3d" title="creator_studio_doc_format.core.Chart.bar_3d (Python field) — A 3D bar chart."><span class="n"><span class="pre">bar_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.bar_interactive" title="creator_studio_doc_format.core.Chart.bar_interactive (Python field) — An interactive bar chart, which shows one data set at a time."><span class="n"><span class="pre">bar_interactive</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.bubble" title="creator_studio_doc_format.core.Chart.bubble (Python field) — A scatter chart whose third value sets the area of each point."><span class="n"><span class="pre">bubble</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.bubble_interactive" title="creator_studio_doc_format.core.Chart.bubble_interactive (Python field) — An interactive bubble chart, which shows one data set at a time."><span class="n"><span class="pre">bubble_interactive</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.column" title="creator_studio_doc_format.core.Chart.column (Python field) — Values as vertical bars, one bar for each series within each category."><span class="n"><span class="pre">column</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.column_3d" title="creator_studio_doc_format.core.Chart.column_3d (Python field) — A 3D column chart."><span class="n"><span class="pre">column_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.column_interactive" title="creator_studio_doc_format.core.Chart.column_interactive (Python field) — An interactive column chart, which shows one data set at a time."><span class="n"><span class="pre">column_interactive</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.donut" title="creator_studio_doc_format.core.Chart.donut (Python field) — A pie chart that appears as a ring with an open center."><span class="n"><span class="pre">donut</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.line" title="creator_studio_doc_format.core.Chart.line (Python field) — Values as points joined by a line, with one line for each series."><span class="n"><span class="pre">line</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.line_3d" title="creator_studio_doc_format.core.Chart.line_3d (Python field) — A 3D line chart."><span class="n"><span class="pre">line_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.mixed" title="creator_studio_doc_format.core.Chart.mixed (Python field) — A mixed chart."><span class="n"><span class="pre">mixed</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.pie" title="creator_studio_doc_format.core.Chart.pie (Python field) — One series as wedges of a circle, with each wedge sized by its share of the total."><span class="n"><span class="pre">pie</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.pie_3d" title="creator_studio_doc_format.core.Chart.pie_3d (Python field) — A 3D pie chart."><span class="n"><span class="pre">pie_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.radar" title="creator_studio_doc_format.core.Chart.radar (Python field) — Categories that appear around a circle, with each series appearing as a closed outline through its values."><span class="n"><span class="pre">radar</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.scatter" title="creator_studio_doc_format.core.Chart.scatter (Python field) — Each series appears as a plot of pairs of X and Y values against two value axes, rather than against categories."><span class="n"><span class="pre">scatter</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.scatter_interactive" title="creator_studio_doc_format.core.Chart.scatter_interactive (Python field) — An interactive scatter chart, which shows one data set at a time."><span class="n"><span class="pre">scatter_interactive</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_area" title="creator_studio_doc_format.core.Chart.stacked_area (Python field) — Filled regions that stack on one another, so the outer edge is the category total."><span class="n"><span class="pre">stacked_area</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_area_3d" title="creator_studio_doc_format.core.Chart.stacked_area_3d (Python field) — A 3D stacked area chart."><span class="n"><span class="pre">stacked_area_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_bar" title="creator_studio_doc_format.core.Chart.stacked_bar (Python field) — Horizontal bars with series that stack end to end, so each bar's length is the category total."><span class="n"><span class="pre">stacked_bar</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_bar_3d" title="creator_studio_doc_format.core.Chart.stacked_bar_3d (Python field) — A 3D stacked bar chart."><span class="n"><span class="pre">stacked_bar_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_column" title="creator_studio_doc_format.core.Chart.stacked_column (Python field) — Vertical bars with series that stack end to end, so each column's height is the category total."><span class="n"><span class="pre">stacked_column</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.stacked_column_3d" title="creator_studio_doc_format.core.Chart.stacked_column_3d (Python field) — A 3D stacked column chart."><span class="n"><span class="pre">stacked_column_3d</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Chart.two_axis" title="creator_studio_doc_format.core.Chart.two_axis (Python field) — A two-axis chart."><span class="n"><span class="pre">two_axis</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Chart" title="creator_studio_doc_format.core.Chart.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Chart"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Chart" title="Link to this definition">¶</a></dt>
+<dd><p>An object that plots a grid of data in a visual style such as column, pie, or scatter.</p>
+<p>Write a chart as an object with a single key, which names its chart type, such as <code class="docutils literal notranslate"><span class="pre">column</span></code> or <code class="docutils literal notranslate"><span class="pre">pie</span></code>, and holds that type’s settings. The chart type decides only how Keynote plots the series: every chart type uses the same chart data, so when you change a chart’s type, that change replots the existing series without rewriting the data.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.area">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">area</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.AreaChart" title="creator_studio_doc_format.core.AreaChart (Python model) — A 2D area chart."><span class="pre">AreaChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.area" title="Link to this definition">¶</a></dt>
+<dd><p>A line chart with the region between the line and the axis filled, one region for each series.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.area_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">area_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.Area3DChart" title="creator_studio_doc_format.core.Area3DChart (Python model) — A 3D area chart."><span class="pre">Area3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.area_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D area chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.bar">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bar</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.BarChart" title="creator_studio_doc_format.core.BarChart (Python model) — A 2D bar chart."><span class="pre">BarChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.bar" title="Link to this definition">¶</a></dt>
+<dd><p>Values as horizontal bars, one bar for each series within each category.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.bar_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bar_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.Bar3DChart" title="creator_studio_doc_format.core.Bar3DChart (Python model) — A 3D horizontal bar chart."><span class="pre">Bar3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.bar_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D bar chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.bar_interactive">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bar_interactive</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.BarInteractiveChart" title="creator_studio_doc_format.core.BarInteractiveChart (Python model) — An interactive horizontal bar chart, which shows one data set at a time."><span class="pre">BarInteractiveChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.bar_interactive" title="Link to this definition">¶</a></dt>
+<dd><p>An interactive bar chart, which shows one data set at a time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.bubble">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bubble</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.BubbleChart" title="creator_studio_doc_format.core.BubbleChart (Python model) — A bubble chart."><span class="pre">BubbleChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.bubble" title="Link to this definition">¶</a></dt>
+<dd><p>A scatter chart whose third value sets the area of each point.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.bubble_interactive">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bubble_interactive</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.BubbleInteractiveChart" title="creator_studio_doc_format.core.BubbleInteractiveChart (Python model) — An interactive bubble chart, which shows one data set at a time."><span class="pre">BubbleInteractiveChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.bubble_interactive" title="Link to this definition">¶</a></dt>
+<dd><p>An interactive bubble chart, which shows one data set at a time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.column">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.ColumnChart" title="creator_studio_doc_format.core.ColumnChart (Python model) — A 2D column chart."><span class="pre">ColumnChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.column" title="Link to this definition">¶</a></dt>
+<dd><p>Values as vertical bars, one bar for each series within each category.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.column_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.Column3DChart" title="creator_studio_doc_format.core.Column3DChart (Python model) — A 3D vertical column chart."><span class="pre">Column3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.column_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D column chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.column_interactive">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_interactive</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.ColumnInteractiveChart" title="creator_studio_doc_format.core.ColumnInteractiveChart (Python model) — An interactive vertical column chart, which shows one data set at a time."><span class="pre">ColumnInteractiveChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.column_interactive" title="Link to this definition">¶</a></dt>
+<dd><p>An interactive column chart, which shows one data set at a time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.donut">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">donut</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.DonutChart" title="creator_studio_doc_format.core.DonutChart (Python model) — A donut chart."><span class="pre">DonutChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.donut" title="Link to this definition">¶</a></dt>
+<dd><p>A pie chart that appears as a ring with an open center.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.line">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">line</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.LineChart" title="creator_studio_doc_format.core.LineChart (Python model) — A 2D line chart."><span class="pre">LineChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.line" title="Link to this definition">¶</a></dt>
+<dd><p>Values as points joined by a line, with one line for each series.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.line_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">line_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.Line3DChart" title="creator_studio_doc_format.core.Line3DChart (Python model) — A 3D line chart."><span class="pre">Line3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.line_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D line chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.mixed">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">mixed</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.MixedChart" title="creator_studio_doc_format.core.MixedChart (Python model) — A mixed chart, which draws individual series as columns, lines, or areas."><span class="pre">MixedChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.mixed" title="Link to this definition">¶</a></dt>
+<dd><p>A mixed chart.</p>
+<p>Each series can appear as columns, as a line, or as an area. For more information on mixed charts, see <code class="docutils literal notranslate"><span class="pre">ChartSeries.mixed_series_type</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.pie">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">pie</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.PieChart" title="creator_studio_doc_format.core.PieChart (Python model) — A pie chart."><span class="pre">PieChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.pie" title="Link to this definition">¶</a></dt>
+<dd><p>One series as wedges of a circle, with each wedge sized by its share of the total.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.pie_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">pie_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.Pie3DChart" title="creator_studio_doc_format.core.Pie3DChart (Python model) — A 3D pie chart."><span class="pre">Pie3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.pie_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D pie chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.radar">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">radar</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.RadarChart" title="creator_studio_doc_format.core.RadarChart (Python model) — A radar chart."><span class="pre">RadarChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.radar" title="Link to this definition">¶</a></dt>
+<dd><p>Categories that appear around a circle, with each series appearing as a closed outline through its values.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.scatter">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">scatter</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.ScatterChart" title="creator_studio_doc_format.core.ScatterChart (Python model) — A scatter chart."><span class="pre">ScatterChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.scatter" title="Link to this definition">¶</a></dt>
+<dd><p>Each series appears as a plot of pairs of X and Y values against two value axes, rather than against categories.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.scatter_interactive">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">scatter_interactive</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.ScatterInteractiveChart" title="creator_studio_doc_format.core.ScatterInteractiveChart (Python model) — An interactive scatter chart, which shows one data set at a time."><span class="pre">ScatterInteractiveChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.scatter_interactive" title="Link to this definition">¶</a></dt>
+<dd><p>An interactive scatter chart, which shows one data set at a time.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_area">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_area</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedAreaChart" title="creator_studio_doc_format.core.StackedAreaChart (Python model) — A 2D stacked area chart."><span class="pre">StackedAreaChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_area" title="Link to this definition">¶</a></dt>
+<dd><p>Filled regions that stack on one another, so the outer edge is the category total.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_area_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_area_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedArea3DChart" title="creator_studio_doc_format.core.StackedArea3DChart (Python model) — A 3D stacked area chart."><span class="pre">StackedArea3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_area_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D stacked area chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_bar">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_bar</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedBarChart" title="creator_studio_doc_format.core.StackedBarChart (Python model) — A 2D stacked bar chart."><span class="pre">StackedBarChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_bar" title="Link to this definition">¶</a></dt>
+<dd><p>Horizontal bars with series that stack end to end, so each bar’s length is the category total.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_bar_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_bar_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedBar3DChart" title="creator_studio_doc_format.core.StackedBar3DChart (Python model) — A 3D stacked horizontal bar chart."><span class="pre">StackedBar3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_bar_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D stacked bar chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_column">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_column</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedColumnChart" title="creator_studio_doc_format.core.StackedColumnChart (Python model) — A 2D stacked column chart."><span class="pre">StackedColumnChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_column" title="Link to this definition">¶</a></dt>
+<dd><p>Vertical bars with series that stack end to end, so each column’s height is the category total.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.stacked_column_3d">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">stacked_column_3d</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.StackedColumn3DChart" title="creator_studio_doc_format.core.StackedColumn3DChart (Python model) — A 3D stacked vertical column chart."><span class="pre">StackedColumn3DChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.stacked_column_3d" title="Link to this definition">¶</a></dt>
+<dd><p>A 3D stacked column chart.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Chart.two_axis">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">two_axis</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="kinds.html#creator_studio_doc_format.core.TwoAxisChart" title="creator_studio_doc_format.core.TwoAxisChart (Python model) — A two-axis chart, which is a category chart with two independent value scales."><span class="pre">TwoAxisChart</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Chart.two_axis" title="Link to this definition">¶</a></dt>
+<dd><p>A two-axis chart.</p>
+<p>This type of chart plots each series against either the primary or the secondary value axis; for more information about axes, see <code class="docutils literal notranslate"><span class="pre">ChartSeries.y_axis_selection</span></code>. Each series can appear as columns, as a line, or as an area. For more information, see <code class="docutils literal notranslate"><span class="pre">ChartSeries.mixed_series_type</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="chart-kinds-and-data">Chart kinds and data<a class="headerlink" href="#chart-kinds-and-data" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="kinds.html"><span class="doc">Chart kinds</span></a></dt><dd><p>Choose the kind of chart to show, from area and bar charts to radar and mixed charts.</p>
+</dd>
+<dt><a class="reference internal" href="data_and_series.html"><span class="doc">Chart data and series</span></a></dt><dd><p>Supply a chart’s data, and style the series it plots and its legend.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="axes-and-shared-properties">Axes and shared properties<a class="headerlink" href="#axes-and-shared-properties" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="axes.html"><span class="doc">Chart axes</span></a></dt><dd><p>Configure the category and value axes of a chart.</p>
+</dd>
+<dt><a class="reference internal" href="shared.html"><span class="doc">Shared chart properties</span></a></dt><dd><p>Set the properties that several kinds of chart share.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../guide/adding_objects.html#add-a-chart"><span class="std std-ref">Add a chart</span></a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

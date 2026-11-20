@@ -1,0 +1,2281 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="appearance.html">
+      
+      
+        <link rel="next" href="transformations.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Conditional styles - Creator Studio Document Format</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.cf2c65c97ee1b6f01.min.css?v=0a68cab4" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autodoc_pydantic.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/site.css?v=0bd8c7fa" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conditionalstyleset" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-header__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creator Studio Document Format
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conditional styles
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light appearance"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light appearance" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Creator Studio Document Format" class="md-nav__button md-logo" aria-label="Creator Studio Document Format" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    Creator Studio Document Format
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/apple/creator-studio-doc-format" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Guide</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Guide</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating and editing a presentation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/adding_objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Adding content to a slide</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/authoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authoring from a theme</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/validation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Validating a document</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Navigating a document efficiently</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Glossary</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Presentation</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Presentation</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#slides-and-placement" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Slides and placement</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html#slide-content" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Slide content</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Slide content</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lists.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Lists</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Links</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Shapes</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Tables</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_5" id="__nav_2_1_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Tables</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#table-structure" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Table structure</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2_5_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html#formats-and-styles" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <span>Formats and styles</span>
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2_5_2" id="__nav_2_1_2_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_2_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Formats and styles</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cell_formats.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Cell formats</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appearance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Table appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Conditional styles</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Conditional styles</span>
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conditionalstyleset" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Conditional<wbr>Style<wbr>Set</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ConditionalStyleSet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableconditionalstylesetrule" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table<wbr>Conditional<wbr>Style<wbr>Set<wbr>Rule</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presetkind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Preset<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicate" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Predicate</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Predicate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predicatetype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Predicate<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Value</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Reference</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualifier" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Qualifier</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datequalifier" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Date<wbr>Qualifier</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#durationunit" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Duration<wbr>Unit</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#row-filters-and-sorts" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Row filters and sorts</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Charts</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Media</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Resource references</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#styles-and-appearance" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Styles and appearance</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html#common-types" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Common types</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Documents and their contents</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Document authoring, navigation, and validation</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Model bases</span>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conditionalstyleset" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Conditional<wbr>Style<wbr>Set</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ConditionalStyleSet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableconditionalstylesetrule" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Table<wbr>Conditional<wbr>Style<wbr>Set<wbr>Rule</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presetkind" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Preset<wbr>Kind</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicate" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Predicate</span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Predicate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predicatetype" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Predicate<wbr>Type</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Value</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Reference</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualifier" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Qualifier</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datequalifier" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Date<wbr>Qualifier</span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#durationunit" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Duration<wbr>Unit</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+
+
+<h1 id="conditional-styles">Conditional styles<a class="headerlink" href="#conditional-styles" title="Link to this heading">¶</a></h1>
+<p>Style a cell when its value meets a condition.</p>
+<p>Filters test cells with the same predicates.</p>
+<h2 id="conditionalstyleset">ConditionalStyleSet<a class="headerlink" href="#conditionalstyleset" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.ConditionalStyleSet">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">ConditionalStyleSet</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ConditionalStyleSet" title="creator_studio_doc_format.core.ConditionalStyleSet.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ConditionalStyleSet.identifier" title="creator_studio_doc_format.core.ConditionalStyleSet.identifier (Python field) — The unique identifier of the conditional style set."><span class="n"><span class="pre">identifier</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.ConditionalStyleSet.rules" title="creator_studio_doc_format.core.ConditionalStyleSet.rules (Python field) — The ordered list of conditional highlighting rules, with a maximum of 15. The first rule whose predicate is true for the cell is applied, and the rules after it aren't."><span class="n"><span class="pre">rules</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.ConditionalStyleSet" title="creator_studio_doc_format.core.ConditionalStyleSet.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#ConditionalStyleSet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.ConditionalStyleSet" title="Link to this definition">¶</a></dt>
+<dd><p>A shared set of conditional highlighting rules that multiple cells can reference.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConditionalStyleSet.identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ConditionalStyleSet.identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The unique identifier of the conditional style set.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.ConditionalStyleSet.rules">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rules</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule" title="creator_studio_doc_format.core.TableConditionalStyleSetRule (Python model) — A single conditional highlighting rule with a predicate and styling to apply when the predicate is true."><span class="pre">TableConditionalStyleSetRule</span></a><span class="p"><span class="pre">]</span></span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.ConditionalStyleSet.rules" title="Link to this definition">¶</a></dt>
+<dd><p>The ordered list of conditional highlighting rules, with a maximum of 15. The first rule whose predicate is true for the cell is applied, and the rules after it aren’t.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="tableconditionalstylesetrule">TableConditionalStyleSetRule<a class="headerlink" href="#tableconditionalstylesetrule" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.TableConditionalStyleSetRule">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">TableConditionalStyleSetRule</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.predicate" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.predicate (Python field) — The condition that determines when this rule applies."><span class="n"><span class="pre">predicate</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.cell_style" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.cell_style (Python field) — The cell styling to apply when the predicate is true."><span class="n"><span class="pre">cell_style</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.text_style" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.text_style (Python field) — The text styling to apply when the predicate is true."><span class="n"><span class="pre">text_style</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.preset_kind" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.preset_kind (Python field) — The built-in conditional-highlighting preset this rule represents. A named preset supplies the styling when cell_style and text_style are omitted; when either is present, it overrides the preset. custom, or no value at all, makes the rule fully custom."><span class="n"><span class="pre">preset_kind</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule" title="creator_studio_doc_format.core.TableConditionalStyleSetRule.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#TableConditionalStyleSetRule"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule" title="Link to this definition">¶</a></dt>
+<dd><p>A single conditional highlighting rule with a predicate and styling to apply when the predicate is true.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TableConditionalStyleSetRule.predicate">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">predicate</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Predicate" title="creator_studio_doc_format.core.Predicate (Python model) — A condition that's evaluated against a single cell's value."><span class="pre">Predicate</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.predicate" title="Link to this definition">¶</a></dt>
+<dd><p>The condition that determines when this rule applies.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TableConditionalStyleSetRule.cell_style">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cell_style</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="cells.html#creator_studio_doc_format.core.CellProperties" title="creator_studio_doc_format.core.CellProperties (Python model) — The styling of a table cell, other than its strokes."><span class="pre">CellProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.cell_style" title="Link to this definition">¶</a></dt>
+<dd><p>The cell styling to apply when the predicate is true.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TableConditionalStyleSetRule.text_style">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">text_style</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../text.html#creator_studio_doc_format.core.ParagraphProperties" title="creator_studio_doc_format.core.ParagraphProperties (Python model) — The paragraph-level properties of text."><span class="pre">ParagraphProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.text_style" title="Link to this definition">¶</a></dt>
+<dd><p>The text styling to apply when the predicate is true.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.TableConditionalStyleSetRule.preset_kind">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">preset_kind</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PresetKind" title="creator_studio_doc_format.core.PresetKind (Python class) — The built-in conditional-highlighting preset that a rule represents."><span class="pre">PresetKind</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.TableConditionalStyleSetRule.preset_kind" title="Link to this definition">¶</a></dt>
+<dd><p>The built-in conditional-highlighting preset this rule represents. A named preset supplies the styling when <code class="docutils literal notranslate"><span class="pre">cell_style</span></code> and <code class="docutils literal notranslate"><span class="pre">text_style</span></code> are omitted; when either is present, it overrides the preset. <code class="docutils literal notranslate"><span class="pre">custom</span></code>, or no value at all, makes the rule fully custom.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="presetkind">PresetKind<a class="headerlink" href="#presetkind" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PresetKind</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PresetKind" title="creator_studio_doc_format.core.PresetKind.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PresetKind" title="creator_studio_doc_format.core.PresetKind.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#PresetKind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind" title="Link to this definition">¶</a></dt>
+<dd><p>The built-in conditional-highlighting preset that a rule represents.</p>
+<p>It lets readers associate the rule with a known visual style.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">PresetKind.BLUE_FILL</span></code> and <code class="docutils literal notranslate"><span class="pre">'blue_fill'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.BLUE_FILL">
+<span class="sig-name descname"><span class="pre">BLUE_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'blue_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.BLUE_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Blue cell fill with white text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.BLUE_TEXT">
+<span class="sig-name descname"><span class="pre">BLUE_TEXT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'blue_text'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.BLUE_TEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Blue text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.BOLD">
+<span class="sig-name descname"><span class="pre">BOLD</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'bold'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.BOLD" title="Link to this definition">¶</a></dt>
+<dd><p>Bold text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.CUSTOM">
+<span class="sig-name descname"><span class="pre">CUSTOM</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'custom'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.CUSTOM" title="Link to this definition">¶</a></dt>
+<dd><p>A fully custom style, set entirely by <code class="docutils literal notranslate"><span class="pre">cell_style</span></code> and <code class="docutils literal notranslate"><span class="pre">text_style</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.GRAY_TEXT">
+<span class="sig-name descname"><span class="pre">GRAY_TEXT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'gray_text'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.GRAY_TEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Gray text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.GREEN_FILL">
+<span class="sig-name descname"><span class="pre">GREEN_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'green_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.GREEN_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Green cell fill with white text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.GREEN_TEXT">
+<span class="sig-name descname"><span class="pre">GREEN_TEXT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'green_text'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.GREEN_TEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Green text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.ITALICS">
+<span class="sig-name descname"><span class="pre">ITALICS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'italics'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.ITALICS" title="Link to this definition">¶</a></dt>
+<dd><p>Italic text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.ORANGE_FILL">
+<span class="sig-name descname"><span class="pre">ORANGE_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'orange_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.ORANGE_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Orange cell fill with white text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.RED_FILL">
+<span class="sig-name descname"><span class="pre">RED_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'red_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.RED_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Red cell fill with white text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.RED_TEXT">
+<span class="sig-name descname"><span class="pre">RED_TEXT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'red_text'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.RED_TEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Red text preset.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.TEAL_FILL">
+<span class="sig-name descname"><span class="pre">TEAL_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'teal_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.TEAL_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Teal cell fill with white text.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PresetKind.YELLOW_FILL">
+<span class="sig-name descname"><span class="pre">YELLOW_FILL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'yellow_fill'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PresetKind.YELLOW_FILL" title="Link to this definition">¶</a></dt>
+<dd><p>Yellow cell fill with white text.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h2 id="predicate">Predicate<a class="headerlink" href="#predicate" title="Link to this heading">¶</a></h2>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Predicate">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Predicate</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate" title="creator_studio_doc_format.core.Predicate.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.predicate_type" title="creator_studio_doc_format.core.Predicate.predicate_type (Python field) — The kind of comparison or test to perform. It determines which of value1, value2, value_list, qualifier, date_qualifier1, date_qualifier2, duration_unit1, and duration_unit2 are required."><span class="n"><span class="pre">predicate_type</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.value1" title="creator_studio_doc_format.core.Predicate.value1 (Python field) — The value the predicate compares the cell against. Predicates that take no operand, such as is_blank or date_is_today, ignore it, and the top and bottom predicates use it as the threshold count N. Its Value case must match the data type predicate_type operates on. For example, text_contains expects text."><span class="n"><span class="pre">value1</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.value2" title="creator_studio_doc_format.core.Predicate.value2 (Python field) — The second comparison value. It's required only for range predicates (value_between, value_not_between, date_is_between, duration_is_between, date_between_relative, duration_is_not_between). It must use the same Value case as value1."><span class="n"><span class="pre">value2</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.qualifier" title="creator_studio_doc_format.core.Predicate.qualifier (Python field) — The case sensitivity of a text predicate (text_contains, text_begins_with, text_ends_with, text_is, text_is_not, text_does_not_contain, text_not_starts_with, text_not_ends_with). If it's omitted, it defaults to case_insensitive."><span class="n"><span class="pre">qualifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.date_qualifier1" title="creator_studio_doc_format.core.Predicate.date_qualifier1 (Python field) — The time unit for the first value of relative date predicates (date_is_in_the_last, date_is_in_the_next, date_before_relative, date_after_relative, date_between_relative, date_in_this). For example, a value1 of 5 with a date_qualifier1 of years means “5 years.” It's required for these predicates."><span class="n"><span class="pre">date_qualifier1</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.date_qualifier2" title="creator_studio_doc_format.core.Predicate.date_qualifier2 (Python field) — The time unit for the second value of relative-date range predicates (date_between_relative). It's required only when both ends of the range need separate units."><span class="n"><span class="pre">date_qualifier2</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.duration_unit1" title="creator_studio_doc_format.core.Predicate.duration_unit1 (Python field) — The display unit for the first value of duration predicates. The duration value itself is stored as a number of seconds, and this unit determines how to interpret it; for example, 3600 seconds with a duration_unit1 of hour means “1 hour.” It's required for duration predicates."><span class="n"><span class="pre">duration_unit1</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.duration_unit2" title="creator_studio_doc_format.core.Predicate.duration_unit2 (Python field) — The display unit for the second value of duration range predicates (duration_is_between, duration_is_not_between). It's required when those predicates are used."><span class="n"><span class="pre">duration_unit2</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate.value_list" title="creator_studio_doc_format.core.Predicate.value_list (Python field) — The ordered list of typed values that the in_list and not_in_list predicates compare the cell against. All entries must use the same Value case. If it's present, value1 and value2 are ignored."><span class="n"><span class="pre">value_list</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Predicate" title="creator_studio_doc_format.core.Predicate.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Predicate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Predicate" title="Link to this definition">¶</a></dt>
+<dd><p>A condition that’s evaluated against a single cell’s value.</p>
+<p>Some predicates evaluate the cell relative to its column instead. Predicates are used by conditional highlighting rules and, in future versions, by table filter rules.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.predicate_type">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">predicate_type</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.PredicateType" title="creator_studio_doc_format.core.PredicateType (Python class) — The type of conditional test to perform."><span class="pre">PredicateType</span></a></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.predicate_type" title="Link to this definition">¶</a></dt>
+<dd><p>The kind of comparison or test to perform. It determines which of <code class="docutils literal notranslate"><span class="pre">value1</span></code>, <code class="docutils literal notranslate"><span class="pre">value2</span></code>, <code class="docutils literal notranslate"><span class="pre">value_list</span></code>, <code class="docutils literal notranslate"><span class="pre">qualifier</span></code>, <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>, <code class="docutils literal notranslate"><span class="pre">date_qualifier2</span></code>, <code class="docutils literal notranslate"><span class="pre">duration_unit1</span></code>, and <code class="docutils literal notranslate"><span class="pre">duration_unit2</span></code> are required.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.value1">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value1</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Value" title="creator_studio_doc_format.core.Value (Python model) — A typed comparison value."><span class="pre">Value</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.value1" title="Link to this definition">¶</a></dt>
+<dd><p>The value the predicate compares the cell against. Predicates that take no operand, such as <code class="docutils literal notranslate"><span class="pre">is_blank</span></code> or <code class="docutils literal notranslate"><span class="pre">date_is_today</span></code>, ignore it, and the top and bottom predicates use it as the threshold count N. Its <code class="docutils literal notranslate"><span class="pre">Value</span></code> case must match the data type <code class="docutils literal notranslate"><span class="pre">predicate_type</span></code> operates on. For example, <code class="docutils literal notranslate"><span class="pre">text_contains</span></code> expects text.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.value2">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value2</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Value" title="creator_studio_doc_format.core.Value (Python model) — A typed comparison value."><span class="pre">Value</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.value2" title="Link to this definition">¶</a></dt>
+<dd><p>The second comparison value. It’s required only for range predicates (<code class="docutils literal notranslate"><span class="pre">value_between</span></code>, <code class="docutils literal notranslate"><span class="pre">value_not_between</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_between</span></code>, <code class="docutils literal notranslate"><span class="pre">duration_is_between</span></code>, <code class="docutils literal notranslate"><span class="pre">date_between_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">duration_is_not_between</span></code>). It must use the same <code class="docutils literal notranslate"><span class="pre">Value</span></code> case as <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.qualifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">qualifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Qualifier" title="creator_studio_doc_format.core.Qualifier (Python class) — A qualifier for text-matching predicates."><span class="pre">Qualifier</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.qualifier" title="Link to this definition">¶</a></dt>
+<dd><p>The case sensitivity of a text predicate (<code class="docutils literal notranslate"><span class="pre">text_contains</span></code>, <code class="docutils literal notranslate"><span class="pre">text_begins_with</span></code>, <code class="docutils literal notranslate"><span class="pre">text_ends_with</span></code>, <code class="docutils literal notranslate"><span class="pre">text_is</span></code>, <code class="docutils literal notranslate"><span class="pre">text_is_not</span></code>, <code class="docutils literal notranslate"><span class="pre">text_does_not_contain</span></code>, <code class="docutils literal notranslate"><span class="pre">text_not_starts_with</span></code>, <code class="docutils literal notranslate"><span class="pre">text_not_ends_with</span></code>). If it’s omitted, it defaults to <code class="docutils literal notranslate"><span class="pre">case_insensitive</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.date_qualifier1">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">date_qualifier1</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.DateQualifier" title="creator_studio_doc_format.core.DateQualifier (Python class) — A time unit for relative date predicates, as in “in the last 5 years.”"><span class="pre">DateQualifier</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.date_qualifier1" title="Link to this definition">¶</a></dt>
+<dd><p>The time unit for the first value of relative date predicates (<code class="docutils literal notranslate"><span class="pre">date_is_in_the_last</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_in_the_next</span></code>, <code class="docutils literal notranslate"><span class="pre">date_before_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">date_after_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">date_between_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">date_in_this</span></code>). For example, a <code class="docutils literal notranslate"><span class="pre">value1</span></code> of 5 with a <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code> of <code class="docutils literal notranslate"><span class="pre">years</span></code> means “5 years.” It’s required for these predicates.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.date_qualifier2">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">date_qualifier2</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.DateQualifier" title="creator_studio_doc_format.core.DateQualifier (Python class) — A time unit for relative date predicates, as in “in the last 5 years.”"><span class="pre">DateQualifier</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.date_qualifier2" title="Link to this definition">¶</a></dt>
+<dd><p>The time unit for the second value of relative-date range predicates (<code class="docutils literal notranslate"><span class="pre">date_between_relative</span></code>). It’s required only when both ends of the range need separate units.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.duration_unit1">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">duration_unit1</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.DurationUnit" title="creator_studio_doc_format.core.DurationUnit (Python class) — The display unit for a duration predicate's values."><span class="pre">DurationUnit</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.duration_unit1" title="Link to this definition">¶</a></dt>
+<dd><p>The display unit for the first value of duration predicates. The duration value itself is stored as a number of seconds, and this unit determines how to interpret it; for example, 3600 seconds with a <code class="docutils literal notranslate"><span class="pre">duration_unit1</span></code> of <code class="docutils literal notranslate"><span class="pre">hour</span></code> means “1 hour.” It’s required for duration predicates.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.duration_unit2">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">duration_unit2</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.DurationUnit" title="creator_studio_doc_format.core.DurationUnit (Python class) — The display unit for a duration predicate's values."><span class="pre">DurationUnit</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.duration_unit2" title="Link to this definition">¶</a></dt>
+<dd><p>The display unit for the second value of duration range predicates (<code class="docutils literal notranslate"><span class="pre">duration_is_between</span></code>, <code class="docutils literal notranslate"><span class="pre">duration_is_not_between</span></code>). It’s required when those predicates are used.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Predicate.value_list">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value_list</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#creator_studio_doc_format.core.Value" title="creator_studio_doc_format.core.Value (Python model) — A typed comparison value."><span class="pre">Value</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Predicate.value_list" title="Link to this definition">¶</a></dt>
+<dd><p>The ordered list of typed values that the <code class="docutils literal notranslate"><span class="pre">in_list</span></code> and <code class="docutils literal notranslate"><span class="pre">not_in_list</span></code> predicates compare the cell against. All entries must use the same <code class="docutils literal notranslate"><span class="pre">Value</span></code> case. If it’s present, <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code> are ignored.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="predicatetype">PredicateType<a class="headerlink" href="#predicatetype" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">PredicateType</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PredicateType" title="creator_studio_doc_format.core.PredicateType.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.PredicateType" title="creator_studio_doc_format.core.PredicateType.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#PredicateType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType" title="Link to this definition">¶</a></dt>
+<dd><p>The type of conditional test to perform.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">PredicateType.DATE_AFTER_RELATIVE</span></code> and <code class="docutils literal notranslate"><span class="pre">'date_after_relative'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_AFTER_RELATIVE">
+<span class="sig-name descname"><span class="pre">DATE_AFTER_RELATIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_after_relative'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_AFTER_RELATIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is after a relative offset of <code class="docutils literal notranslate"><span class="pre">value1</span></code> time units (the unit is given by <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_BEFORE_RELATIVE">
+<span class="sig-name descname"><span class="pre">DATE_BEFORE_RELATIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_before_relative'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_BEFORE_RELATIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is before a relative offset of <code class="docutils literal notranslate"><span class="pre">value1</span></code> time units (the unit is given by <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_BETWEEN_RELATIVE">
+<span class="sig-name descname"><span class="pre">DATE_BETWEEN_RELATIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_between_relative'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_BETWEEN_RELATIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is between two relative offsets of <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code> time units.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IN_THIS">
+<span class="sig-name descname"><span class="pre">DATE_IN_THIS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_in_this'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IN_THIS" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is in the day, week, month, or year (the unit is given by <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_AFTER">
+<span class="sig-name descname"><span class="pre">DATE_IS_AFTER</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_after'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_AFTER" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is after <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_BEFORE">
+<span class="sig-name descname"><span class="pre">DATE_IS_BEFORE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_before'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_BEFORE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is before <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_BETWEEN">
+<span class="sig-name descname"><span class="pre">DATE_IS_BETWEEN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_between'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_BETWEEN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is between <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_EXACTLY">
+<span class="sig-name descname"><span class="pre">DATE_IS_EXACTLY</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_exactly'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_EXACTLY" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is exactly <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_IN_THE_LAST">
+<span class="sig-name descname"><span class="pre">DATE_IS_IN_THE_LAST</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_in_the_last'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_IN_THE_LAST" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is within the last <code class="docutils literal notranslate"><span class="pre">value1</span></code> units (the unit is given by <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_IN_THE_NEXT">
+<span class="sig-name descname"><span class="pre">DATE_IS_IN_THE_NEXT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_in_the_next'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_IN_THE_NEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is within the next <code class="docutils literal notranslate"><span class="pre">value1</span></code> units (the unit is given by <code class="docutils literal notranslate"><span class="pre">date_qualifier1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_THE_DATE">
+<span class="sig-name descname"><span class="pre">DATE_IS_THE_DATE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_the_date'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_THE_DATE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is on the same calendar day as <code class="docutils literal notranslate"><span class="pre">value1</span></code>. It’s distinct from <code class="docutils literal notranslate"><span class="pre">date_is_exactly</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_TODAY">
+<span class="sig-name descname"><span class="pre">DATE_IS_TODAY</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_today'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_TODAY" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is today.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_TOMORROW">
+<span class="sig-name descname"><span class="pre">DATE_IS_TOMORROW</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_tomorrow'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_TOMORROW" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is tomorrow.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DATE_IS_YESTERDAY">
+<span class="sig-name descname"><span class="pre">DATE_IS_YESTERDAY</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'date_is_yesterday'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DATE_IS_YESTERDAY" title="Link to this definition">¶</a></dt>
+<dd><p>Cell date is yesterday.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DISTINCTS">
+<span class="sig-name descname"><span class="pre">DISTINCTS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'distincts'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DISTINCTS" title="Link to this definition">¶</a></dt>
+<dd><p>Cell is one of the distinct values in the column.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DUPLICATES">
+<span class="sig-name descname"><span class="pre">DUPLICATES</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duplicates'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DUPLICATES" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is duplicated elsewhere in the column.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_ABOVE_AVERAGE">
+<span class="sig-name descname"><span class="pre">DURATION_ABOVE_AVERAGE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_above_average'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_ABOVE_AVERAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is above the average.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_BELOW_AVERAGE">
+<span class="sig-name descname"><span class="pre">DURATION_BELOW_AVERAGE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_below_average'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_BELOW_AVERAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is below the average.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_BOTTOM">
+<span class="sig-name descname"><span class="pre">DURATION_BOTTOM</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_bottom'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_BOTTOM" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is in the bottom N values (or bottom N percent) of its column. The threshold N is given by <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_BETWEEN">
+<span class="sig-name descname"><span class="pre">DURATION_IS_BETWEEN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_between'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_BETWEEN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is between <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_EQUAL">
+<span class="sig-name descname"><span class="pre">DURATION_IS_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration equals <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_GREATER_THAN">
+<span class="sig-name descname"><span class="pre">DURATION_IS_GREATER_THAN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_greater_than'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_GREATER_THAN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is greater than <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_GREATER_THAN_OR_EQUAL">
+<span class="sig-name descname"><span class="pre">DURATION_IS_GREATER_THAN_OR_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_greater_than_or_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_GREATER_THAN_OR_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is greater than or equal to <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_LESS_THAN">
+<span class="sig-name descname"><span class="pre">DURATION_IS_LESS_THAN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_less_than'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_LESS_THAN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is less than <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_LESS_THAN_OR_EQUAL">
+<span class="sig-name descname"><span class="pre">DURATION_IS_LESS_THAN_OR_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_less_than_or_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_LESS_THAN_OR_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is less than or equal to <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_NOT_BETWEEN">
+<span class="sig-name descname"><span class="pre">DURATION_IS_NOT_BETWEEN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_not_between'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_NOT_BETWEEN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration isn’t between <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_IS_NOT_EQUAL">
+<span class="sig-name descname"><span class="pre">DURATION_IS_NOT_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_is_not_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_IS_NOT_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration doesn’t equal <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.DURATION_TOP">
+<span class="sig-name descname"><span class="pre">DURATION_TOP</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'duration_top'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.DURATION_TOP" title="Link to this definition">¶</a></dt>
+<dd><p>Cell duration is in the top N values (or top N percent) of its column. The threshold N is given by <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.FORMULA">
+<span class="sig-name descname"><span class="pre">FORMULA</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'formula'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.FORMULA" title="Link to this definition">¶</a></dt>
+<dd><p>Cell matches an arbitrary formula-based predicate. The formula text is given by <code class="docutils literal notranslate"><span class="pre">value1</span></code>, in the consuming application’s formula syntax.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IN_LIST">
+<span class="sig-name descname"><span class="pre">IN_LIST</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'in_list'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IN_LIST" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value matches any value in <code class="docutils literal notranslate"><span class="pre">value_list</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_BLANK">
+<span class="sig-name descname"><span class="pre">IS_BLANK</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_blank'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_BLANK" title="Link to this definition">¶</a></dt>
+<dd><p>Cell is blank.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_CHECKED">
+<span class="sig-name descname"><span class="pre">IS_CHECKED</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_checked'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_CHECKED" title="Link to this definition">¶</a></dt>
+<dd><p>Cell checkbox is checked.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_FALSE">
+<span class="sig-name descname"><span class="pre">IS_FALSE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_false'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_FALSE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is FALSE.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_NEGATIVE">
+<span class="sig-name descname"><span class="pre">IS_NEGATIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_negative'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_NEGATIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell numeric value is negative (&lt; 0).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_NOT_BLANK">
+<span class="sig-name descname"><span class="pre">IS_NOT_BLANK</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_not_blank'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_NOT_BLANK" title="Link to this definition">¶</a></dt>
+<dd><p>Cell isn’t blank.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_NOT_CHECKED">
+<span class="sig-name descname"><span class="pre">IS_NOT_CHECKED</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_not_checked'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_NOT_CHECKED" title="Link to this definition">¶</a></dt>
+<dd><p>Cell checkbox isn’t checked.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_POSITIVE">
+<span class="sig-name descname"><span class="pre">IS_POSITIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_positive'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_POSITIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell numeric value is zero or positive (&gt;= 0).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.IS_TRUE">
+<span class="sig-name descname"><span class="pre">IS_TRUE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'is_true'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.IS_TRUE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is TRUE.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.NOT_IN_LIST">
+<span class="sig-name descname"><span class="pre">NOT_IN_LIST</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'not_in_list'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.NOT_IN_LIST" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value matches none of the values in <code class="docutils literal notranslate"><span class="pre">value_list</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.PredicateType.PIVOT_SOURCE_FILTERED_FOR_COLUMN">
+<span class="sig-name descname"><span class="pre">PIVOT_SOURCE_FILTERED_FOR_COLUMN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'pivot_source_filtered_for_column'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.PIVOT_SOURCE_FILTERED_FOR_COLUMN" title="Link to this definition">¶</a></dt>
+<dd><p>The column is filtered by a pivot table’s source predicates. It’s reserved for pivot tables, which version 1.0 doesn’t support.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.PIVOT_SOURCE_FILTERED_FOR_ROW">
+<span class="sig-name descname"><span class="pre">PIVOT_SOURCE_FILTERED_FOR_ROW</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'pivot_source_filtered_for_row'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.PIVOT_SOURCE_FILTERED_FOR_ROW" title="Link to this definition">¶</a></dt>
+<dd><p>The row is filtered by a pivot table’s source predicates. It’s reserved for pivot tables, which version 1.0 doesn’t support.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_BEGINS_WITH">
+<span class="sig-name descname"><span class="pre">TEXT_BEGINS_WITH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_begins_with'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_BEGINS_WITH" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text begins with <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_CONTAINS">
+<span class="sig-name descname"><span class="pre">TEXT_CONTAINS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_contains'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_CONTAINS" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text contains <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_DOES_NOT_CONTAIN">
+<span class="sig-name descname"><span class="pre">TEXT_DOES_NOT_CONTAIN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_does_not_contain'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_DOES_NOT_CONTAIN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text doesn’t contain <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_ENDS_WITH">
+<span class="sig-name descname"><span class="pre">TEXT_ENDS_WITH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_ends_with'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_ENDS_WITH" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text ends with <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_IS">
+<span class="sig-name descname"><span class="pre">TEXT_IS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_is'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_IS" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text is exactly <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_IS_NOT">
+<span class="sig-name descname"><span class="pre">TEXT_IS_NOT</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_is_not'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_IS_NOT" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text isn’t <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_NOT_ENDS_WITH">
+<span class="sig-name descname"><span class="pre">TEXT_NOT_ENDS_WITH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_not_ends_with'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_NOT_ENDS_WITH" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text doesn’t end with <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.TEXT_NOT_STARTS_WITH">
+<span class="sig-name descname"><span class="pre">TEXT_NOT_STARTS_WITH</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'text_not_starts_with'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.TEXT_NOT_STARTS_WITH" title="Link to this definition">¶</a></dt>
+<dd><p>Cell text doesn’t begin with <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.UNIQUES">
+<span class="sig-name descname"><span class="pre">UNIQUES</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'uniques'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.UNIQUES" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is unique in the column.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_ABOVE_AVERAGE">
+<span class="sig-name descname"><span class="pre">VALUE_ABOVE_AVERAGE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_above_average'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_ABOVE_AVERAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is above the column or row average.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_BELOW_AVERAGE">
+<span class="sig-name descname"><span class="pre">VALUE_BELOW_AVERAGE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_below_average'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_BELOW_AVERAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is below the column or row average.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_BETWEEN">
+<span class="sig-name descname"><span class="pre">VALUE_BETWEEN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_between'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_BETWEEN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is between <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code> (inclusive).</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_BOTTOM">
+<span class="sig-name descname"><span class="pre">VALUE_BOTTOM</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_bottom'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_BOTTOM" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is in the bottom N values (or bottom N percent) of its column. The threshold N is given by <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_EQUAL">
+<span class="sig-name descname"><span class="pre">VALUE_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value equals <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_GREATER_THAN">
+<span class="sig-name descname"><span class="pre">VALUE_GREATER_THAN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_greater_than'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_GREATER_THAN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is greater than <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_GREATER_THAN_OR_EQUAL">
+<span class="sig-name descname"><span class="pre">VALUE_GREATER_THAN_OR_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_greater_than_or_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_GREATER_THAN_OR_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is greater than or equal to <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_LESS_THAN">
+<span class="sig-name descname"><span class="pre">VALUE_LESS_THAN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_less_than'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_LESS_THAN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is less than <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_LESS_THAN_OR_EQUAL">
+<span class="sig-name descname"><span class="pre">VALUE_LESS_THAN_OR_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_less_than_or_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_LESS_THAN_OR_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is less than or equal to <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_NOT_BETWEEN">
+<span class="sig-name descname"><span class="pre">VALUE_NOT_BETWEEN</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_not_between'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_NOT_BETWEEN" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value isn’t between <code class="docutils literal notranslate"><span class="pre">value1</span></code> and <code class="docutils literal notranslate"><span class="pre">value2</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_NOT_EQUAL">
+<span class="sig-name descname"><span class="pre">VALUE_NOT_EQUAL</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_not_equal'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_NOT_EQUAL" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value doesn’t equal <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.PredicateType.VALUE_TOP">
+<span class="sig-name descname"><span class="pre">VALUE_TOP</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'value_top'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.PredicateType.VALUE_TOP" title="Link to this definition">¶</a></dt>
+<dd><p>Cell value is in the top N values (or top N percent) of its column. The threshold N is given by <code class="docutils literal notranslate"><span class="pre">value1</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="value">Value<a class="headerlink" href="#value" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Value">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Value</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value" title="creator_studio_doc_format.core.Value.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value.date" title="creator_studio_doc_format.core.Value.date (Python field) — Absolute date value, used by absolute date predicates."><span class="n"><span class="pre">date</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value.duration" title="creator_studio_doc_format.core.Value.duration (Python field) — Duration value in seconds, used by duration predicates. The accompanying Table.Predicate.duration_unit1 (or duration_unit2) determines how to interpret the value."><span class="n"><span class="pre">duration</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value.number" title="creator_studio_doc_format.core.Value.number (Python field) — Numeric value, used by value-comparison predicates, for example, value_equal, value_greater_than, and value_between, and by relative date predicates that take a unit count, for example, date_is_in_the_last."><span class="n"><span class="pre">number</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value.reference" title="creator_studio_doc_format.core.Value.reference (Python field) — The comparison operand is another cell rather than a literal value (for example, “date is before [B2]”). A reader compares the referenced cell's value at evaluation time. A version 1.0 reader doesn't support a cell operand: a rule that compares against a reference in value1 or value2 is dropped and a warning is reported, and a reference entry in value_list is skipped."><span class="n"><span class="pre">reference</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Value.text" title="creator_studio_doc_format.core.Value.text (Python field) — Text value, used by text-matching predicates (such as text_contains, text_begins_with, text_ends_with, and text_is)."><span class="n"><span class="pre">text</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Value" title="creator_studio_doc_format.core.Value.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Value" title="Link to this definition">¶</a></dt>
+<dd><p>A typed comparison value.</p>
+<blockquote>
+<div><p>This value is carried in <code class="docutils literal notranslate"><span class="pre">Table.Predicate.value1</span></code> or <code class="docutils literal notranslate"><span class="pre">Table.Predicate.value2</span></code>.</p>
+</div></blockquote>
+<p>Its case must match the data type the predicate operates on.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Value.date">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">date</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="../common_types.html#creator_studio_doc_format.core.Date" title="creator_studio_doc_format.core.Date (Python model) — An absolute point in time."><span class="pre">Date</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Value.date" title="Link to this definition">¶</a></dt>
+<dd><p>Absolute date value, used by absolute date predicates.</p>
+<p>Examples of these values are <code class="docutils literal notranslate"><span class="pre">date_is_before</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_after</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_between</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_exactly</span></code>, and <code class="docutils literal notranslate"><span class="pre">date_is_the_date</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Value.duration">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">duration</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Value.duration" title="Link to this definition">¶</a></dt>
+<dd><p>Duration value in seconds, used by duration predicates. The accompanying <code class="docutils literal notranslate"><span class="pre">Table.Predicate.duration_unit1</span></code> (or <code class="docutils literal notranslate"><span class="pre">duration_unit2</span></code>) determines how to interpret the value.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Value.number">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Value.number" title="Link to this definition">¶</a></dt>
+<dd><p>Numeric value, used by value-comparison predicates, for example, <code class="docutils literal notranslate"><span class="pre">value_equal</span></code>, <code class="docutils literal notranslate"><span class="pre">value_greater_than</span></code>, and <code class="docutils literal notranslate"><span class="pre">value_between</span></code>, and by relative date predicates that take a unit count, for example, <code class="docutils literal notranslate"><span class="pre">date_is_in_the_last</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Value.reference">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">reference</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><a class="reference internal" href="#creator_studio_doc_format.core.Reference" title="creator_studio_doc_format.core.Reference (Python model) — A reference to a single cell, used as a predicate's comparison operand."><span class="pre">Reference</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Value.reference" title="Link to this definition">¶</a></dt>
+<dd><p>The comparison operand is another cell rather than a literal value (for example, “date is before [B2]”). A reader compares the referenced cell’s value at evaluation time. A version 1.0 reader doesn’t support a cell operand: a rule that compares against a <code class="docutils literal notranslate"><span class="pre">reference</span></code> in <code class="docutils literal notranslate"><span class="pre">value1</span></code> or <code class="docutils literal notranslate"><span class="pre">value2</span></code> is dropped and a warning is reported, and a <code class="docutils literal notranslate"><span class="pre">reference</span></code> entry in <code class="docutils literal notranslate"><span class="pre">value_list</span></code> is skipped.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Value.text">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">text</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Value.text" title="Link to this definition">¶</a></dt>
+<dd><p>Text value, used by text-matching predicates (such as <code class="docutils literal notranslate"><span class="pre">text_contains</span></code>, <code class="docutils literal notranslate"><span class="pre">text_begins_with</span></code>, <code class="docutils literal notranslate"><span class="pre">text_ends_with</span></code>, and <code class="docutils literal notranslate"><span class="pre">text_is</span></code>).</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="reference">Reference<a class="headerlink" href="#reference" title="Link to this heading">¶</a></h3>
+<dl class="py class pydantic_model objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="creator_studio_doc_format.core.Reference">
+<span class="property"><span class="pre">class</span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Reference</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference" title="creator_studio_doc_format.core.Reference.preset_identifier (Python parameter)"><span class="n"><span class="pre">preset_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">''</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference.row_identifier" title="creator_studio_doc_format.core.Reference.row_identifier (Python field) — The row ID of the referenced cell. It must match a Table.Row.row_identifier in this table or, for a cross-table reference, in the table identified by table_identifier."><span class="n"><span class="pre">row_identifier</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference.column_identifier" title="creator_studio_doc_format.core.Reference.column_identifier (Python field) — The column ID of the referenced cell. It must match a Table.ColumnHeader.column_identifier in the referenced table."><span class="n"><span class="pre">column_identifier</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference.is_row_absolute" title="creator_studio_doc_format.core.Reference.is_row_absolute (Python field) — Whether the row reference is absolute. It's true if the original notation pinned the row (for example, A$1), and false if the row is relative (A1)."><span class="n"><span class="pre">is_row_absolute</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference.is_column_absolute" title="creator_studio_doc_format.core.Reference.is_column_absolute (Python field) — Whether the column reference is absolute. It's true if the original notation pinned the column (for example, $A1), and false if the column is relative (A1)."><span class="n"><span class="pre">is_column_absolute</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Reference.table_identifier" title="creator_studio_doc_format.core.Reference.table_identifier (Python field) — The identifier of another table, for a cross-table reference. It matches the Table.identifier of that table. Omit it for a reference within the same table."><span class="n"><span class="pre">table_identifier</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><a class="n reference internal" href="#creator_studio_doc_format.core.Reference" title="creator_studio_doc_format.core.Reference.extra_data (Python parameter)"><span class="n"><span class="pre">extra_data</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Reference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Reference" title="Link to this definition">¶</a></dt>
+<dd><p>A reference to a single cell, used as a predicate’s comparison operand.</p>
+<p>It addresses the cell by row and column ID, so the reference stays stable across structural edits. Range references aren’t supported here; predicate operands are always single scalar values.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Reference.row_identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">row_identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Reference.row_identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The row ID of the referenced cell. It must match a <code class="docutils literal notranslate"><span class="pre">Table.Row.row_identifier</span></code> in this table or, for a cross-table reference, in the table identified by <code class="docutils literal notranslate"><span class="pre">table_identifier</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Reference.column_identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span></span><span class="property"> <span class="pre">[Required]</span></span><a class="headerlink" href="#creator_studio_doc_format.core.Reference.column_identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The column ID of the referenced cell. It must match a <code class="docutils literal notranslate"><span class="pre">Table.ColumnHeader.column_identifier</span></code> in the referenced table.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Reference.is_row_absolute">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_row_absolute</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Reference.is_row_absolute" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the row reference is absolute. It’s <code class="docutils literal notranslate"><span class="pre">true</span></code> if the original notation pinned the row (for example, <code class="docutils literal notranslate"><span class="pre">A$1</span></code>), and <code class="docutils literal notranslate"><span class="pre">false</span></code> if the row is relative (<code class="docutils literal notranslate"><span class="pre">A1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Reference.is_column_absolute">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_column_absolute</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">bool</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Reference.is_column_absolute" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the column reference is absolute. It’s <code class="docutils literal notranslate"><span class="pre">true</span></code> if the original notation pinned the column (for example, <code class="docutils literal notranslate"><span class="pre">$A1</span></code>), and <code class="docutils literal notranslate"><span class="pre">false</span></code> if the column is relative (<code class="docutils literal notranslate"><span class="pre">A1</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Reference.table_identifier">
+<span class="property"><span class="pre">field</span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">table_identifier</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Reference.table_identifier" title="Link to this definition">¶</a></dt>
+<dd><p>The identifier of another table, for a cross-table reference. It matches the <code class="docutils literal notranslate"><span class="pre">Table.identifier</span></code> of that table. Omit it for a reference within the same table.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="qualifier">Qualifier<a class="headerlink" href="#qualifier" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Qualifier">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">Qualifier</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Qualifier" title="creator_studio_doc_format.core.Qualifier.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.Qualifier" title="creator_studio_doc_format.core.Qualifier.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#Qualifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.Qualifier" title="Link to this definition">¶</a></dt>
+<dd><p>A qualifier for text-matching predicates.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">Qualifier.CASE_INSENSITIVE</span></code> and <code class="docutils literal notranslate"><span class="pre">'case_insensitive'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Qualifier.CASE_INSENSITIVE">
+<span class="sig-name descname"><span class="pre">CASE_INSENSITIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'case_insensitive'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Qualifier.CASE_INSENSITIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Match is case insensitive.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.Qualifier.CASE_SENSITIVE">
+<span class="sig-name descname"><span class="pre">CASE_SENSITIVE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'case_sensitive'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.Qualifier.CASE_SENSITIVE" title="Link to this definition">¶</a></dt>
+<dd><p>Match is case sensitive.</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="datequalifier">DateQualifier<a class="headerlink" href="#datequalifier" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">DateQualifier</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.DateQualifier" title="creator_studio_doc_format.core.DateQualifier.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.DateQualifier" title="creator_studio_doc_format.core.DateQualifier.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#DateQualifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier" title="Link to this definition">¶</a></dt>
+<dd><p>A time unit for relative date predicates, as in “in the last 5 years.”</p>
+<p>It’s used by predicates that take a unit count as their value, such as <code class="docutils literal notranslate"><span class="pre">date_is_in_the_last</span></code>, <code class="docutils literal notranslate"><span class="pre">date_is_in_the_next</span></code>, <code class="docutils literal notranslate"><span class="pre">date_before_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">date_after_relative</span></code>, <code class="docutils literal notranslate"><span class="pre">date_between_relative</span></code>, and <code class="docutils literal notranslate"><span class="pre">date_in_this</span></code>.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">DateQualifier.AGO</span></code> and <code class="docutils literal notranslate"><span class="pre">'ago'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.AGO">
+<span class="sig-name descname"><span class="pre">AGO</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'ago'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.AGO" title="Link to this definition">¶</a></dt>
+<dd><p>The unit count is in the past, for use with the <code class="docutils literal notranslate"><span class="pre">date_before_relative</span></code> and <code class="docutils literal notranslate"><span class="pre">date_after_relative</span></code> predicates.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.DAYS">
+<span class="sig-name descname"><span class="pre">DAYS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'days'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.DAYS" title="Link to this definition">¶</a></dt>
+<dd><p>Days</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.FROM_NOW">
+<span class="sig-name descname"><span class="pre">FROM_NOW</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'from_now'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.FROM_NOW" title="Link to this definition">¶</a></dt>
+<dd><p>The unit count is in the future, for use with the <code class="docutils literal notranslate"><span class="pre">date_before_relative</span></code> and <code class="docutils literal notranslate"><span class="pre">date_after_relative</span></code> predicates.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.MONTHS">
+<span class="sig-name descname"><span class="pre">MONTHS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'months'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.MONTHS" title="Link to this definition">¶</a></dt>
+<dd><p>Months</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.QUARTERS">
+<span class="sig-name descname"><span class="pre">QUARTERS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'quarters'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.QUARTERS" title="Link to this definition">¶</a></dt>
+<dd><p>Quarters</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.WEEKS">
+<span class="sig-name descname"><span class="pre">WEEKS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'weeks'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.WEEKS" title="Link to this definition">¶</a></dt>
+<dd><p>Weeks</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DateQualifier.YEARS">
+<span class="sig-name descname"><span class="pre">YEARS</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'years'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DateQualifier.YEARS" title="Link to this definition">¶</a></dt>
+<dd><p>Years</p>
+</dd></dl>
+
+</dd></dl>
+
+<h3 id="durationunit">DurationUnit<a class="headerlink" href="#durationunit" title="Link to this heading">¶</a></h3>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">creator_studio_doc_format.core.</span></span><span class="sig-name descname"><span class="pre">DurationUnit</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.DurationUnit" title="creator_studio_doc_format.core.DurationUnit.__init__.str (Python parameter)"><span class="n"><span class="pre">str</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="n reference internal" href="#creator_studio_doc_format.core.DurationUnit" title="creator_studio_doc_format.core.DurationUnit.__init__.Enum (Python parameter)"><span class="n"><span class="pre">Enum</span></span></a></em></span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/creator_studio_doc_format/core/models.html#DurationUnit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit" title="Link to this definition">¶</a></dt>
+<dd><p>The display unit for a duration predicate’s values.</p>
+<p>The duration value itself is stored as a number of seconds; this unit indicates how to interpret and render that value. For example, a value of 7200 with the unit <code class="docutils literal notranslate"><span class="pre">hour</span></code> means “2 hours.” It’s required for a predicate with duration values to be read back correctly.</p>
+<p>A field accepts a member or its value, so <code class="docutils literal notranslate"><span class="pre">DurationUnit.DAY</span></code> and <code class="docutils literal notranslate"><span class="pre">'day'</span></code> are the same. The member’s name as a string isn’t accepted.</p>
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.DAY">
+<span class="sig-name descname"><span class="pre">DAY</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'day'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.DAY" title="Link to this definition">¶</a></dt>
+<dd><p>Days</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.HOUR">
+<span class="sig-name descname"><span class="pre">HOUR</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'hour'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.HOUR" title="Link to this definition">¶</a></dt>
+<dd><p>Hours</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.MILLISECOND">
+<span class="sig-name descname"><span class="pre">MILLISECOND</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'millisecond'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.MILLISECOND" title="Link to this definition">¶</a></dt>
+<dd><p>Milliseconds</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.MINUTE">
+<span class="sig-name descname"><span class="pre">MINUTE</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'minute'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.MINUTE" title="Link to this definition">¶</a></dt>
+<dd><p>Minutes</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.SECOND">
+<span class="sig-name descname"><span class="pre">SECOND</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'second'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.SECOND" title="Link to this definition">¶</a></dt>
+<dd><p>Seconds</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="creator_studio_doc_format.core.DurationUnit.WEEK">
+<span class="sig-name descname"><span class="pre">WEEK</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">'week'</span></code><a class="headerlink" href="#creator_studio_doc_format.core.DurationUnit.WEEK" title="Link to this definition">¶</a></dt>
+<dd><p>Weeks</p>
+</dd></dl>
+
+</dd></dl>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2026, Apple Inc.
+        
+    </div>
+  
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "../versions.json"}}</script>
+    
+      
+        <script src="../../../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../../../_static/sphinx_immaterial_theme.ce3f826234c1e494c.min.js?v=6917d573"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=42416f38"></script>
+    
+  </body>
+</html>

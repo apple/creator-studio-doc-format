@@ -1,0 +1,57 @@
+..
+    Copyright © 2026 Apple Inc.
+
+    Licensed under Apache License v2.0. For more information, see LICENSE.
+    SPDX-License-Identifier: Apache-2.0
+
+Model bases
+===========
+
+.. Declares the module so :mod:`creator_studio_doc_format.core` resolves everywhere.
+   It isn't an ``automodule``, because ``creator_studio_doc_format.core`` re-exports
+   every model, which ``api/presentation/`` documents instead.
+.. py:module:: creator_studio_doc_format.core
+
+Set union cases and override values through the base classes that every model derives
+from.
+
+ObjectModel
+-----------
+
+.. autoclass:: creator_studio_doc_format.core.ObjectModel
+
+TaggedUnionModel
+----------------
+
+.. autoclass:: creator_studio_doc_format.core.TaggedUnionModel
+
+Override
+--------
+
+..
+   Only this page uses ``undoc-members``, so that the guide can link to each member below.
+
+.. autoclass:: creator_studio_doc_format.core.Override
+   :undoc-members:
+
+PayloadT
+--------
+
+.. py:data:: PayloadT
+
+   The type variable for the root model of a
+   :class:`~creator_studio_doc_format.core.Package`, bound to
+   :class:`~creator_studio_doc_format.core.ObjectModel`. ``KeyxDocument`` binds it to
+   ``Presentation``.
+
+Model lookup and comparison
+---------------------------
+
+.. autofunction:: creator_studio_doc_format.core.model_for
+
+.. autofunction:: creator_studio_doc_format.core.same_json
+
+.. seealso:: :authoring:`Write nulls only where you mean them
+   <Write-nulls-only-where-you-mean-them>` in the format's authoring requirements, and
+   :structure:`Turn off an inherited value <Turn-off-an-inherited-value>` for what a null
+   means.
